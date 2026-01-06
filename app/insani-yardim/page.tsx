@@ -82,48 +82,76 @@ export default function InsaniYardimPage() {
                 description="İyiliğe Açılan Kapı"
             />
 
-            {/* ECİR KAPISI TANITIM */}
-            <section id="tanitim" className="py-20 bg-background">
+            {/* ECİR KAPISI TANITIM - AYDINLIK BOX LAYOUT */}
+            <section id="tanitim" className="py-24 bg-background">
                 <div className="container px-4 md:px-6">
-                    <div className="max-w-4xl mx-auto text-center space-y-8">
-                        <div className="inline-flex items-center justify-center p-4 bg-primary/10 rounded-full mb-4">
-                            <HeartHandshake className="w-12 h-12 text-primary" />
+                    {/* Sinematik Çerçeve */}
+                    <div className="relative w-full max-w-[1400px] mx-auto rounded-[2.5rem] overflow-hidden shadow-[0_32px_64px_-12px_rgba(0,0,0,0.1)] border border-border/40 isolate bg-background">
+
+                        {/* Arka Plan Görseli */}
+                        <div className="absolute inset-0 z-0">
+                            <Image
+                                src="/images/yetim_hamiligi.webp"
+                                alt="Ecir Kapısı Yetim Hamiliği"
+                                fill
+                                className="object-cover scale-105 opacity-90 group-hover:scale-100 transition-transform duration-[2s] ease-in-out"
+                            />
+                            {/* Beyaz/Aydınlık Overlay - Dengeli */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background/60" />
                         </div>
-                        <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
-                            Ecir Kapısı Nedir?
-                        </h2>
-                        <div className="space-y-4 text-muted-foreground leading-relaxed text-lg">
-                            <p>
-                                Ecir Kapısı Derneği olarak; insani yardım, kalkınma ve kriz destek çalışmalarımızı,
-                                emanet bilinciyle ve insan onurunu merkeze alarak farklı coğrafyalarda sürdürüyoruz.
-                            </p>
-                            <p>
-                                Ecir Kapısı, şeffaf, güvenilir ve sürdürülebilir insani yardım projeleriyle mazlum coğrafyalara umut taşıyor.
-                                Zekat, sadaka ve infaklarınız emanet bilinciyle yerlerine ulaştırılır.
-                            </p>
-                            <p className="text-base italic">
-                                &quot;Veren el, alan elden üstündür.&quot;
-                            </p>
-                        </div>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
-                            <Button size="lg" asChild>
-                                <Link href="https://www.ecirkapisi.org.tr/bagis" target="_blank">
-                                    <HeartHandshake className="mr-2 h-4 w-4" />
-                                    Şimdi Bağış Yap
-                                </Link>
-                            </Button>
-                            <Button size="lg" variant="outline" asChild>
-                                <Link href="https://www.ecirkapisi.org.tr/hakkimizda" target="_blank">
-                                    <ExternalLink className="mr-2 h-4 w-4" />
-                                    Hakkımızda
-                                </Link>
-                            </Button>
-                            <Button size="lg" variant="outline" asChild>
-                                <Link href="https://www.ecirkapisi.org.tr/" target="_blank">
-                                    <ExternalLink className="mr-2 h-4 w-4" />
-                                    Ecir Kapısı&apos;nı Ziyaret Et
-                                </Link>
-                            </Button>
+
+                        {/* İçerik */}
+                        <div className="relative z-10 px-6 py-20 md:px-20 md:py-32 flex flex-col items-center justify-center text-center min-h-[600px]">
+                            <div className="max-w-4xl mx-auto space-y-8">
+                                {/* İkon */}
+                                <div className="inline-flex items-center justify-center p-5 bg-primary/10 rounded-3xl mb-4 ring-1 ring-primary/20 backdrop-blur-md shadow-sm animate-fade-in-up">
+                                    <HeartHandshake className="w-12 h-12 text-primary" />
+                                </div>
+
+                                {/* Başlık */}
+                                <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground drop-shadow-sm animate-fade-in-up" style={{ animationDelay: "100ms" }}>
+                                    Ecir Kapısı Nedir?
+                                </h2>
+
+                                {/* Açıklama Metni */}
+                                <div className="space-y-6 text-muted-foreground leading-relaxed text-lg md:text-xl font-light max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: "200ms" }}>
+                                    <p className="font-normal text-foreground/80">
+                                        Ecir Kapısı Derneği olarak; insani yardım, kalkınma ve kriz destek çalışmalarımızı,
+                                        emanet bilinciyle ve insan onurunu merkeze alarak farklı coğrafyalarda sürdürüyoruz.
+                                    </p>
+                                    <p>
+                                        Ecir Kapısı, şeffaf, güvenilir ve sürdürülebilir insani yardım projeleriyle mazlum coğrafyalara umut taşıyor.
+                                        Zekat, sadaka ve infaklarınız emanet bilinciyle yerlerine ulaştırılır.
+                                    </p>
+                                    <div className="pt-4">
+                                        <p className="text-xl md:text-2xl italic font-serif text-primary/80 border-t border-primary/10 pt-6 inline-block px-8">
+                                            &quot;Veren el, alan elden üstündür.&quot;
+                                        </p>
+                                    </div>
+                                </div>
+
+                                {/* Butonlar */}
+                                <div className="flex flex-col sm:flex-row gap-5 justify-center mt-12 animate-fade-in-up" style={{ animationDelay: "300ms" }}>
+                                    <Button size="lg" className="h-14 px-8 text-lg bg-primary hover:bg-primary/90 text-primary-foreground border-none shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-xl" asChild>
+                                        <Link href="https://www.ecirkapisi.org.tr/bagis" target="_blank">
+                                            <HeartHandshake className="mr-3 h-5 w-5" />
+                                            Şimdi Bağış Yap
+                                        </Link>
+                                    </Button>
+                                    <Button size="lg" variant="outline" className="h-14 px-8 text-lg border-primary/20 bg-background/50 text-foreground hover:bg-primary/5 hover:border-primary/40 backdrop-blur-sm transition-all duration-300 rounded-xl" asChild>
+                                        <Link href="https://www.ecirkapisi.org.tr/hakkimizda" target="_blank">
+                                            <ExternalLink className="mr-3 h-5 w-5" />
+                                            Hakkımızda
+                                        </Link>
+                                    </Button>
+                                    <Button size="lg" variant="outline" className="h-14 px-8 text-lg border-primary/20 bg-background/50 text-foreground hover:bg-primary/5 hover:border-primary/40 backdrop-blur-sm transition-all duration-300 rounded-xl" asChild>
+                                        <Link href="https://www.ecirkapisi.org.tr/" target="_blank">
+                                            <ExternalLink className="mr-3 h-5 w-5" />
+                                            Websitesini Ziyaret Et
+                                        </Link>
+                                    </Button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

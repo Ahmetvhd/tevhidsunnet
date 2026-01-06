@@ -3,6 +3,7 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { inter } from "@/lib/fonts";
 import "./globals.css";
+import { ThemeProvider } from "@/components/theme-provider";
 
 export const metadata: Metadata = {
   title: "Tevhid ve Sünnet | İlim ve Davet",
@@ -17,9 +18,16 @@ export default function RootLayout({
   return (
     <html lang="tr" className="scroll-smooth" suppressHydrationWarning>
       <body className={`${inter.className} antialiased min-h-screen flex flex-col`} suppressHydrationWarning>
-        <Navbar />
-        <main className="flex-1">{children}</main>
-        <Footer />
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          <Navbar />
+          <main className="flex-1">{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

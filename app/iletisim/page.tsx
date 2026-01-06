@@ -1,4 +1,5 @@
 
+import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MessageSquare } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -34,35 +35,42 @@ export default function IletisimPage() {
 
                         <div className="grid md:grid-cols-3 gap-6">
                             {/* GSM */}
-                            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
-                                <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-full mb-4">
-                                    <Phone className="w-6 h-6 text-primary" />
-                                </div>
-                                <h3 className="font-semibold mb-2">Telefon</h3>
-                                <p className="text-muted-foreground text-sm">+90 535 766 45 45</p>
-                            </Card>
+                            <Link href="tel:+905357664545" className="block group">
+                                <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1 group-hover:border-primary/50 h-full">
+                                    <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-full mb-4 group-hover:bg-primary/20 transition-colors">
+                                        <Phone className="w-6 h-6 text-primary" />
+                                    </div>
+                                    <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">Telefon</h3>
+                                    <p className="text-muted-foreground text-sm group-hover:text-foreground transition-colors">+90 535 766 45 45</p>
+                                </Card>
+                            </Link>
 
                             {/* WhatsApp */}
-                            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
-                                <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-full mb-4">
-                                    <MessageSquare className="w-6 h-6 text-primary" />
-                                </div>
-                                <h3 className="font-semibold mb-2">WhatsApp</h3>
-                                <p className="text-muted-foreground text-sm">+90 535 766 45 45</p>
-                            </Card>
+                            <Link href="https://wa.me/905357664545" target="_blank" className="block group">
+                                <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1 group-hover:border-primary/50 h-full">
+                                    <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-full mb-4 group-hover:bg-primary/20 transition-colors">
+                                        <MessageSquare className="w-6 h-6 text-primary" />
+                                    </div>
+                                    <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">WhatsApp</h3>
+                                    <p className="text-muted-foreground text-sm group-hover:text-foreground transition-colors">+90 535 766 45 45</p>
+                                </Card>
+                            </Link>
 
                             {/* Mail */}
-                            <Card className="p-6 text-center hover:shadow-lg transition-shadow">
-                                <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-full mb-4">
-                                    <Mail className="w-6 h-6 text-primary" />
-                                </div>
-                                <h3 className="font-semibold mb-2">E-Posta</h3>
-                                <p className="text-muted-foreground text-sm">info@tevhiddergisi.org</p>
-                            </Card>
+                            <Link href="mailto:info@tevhiddergisi.org" className="block group">
+                                <Card className="p-6 text-center hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1 group-hover:border-primary/50 h-full">
+                                    <div className="inline-flex items-center justify-center p-3 bg-primary/10 rounded-full mb-4 group-hover:bg-primary/20 transition-colors">
+                                        <Mail className="w-6 h-6 text-primary" />
+                                    </div>
+                                    <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">E-Posta</h3>
+                                    <p className="text-muted-foreground text-sm group-hover:text-foreground transition-colors">info@tevhiddergisi.org</p>
+                                </Card>
+                            </Link>
                         </div>
                     </div>
                 </div>
             </section>
+
 
 
         </div>
