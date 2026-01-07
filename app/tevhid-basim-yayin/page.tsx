@@ -185,10 +185,10 @@ export default function TevhidBasimYayinPage() {
             </section>
 
             {/* TEVHİD ÇOCUK SON SAYI */}
-            <section className="py-20 bg-orange-50/50">
+            <section className="py-20 bg-muted/30">
                 <div className="container px-4 md:px-6">
                     <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-                        <div className="relative flex items-center justify-center bg-white rounded-xl shadow-2xl p-8 border border-orange-500/10 group overflow-hidden">
+                        <div className="relative flex items-center justify-center bg-white rounded-xl shadow-2xl p-8 border border-primary/10 group overflow-hidden">
                             <div className="relative w-full max-w-[320px] aspect-[3/4]">
                                 <Image
                                     src="/images/31.sayi.jpg"
@@ -198,15 +198,15 @@ export default function TevhidBasimYayinPage() {
                                 />
                             </div>
                             <div className="absolute top-4 right-4 group-hover:scale-110 transition-transform duration-300">
-                                <Badge className="bg-orange-500 text-white text-lg px-4 py-1 shadow-lg">YENİ SAYI</Badge>
+                                <Badge className="bg-primary text-primary-foreground text-lg px-4 py-1 shadow-lg">YENİ SAYI</Badge>
                             </div>
                         </div>
                         <div className="space-y-8">
                             <div className="space-y-4">
-                                <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-orange-950">
+                                <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
                                     Tevhid Çocuk 31. Sayı Çıktı!
                                 </h2>
-                                <p className="text-xl text-orange-600 font-medium">
+                                <p className="text-xl text-primary font-medium">
                                     "Minik Kalplerde Büyük İman"
                                 </p>
                             </div>
@@ -215,7 +215,7 @@ export default function TevhidBasimYayinPage() {
                                 <p>
                                     Sevgili çocuklar! Bu sayımızda Peygamber Efendimiz'in hayatından çok özel kıssalar, arkadaşlığın ve kardeşliğin önemi üzerine sıcacık hikayeler sizi bekliyor.
                                 </p>
-                                <blockquote className="border-l-4 border-orange-500 pl-4 italic bg-white/50 p-4 rounded-r-lg">
+                                <blockquote className="border-l-4 border-primary pl-4 italic bg-background/50 p-4 rounded-r-lg">
                                     "Sizin en hayırlınız, ahlakı en güzel olanınızdır."
                                 </blockquote>
                                 <p>
@@ -224,11 +224,11 @@ export default function TevhidBasimYayinPage() {
                             </div>
 
                             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                                <Button size="lg" className="h-12 px-8 text-base bg-orange-600 hover:bg-orange-700">
+                                <Button size="lg" className="h-12 px-8 text-base">
                                     <BookOpen className="mr-2 h-5 w-5" />
                                     Sayıyı İncele
                                 </Button>
-                                <Button size="lg" variant="outline" className="h-12 px-8 text-base border-orange-200 text-orange-700 hover:bg-orange-100" asChild>
+                                <Button size="lg" variant="outline" className="h-12 px-8 text-base" asChild>
                                     <Link href="https://tevhiddergisi.org/tevhid-cocuk-dergisi/" target="_blank">
                                         <ArrowRight className="mr-2 h-5 w-5" />
                                         Tüm Sayılar
@@ -241,7 +241,7 @@ export default function TevhidBasimYayinPage() {
             </section>
 
             {/* TEVHİD ÇOCUK */}
-            <section id="tevhid-cocuk" className="py-20 bg-muted/20">
+            <section id="tevhid-cocuk" className="py-20 bg-background">
                 <div className="container px-4 md:px-6">
                     <div className="text-center mb-16 space-y-4">
                         <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Tevhid Çocuk</h2>
@@ -262,10 +262,10 @@ export default function TevhidBasimYayinPage() {
                                 />
                             </div>
                             <CardContent className="pt-6">
-                                <h3 className="font-semibold text-lg leading-tight mb-2 text-orange-950">
+                                <h3 className="font-semibold text-lg leading-tight mb-2">
                                     Tevhid Çocuk - Sayı 30
                                 </h3>
-                                <Button variant="link" className="px-0 text-orange-600">
+                                <Button variant="link" className="px-0 text-primary">
                                     İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
                                 </Button>
                             </CardContent>
@@ -282,10 +282,10 @@ export default function TevhidBasimYayinPage() {
                                 />
                             </div>
                             <CardContent className="pt-6">
-                                <h3 className="font-semibold text-lg leading-tight mb-2 text-orange-950">
+                                <h3 className="font-semibold text-lg leading-tight mb-2">
                                     Tevhid Çocuk - Sayı 29
                                 </h3>
-                                <Button variant="link" className="px-0 text-orange-600">
+                                <Button variant="link" className="px-0 text-primary">
                                     İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
                                 </Button>
                             </CardContent>
@@ -302,10 +302,10 @@ export default function TevhidBasimYayinPage() {
                                 />
                             </div>
                             <CardContent className="pt-6">
-                                <h3 className="font-semibold text-lg leading-tight mb-2 text-orange-950">
+                                <h3 className="font-semibold text-lg leading-tight mb-2">
                                     Tevhid Çocuk - Sayı 28
                                 </h3>
-                                <Button variant="link" className="px-0 text-orange-600">
+                                <Button variant="link" className="px-0 text-primary">
                                     İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
                                 </Button>
                             </CardContent>
@@ -322,10 +322,10 @@ export default function TevhidBasimYayinPage() {
                                 />
                             </div>
                             <CardContent className="pt-6">
-                                <h3 className="font-semibold text-lg leading-tight mb-2 text-orange-950">
+                                <h3 className="font-semibold text-lg leading-tight mb-2">
                                     Tevhid Çocuk - Sayı 27
                                 </h3>
-                                <Button variant="link" className="px-0 text-orange-600">
+                                <Button variant="link" className="px-0 text-primary">
                                     İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
                                 </Button>
                             </CardContent>
@@ -333,7 +333,7 @@ export default function TevhidBasimYayinPage() {
                     </div>
 
                     <div className="flex justify-center mt-12">
-                        <Button size="lg" variant="outline" className="h-12 px-8 text-base border-orange-200 text-orange-700 hover:bg-orange-100" asChild>
+                        <Button size="lg" variant="outline" className="h-12 px-8 text-base border-primary/20 hover:border-primary text-primary" asChild>
                             <a href="https://tevhiddergisi.org/tevhid-cocuk-dergisi/" target="_blank" rel="noopener noreferrer">
                                 Tüm Dergileri Gör <ArrowRight className="ml-2 h-4 w-4" />
                             </a>

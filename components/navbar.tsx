@@ -46,6 +46,7 @@ import {
 import { VisuallyHidden } from "@/components/ui/visually-hidden"
 import { cn } from "@/lib/utils"
 import { ModeToggle } from "@/components/mode-toggle"
+import { useTheme } from "next-themes"
 
 import { cinzel } from "@/lib/fonts"
 
@@ -99,6 +100,12 @@ export function Navbar() {
   const [isScrolled, setIsScrolled] = React.useState(false)
   const pathname = usePathname()
   const router = useRouter()
+  const { theme, resolvedTheme } = useTheme()
+  const [mounted, setMounted] = React.useState(false)
+
+  React.useEffect(() => {
+    setMounted(true)
+  }, [])
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -153,13 +160,24 @@ export function Navbar() {
                         </span>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent className="bg-transparent border-none shadow-none mt-2 animate-in fade-in slide-in-from-top-1 duration-200">
-                        <ul className="flex flex-col w-[220px] gap-1 p-2 bg-white/80 backdrop-blur-lg rounded-xl border border-white/20 shadow-xl">
-                          {item.children.map((child) => (
+                        <ul className={cn(
+                          "flex flex-col w-[240px] gap-2 p-2 rounded-xl backdrop-blur-xl transition-all duration-300",
+                          isScrolled
+                            ? "bg-background/80 border border-border/40 shadow-xl"
+                            : "bg-black/10 border border-white/10 shadow-lg"
+                        )}>
+                          {item.children.map((child, idx) => (
                             <ListItem
                               key={child.href}
                               title={child.label}
                               href={child.href}
-                              className="text-zinc-800 hover:text-primary hover:bg-black/5 focus:text-primary focus:bg-black/5 bg-transparent rounded-lg py-1.5 transition-colors font-medium"
+                              index={idx}
+                              className={cn(
+                                "transition-all duration-300 font-medium py-2 px-3 rounded-lg",
+                                isScrolled
+                                  ? "text-foreground hover:bg-primary/10 hover:text-primary"
+                                  : "text-white hover:bg-white/10 hover:text-white"
+                              )}
                             />
                           ))}
                         </ul>
@@ -315,16 +333,19 @@ export function Navbar() {
 
 const ListItem = React.forwardRef<
   React.ElementRef<"a">,
-  React.ComponentPropsWithoutRef<"a">
->(({ className, title, href, ...props }, ref) => {
+  React.ComponentPropsWithoutRef<"a"> & { index?: number }
+>(({ className, title, href, index = 0, ...props }, ref) => {
   return (
-    <li>
+    <li
+      className="animate-in fade-in slide-in-from-top-4 duration-500 fill-mode-both"
+      style={{ animationDelay: `${index * 100}ms` }}
+    >
       <NavigationMenuLink asChild>
         <Link
           ref={ref as any}
           href={href || "#"}
           className={cn(
-            "block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "block select-none space-y-1 rounded-md p-2 leading-none no-underline outline-none transition-all hover:translate-x-1",
             className
           )}
           {...props}

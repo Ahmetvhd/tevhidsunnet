@@ -1955,7 +1955,7 @@ export default function DijitalIceriklerimizPage() {
                                             Sosyal Medya
                                         </Badge>
                                     </div>
-                                    <span className="text-[10px] font-medium text-muted-foreground/60 mb-1">Türkçe</span>
+                                    <span className="text-[5px] font-medium text-transparent mb-1 select-none">Boşluk</span>
 
                                     {/* Başlık */}
                                     <h3 className="text-sm font-bold tracking-tight group-hover:text-primary transition-colors duration-300 mb-2">
@@ -2028,7 +2028,9 @@ export default function DijitalIceriklerimizPage() {
                                             Sosyal Medya
                                         </Badge>
                                     </div>
-                                    <span className="text-[10px] font-medium text-muted-foreground/60 mb-1">Türkçe</span>
+
+
+                                    <span className="text-[5px] font-medium text-transparent mb-1 select-none">Boşluk</span>
 
                                     {/* Başlık */}
                                     <h3 className="text-sm font-bold tracking-tight group-hover:text-primary transition-colors duration-300 mb-2">
@@ -2100,7 +2102,9 @@ export default function DijitalIceriklerimizPage() {
                                             Sosyal Medya
                                         </Badge>
                                     </div>
-                                    <span className="text-[10px] font-medium text-muted-foreground/60 mb-1">Türkçe</span>
+
+
+                                    <span className="text-[5px] font-medium text-transparent mb-1 select-none">Boşluk</span>
 
                                     {/* Başlık */}
                                     <h3 className="text-sm font-bold tracking-tight group-hover:text-primary transition-colors duration-300 mb-2">
@@ -2172,7 +2176,9 @@ export default function DijitalIceriklerimizPage() {
                                             Sosyal Medya
                                         </Badge>
                                     </div>
-                                    <span className="text-[10px] font-medium text-muted-foreground/60 mb-1">Türkçe</span>
+
+
+                                    <span className="text-[5px] font-medium text-transparent mb-1 select-none">Boşluk</span>
 
                                     {/* Başlık */}
                                     <h3 className="text-sm font-bold tracking-tight group-hover:text-primary transition-colors duration-300 mb-2">
