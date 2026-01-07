@@ -22,6 +22,16 @@ const nextConfig: NextConfig = {
         protocol: 'https',
         hostname: 'kiblegah.com',
         pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'play-lh.googleusercontent.com',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'is1-ssl.mzstatic.com',
+        pathname: '/**',
       }
     ],
   },

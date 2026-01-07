@@ -74,7 +74,7 @@ export default function BizKimizPage() {
                                             Tevhid ve Sünnet davetinin metodunu, hedeflerini ve ilkelerini detaylıca anlatan temel kaynağımız.
                                         </p>
                                     </div>
-                                    <div className="flex gap-4">
+                                    <div className="hidden md:flex gap-4">
                                         <BookletViewer />
                                     </div>
                                 </div>
@@ -93,6 +93,9 @@ export default function BizKimizPage() {
                                             </div>
                                         </div>
                                     </div>
+                                </div>
+                                <div className="md:hidden w-full mt-6">
+                                    <BookletViewer />
                                 </div>
                             </div>
                         </Card>

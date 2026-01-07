@@ -147,9 +147,9 @@ export function Navbar() {
                             ? "text-foreground hover:text-primary focus:text-primary"
                             : "text-white hover:text-white/80 focus:text-white/80 data-[state=open]:text-white/90"
                         )}>
-                        <span className="relative">
+                        <span className="relative group/item">
                           {item.label}
-                          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover/item:w-full" />
                         </span>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent className="bg-transparent border-none shadow-none mt-2 animate-in fade-in slide-in-from-top-1 duration-200">
@@ -178,9 +178,9 @@ export function Navbar() {
                         : "text-white hover:text-white/80 focus:text-white/80"
                     )}>
                       <Link href={item.href}>
-                        <span className="relative">
+                        <span className="relative group/item">
                           {item.label}
-                          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                          <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover/item:w-full" />
                         </span>
                       </Link>
                     </NavigationMenuLink>

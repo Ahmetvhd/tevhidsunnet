@@ -1,7 +1,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { HeartHandshake, ExternalLink, Droplets, GraduationCap, Sprout, Milk, Users, Play } from "lucide-react";
+import { HeartHandshake, ExternalLink, Droplets, GraduationCap, Sprout, Milk, Users, Play, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
@@ -23,7 +23,7 @@ const projects = [
         badge: "Acil",
         link: "https://www.ecirkapisi.org.tr/sudan-acil-yardim",
         category: "Acil Yardım",
-        image: "https://cdn.ecirkapisi.org.tr/upload/images/slider/sudan_acil_gorsel.webp"
+        image: "/images/sudan_acil_yardim.webp"
     },
     {
         title: "Gazze Acil Bağış",
@@ -32,7 +32,7 @@ const projects = [
         badge: "Acil",
         link: "https://www.ecirkapisi.org.tr/gazze-acil-bagis",
         category: "Acil Yardım",
-        image: "https://cdn.ecirkapisi.org.tr/upload/images/kampanyalar/acil_yardimlar/gazze_acil_bagis_.webp"
+        image: "/images/gazze_acil_bagis.webp"
     },
     {
         title: "Yemen Kalkınma Projesi - Seracılık",
@@ -50,16 +50,16 @@ const projects = [
         badge: "Kalkınma",
         link: "https://www.ecirkapisi.org.tr/afrika-sut-kecisi-projesi",
         category: "Kalkınma",
-        image: "https://cdn.ecirkapisi.org.tr/upload/images/Faaliyetler/Afrika%20Kalk%C4%B1nma%20Projesi/afrika_sut_kecisi.webp"
+        image: "/images/afrika_sut_kecisi.webp"
     },
     {
         title: "Eğitimde Eşitlik, Gelecekte Umut",
-        description: "Ecir Kapısı Derneği, yetim ve hafız bursları, kırtasiye yardımları ve Kur'an-ı Kerim dağıtımlarıyla çocukların eğitimine destek oluyor, onların eşit imkânlarla geleceğe umutla bakmasını hedefliyor.",
+        description: "Ecir Kapısı Derneği, yetim ve hafız bursları, kırtasiye yardımları ve Kur'an-ı Kerim dağıtımlarıyla çocukların eğitimine destek oluyor, onunların eşit imkânlarla geleceğe umutla bakmasını hedefliyor.",
         icon: GraduationCap,
         badge: "Eğitim",
         link: "https://www.ecirkapisi.org.tr/egitim-yardimlari",
         category: "Eğitim",
-        image: "https://cdn.ecirkapisi.org.tr/upload/images/Faaliyetler/Yetim/Yeni/IMG_6620.JPG"
+        image: "/images/egitim-yardimlari.jpeg"
     },
     {
         title: "Hisseli Su Kuyusu",
@@ -68,7 +68,7 @@ const projects = [
         badge: "Altyapı",
         link: "https://www.ecirkapisi.org.tr/hisseli-su-kuyusu-afrika",
         category: "Altyapı",
-        image: "https://cdn.ecirkapisi.org.tr/upload/images/kampanyalar/kalici_eserler/afrika_su_kuyusu.jpg"
+        image: "/images/su_kuyusu.webp"
     },
 ];
 
@@ -88,33 +88,33 @@ export default function InsaniYardimPage() {
                     {/* Sinematik Çerçeve */}
                     <div className="relative w-full max-w-[1400px] mx-auto rounded-[2.5rem] overflow-hidden shadow-[0_32px_64px_-12px_rgba(0,0,0,0.1)] border border-border/40 isolate bg-background">
 
-                        {/* Arka Plan Görseli */}
-                        <div className="absolute inset-0 z-0">
+                        {/* Arka Plan Görseli - Dekoratif ve Bulanık */}
+                        <div className="absolute inset-0 z-0 overflow-hidden">
                             <Image
-                                src="/images/yetim_hamiligi.webp"
-                                alt="Ecir Kapısı Yetim Hamiliği"
+                                src="/images/ecirkapısı.jpeg"
+                                alt=""
                                 fill
-                                className="object-cover scale-105 opacity-90 group-hover:scale-100 transition-transform duration-[2s] ease-in-out"
+                                className="object-cover blur-3xl opacity-20 scale-110"
                             />
-                            {/* Beyaz/Aydınlık Overlay - Dengeli */}
-                            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/85 to-background/60" />
+                            <div className="absolute inset-0 bg-gradient-to-br from-background/50 via-background/80 to-background" />
                         </div>
 
-                        {/* İçerik */}
-                        <div className="relative z-10 px-6 py-20 md:px-20 md:py-32 flex flex-col items-center justify-center text-center min-h-[600px]">
-                            <div className="max-w-4xl mx-auto space-y-8">
+                        {/* İçerik - 2 Sütunlu Yapı */}
+                        <div className="relative z-10 px-6 py-12 md:px-16 md:py-20 grid lg:grid-cols-2 gap-12 items-center min-h-[600px]">
+                            {/* Sol Taraf: Metin İçeriği */}
+                            <div className="flex flex-col items-center lg:items-start text-center lg:text-left space-y-6 md:space-y-8 max-w-2xl">
                                 {/* İkon */}
-                                <div className="inline-flex items-center justify-center p-5 bg-primary/10 rounded-3xl mb-4 ring-1 ring-primary/20 backdrop-blur-md shadow-sm animate-fade-in-up">
-                                    <HeartHandshake className="w-12 h-12 text-primary" />
+                                <div className="inline-flex items-center justify-center p-4 bg-primary/10 rounded-2xl ring-1 ring-primary/20 backdrop-blur-md shadow-sm animate-fade-in-up">
+                                    <HeartHandshake className="w-10 h-10 text-primary" />
                                 </div>
 
                                 {/* Başlık */}
-                                <h2 className="text-4xl md:text-6xl font-bold tracking-tight text-foreground drop-shadow-sm animate-fade-in-up" style={{ animationDelay: "100ms" }}>
+                                <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-foreground drop-shadow-sm animate-fade-in-up" style={{ animationDelay: "100ms" }}>
                                     Ecir Kapısı Nedir?
                                 </h2>
 
                                 {/* Açıklama Metni */}
-                                <div className="space-y-6 text-muted-foreground leading-relaxed text-lg md:text-xl font-light max-w-3xl mx-auto animate-fade-in-up" style={{ animationDelay: "200ms" }}>
+                                <div className="space-y-4 text-muted-foreground leading-relaxed text-base md:text-lg font-light animate-fade-in-up" style={{ animationDelay: "200ms" }}>
                                     <p className="font-normal text-foreground/80">
                                         Ecir Kapısı Derneği olarak; insani yardım, kalkınma ve kriz destek çalışmalarımızı,
                                         emanet bilinciyle ve insan onurunu merkeze alarak farklı coğrafyalarda sürdürüyoruz.
@@ -123,33 +123,60 @@ export default function InsaniYardimPage() {
                                         Ecir Kapısı, şeffaf, güvenilir ve sürdürülebilir insani yardım projeleriyle mazlum coğrafyalara umut taşıyor.
                                         Zekat, sadaka ve infaklarınız emanet bilinciyle yerlerine ulaştırılır.
                                     </p>
-                                    <div className="pt-4">
-                                        <p className="text-xl md:text-2xl italic font-serif text-primary/80 border-t border-primary/10 pt-6 inline-block px-8">
+                                    <div className="pt-2">
+                                        <p className="text-lg md:text-xl italic font-serif text-primary/80 border-t border-primary/10 pt-4 inline-block">
                                             &quot;Veren el, alan elden üstündür.&quot;
                                         </p>
                                     </div>
                                 </div>
 
                                 {/* Butonlar */}
-                                <div className="flex flex-col sm:flex-row gap-5 justify-center mt-12 animate-fade-in-up" style={{ animationDelay: "300ms" }}>
-                                    <Button size="lg" className="h-14 px-8 text-lg bg-primary hover:bg-primary/90 text-primary-foreground border-none shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-xl" asChild>
+                                <div className="flex flex-wrap gap-4 justify-center lg:justify-start mt-4 animate-fade-in-up" style={{ animationDelay: "300ms" }}>
+                                    <Button size="lg" className="h-12 px-6 text-base bg-primary hover:bg-primary/90 text-primary-foreground border-none shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300 rounded-xl" asChild>
                                         <Link href="https://www.ecirkapisi.org.tr/bagis" target="_blank">
-                                            <HeartHandshake className="mr-3 h-5 w-5" />
-                                            Şimdi Bağış Yap
+                                            <HeartHandshake className="mr-2 h-4 w-4" />
+                                            Bağış Yap
                                         </Link>
                                     </Button>
-                                    <Button size="lg" variant="outline" className="h-14 px-8 text-lg border-primary/20 bg-background/50 text-foreground hover:bg-primary/5 hover:border-primary/40 backdrop-blur-sm transition-all duration-300 rounded-xl" asChild>
+                                    <Button size="lg" variant="outline" className="h-12 px-6 text-base border-primary/20 bg-background/50 text-foreground hover:bg-primary/5 hover:border-primary/40 backdrop-blur-sm transition-all duration-300 rounded-xl" asChild>
                                         <Link href="https://www.ecirkapisi.org.tr/hakkimizda" target="_blank">
-                                            <ExternalLink className="mr-3 h-5 w-5" />
+                                            <ExternalLink className="mr-2 h-4 w-4" />
                                             Hakkımızda
                                         </Link>
                                     </Button>
-                                    <Button size="lg" variant="outline" className="h-14 px-8 text-lg border-primary/20 bg-background/50 text-foreground hover:bg-primary/5 hover:border-primary/40 backdrop-blur-sm transition-all duration-300 rounded-xl" asChild>
+                                    <Button size="lg" variant="outline" className="h-12 px-6 text-base border-primary/20 bg-background/50 text-foreground hover:bg-primary/5 hover:border-primary/40 backdrop-blur-sm transition-all duration-300 rounded-xl" asChild>
                                         <Link href="https://www.ecirkapisi.org.tr/" target="_blank">
-                                            <ExternalLink className="mr-3 h-5 w-5" />
-                                            Websitesini Ziyaret Et
+                                            <ExternalLink className="mr-2 h-4 w-4" />
+                                            Websitesi
                                         </Link>
                                     </Button>
+                                </div>
+                            </div>
+
+                            {/* Sağ Taraf: Görsel / Bilgi Grafiği */}
+                            <div className="relative group animate-fade-in-right hidden lg:block" style={{ animationDelay: "400ms" }}>
+                                <div className="relative aspect-square w-full max-w-[500px] mx-auto rounded-3xl overflow-hidden shadow-[0_0_50px_-12px_rgba(0,0,0,0.25)] border border-border/50 bg-white">
+                                    <Image
+                                        src="/images/ecirkapısı.jpeg"
+                                        alt="Ecir Kapısı Bilgi Grafiği"
+                                        fill
+                                        className="object-contain p-4 group-hover:scale-105 transition-transform duration-500"
+                                    />
+                                </div>
+                                {/* Dekoratif Elementler */}
+                                <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-primary/5 rounded-full blur-3xl -z-10" />
+                                <div className="absolute -top-6 -left-6 w-32 h-32 bg-primary/10 rounded-full blur-3xl -z-10" />
+                            </div>
+
+                            {/* Mobil için Görsel (Sadece Mobilde Aşağıda Gözükür) */}
+                            <div className="lg:hidden w-full max-w-[400px] mx-auto mt-8 animate-fade-in-up" style={{ animationDelay: "400ms" }}>
+                                <div className="relative aspect-square rounded-2xl overflow-hidden shadow-xl border border-border/50 bg-white">
+                                    <Image
+                                        src="/images/ecirkapısı.jpeg"
+                                        alt="Ecir Kapısı Bilgi Grafiği"
+                                        fill
+                                        className="object-contain p-2"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -170,11 +197,11 @@ export default function InsaniYardimPage() {
                         </div>
 
                         {/* Featured Image with Video Link */}
-                        <Card className="overflow-hidden mb-8 group">
+                        <Card className="overflow-hidden mb-8 group rounded-2xl">
                             <Link href="https://www.youtube.com/watch?v=pvWpwrASHXY&t=7s" target="_blank" className="block relative">
                                 <div className="relative aspect-video w-full overflow-hidden bg-muted">
                                     <Image
-                                        src="https://cdn.ecirkapisi.org.tr/upload/images/neler_yaptik/2025deneleryaptik(1).webp"
+                                        src="/images/2025deneleryaptik.webp"
                                         alt="2025'te Neler Yaptık?"
                                         fill
                                         className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -226,61 +253,70 @@ export default function InsaniYardimPage() {
             </section>
 
             {/* ECİR KAPISI PROJELER */}
-            <section id="projeler" className="py-20 bg-background">
+            <section id="projeler" className="py-32 bg-background">
                 <div className="container px-4 md:px-6">
-                    <div className="text-center mb-16 space-y-4">
-                        <h2 className="text-3xl md:text-4xl font-bold tracking-tight">Projelerimiz</h2>
-                        <p className="text-muted-foreground max-w-2xl mx-auto">
-                            Farklı coğrafyalarda yürüttüğümüz insani yardım, kalkınma ve eğitim projeleri
+                    <div className="text-center mb-20 space-y-4">
+                        <Badge variant="outline" className="px-4 py-1 text-xs uppercase tracking-widest border-primary/20 text-primary">Projelerimiz</Badge>
+                        <h2 className="text-3xl md:text-5xl font-bold tracking-tight">Kapsamlı Yardım Faaliyetleri</h2>
+                        <p className="text-muted-foreground max-w-2xl mx-auto text-lg font-light">
+                            Farklı coğrafyalarda yürüttüğümüz insani yardım, kalkınma ve eğitim projeleri ile dertlere derman olmaya çalışıyoruz.
                         </p>
                     </div>
 
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 lg:gap-12 max-w-7xl mx-auto">
                         {projects.map((project, index) => {
                             const IconComponent = project.icon;
                             return (
-                                <Card key={index} className="overflow-hidden hover:shadow-lg transition-all duration-300 hover:-translate-y-1 group">
-                                    {/* Image Section */}
-                                    <div className="relative h-48 w-full overflow-hidden bg-muted">
+                                <div key={index} className="group/card flex flex-col h-full animate-fade-in-up" style={{ animationDelay: `${index * 100}ms` }}>
+                                    {/* Image Section - Standard Rounded Corner */}
+                                    <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-lg group-hover/card:shadow-xl transition-all duration-500 mb-6 bg-muted">
                                         <Image
                                             src={project.image}
                                             alt={project.title}
                                             fill
-                                            className="object-cover group-hover:scale-105 transition-transform duration-300"
+                                            className="object-cover group-hover/card:scale-105 transition-transform duration-700"
                                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                         />
-                                        {/* Overlay on hover */}
-                                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                                        {/* Premium Overlay */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-60 group-hover/card:opacity-75 transition-opacity duration-500" />
 
-                                        {/* Badge positioned on image */}
-                                        <div className="absolute top-3 right-3">
-                                            <Badge variant="secondary" className="text-xs backdrop-blur-sm bg-background/90">
+                                        {/* Badge Positioned Top Right */}
+                                        <div className="absolute top-4 right-4">
+                                            <Badge className="px-3 py-1 text-xs bg-primary/95 backdrop-blur-md text-primary-foreground border-none font-semibold shadow-lg">
                                                 {project.badge}
                                             </Badge>
                                         </div>
+
+                                        {/* Category Info Bottom Left */}
+                                        <div className="absolute bottom-4 left-4 flex items-center gap-2">
+                                            <div className="inline-flex items-center justify-center p-2 bg-white/10 backdrop-blur-md rounded-xl ring-1 ring-white/20">
+                                                <IconComponent className="w-4 h-4 text-white" />
+                                            </div>
+                                            <span className="text-white text-[10px] font-bold tracking-widest uppercase">
+                                                {project.category}
+                                            </span>
+                                        </div>
                                     </div>
 
-                                    {/* Content Section */}
-                                    <div className="p-6">
-                                        <div className="flex items-start gap-3 mb-3">
-                                            <div className="inline-flex items-center justify-center p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors flex-shrink-0">
-                                                <IconComponent className="w-5 h-5 text-primary" />
-                                            </div>
-                                            <h3 className="text-lg font-bold leading-tight">{project.title}</h3>
-                                        </div>
-
-                                        <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-3">
+                                    {/* Content Section - Airy & Minimal */}
+                                    <div className="px-1 flex flex-col flex-1">
+                                        <h3 className="text-xl font-bold leading-tight mb-3 text-foreground group-hover/card:text-primary transition-colors duration-300">
+                                            {project.title}
+                                        </h3>
+                                        <p className="text-muted-foreground text-sm leading-relaxed mb-4 line-clamp-3 font-light">
                                             {project.description}
                                         </p>
 
-                                        <Button variant="outline" size="sm" asChild className="w-full">
-                                            <Link href={project.link} target="_blank">
-                                                <ExternalLink className="mr-2 h-3 w-3" />
-                                                Detaylı Bilgi
-                                            </Link>
-                                        </Button>
+                                        <div className="mt-auto pt-3 border-t border-border/40">
+                                            <Button variant="ghost" className="p-0 h-auto text-primary hover:text-primary/80 hover:bg-transparent font-bold text-sm group/btn transition-all" asChild>
+                                                <Link href={project.link} target="_blank">
+                                                    Detaylı Bilgi
+                                                    <ArrowRight className="ml-1.5 h-4 w-4 transform group-hover/btn:translate-x-1 transition-transform duration-300" />
+                                                </Link>
+                                            </Button>
+                                        </div>
                                     </div>
-                                </Card>
+                                </div>
                             );
                         })}
                     </div>

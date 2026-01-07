@@ -30,21 +30,23 @@ export default function TevhidBasimYayinPage() {
             <section className="py-20 bg-muted/30">
                 <div className="container px-4 md:px-6">
                     <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-                        <div className="relative h-[500px] w-full rounded-xl shadow-2xl overflow-hidden group">
-                            <Image
-                                src="/images/magazine-cover.png"
-                                alt="Tevhid Dergisi Son Sayı"
-                                fill
-                                className="object-cover group-hover:scale-105 transition-transform duration-500"
-                            />
-                            <div className="absolute top-4 right-4">
-                                <Badge className="bg-primary text-primary-foreground text-lg px-4 py-1">YENİ SAYI</Badge>
+                        <div className="relative flex items-center justify-center bg-white rounded-xl shadow-2xl p-8 border border-primary/10 group overflow-hidden">
+                            <div className="relative w-full max-w-[320px] aspect-[3/4]">
+                                <Image
+                                    src="/images/153.sayi.jpg"
+                                    alt="Tevhid Dergisi Son Sayı"
+                                    fill
+                                    className="object-contain transition-transform duration-500 group-hover:scale-105"
+                                />
+                            </div>
+                            <div className="absolute top-4 right-4 group-hover:scale-110 transition-transform duration-300">
+                                <Badge className="bg-primary text-primary-foreground text-lg px-4 py-1 shadow-lg">YENİ SAYI</Badge>
                             </div>
                         </div>
                         <div className="space-y-8">
                             <div className="space-y-4">
                                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight">
-                                    Tevhid Dergisi 124. Sayı Çıktı!
+                                    Tevhid Dergisi 153. Sayı Çıktı!
                                 </h2>
                                 <p className="text-xl text-primary font-medium">
                                     "Zulmün Karanlığından İslam'ın Aydınlığına"
@@ -91,26 +93,85 @@ export default function TevhidBasimYayinPage() {
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-                        {[123, 122, 121, 120].map((index) => (
-                            <Card key={index} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
-                                <div className="relative aspect-[3/4] w-full overflow-hidden bg-muted">
-                                    <Image
-                                        src="/images/magazine-cover.png"
-                                        alt={`Tevhid Dergisi Sayı ${index}`}
-                                        fill
-                                        className="object-cover hover:scale-105 transition-transform duration-500"
-                                    />
-                                </div>
-                                <CardContent className="pt-6">
-                                    <h3 className="font-semibold text-lg leading-tight mb-2">
-                                        Tevhid Dergisi - Sayı {index}
-                                    </h3>
-                                    <Button variant="link" className="px-0 text-primary">
-                                        İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                    </Button>
-                                </CardContent>
-                            </Card>
-                        ))}
+                        {/* Sayı 152 */}
+                        <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div className="relative aspect-[3/4] w-full overflow-hidden bg-white p-6">
+                                <Image
+                                    src="/images/152.sayi.jpg"
+                                    alt="Tevhid Dergisi Sayı 152"
+                                    fill
+                                    className="object-contain hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
+                            <CardContent className="pt-6">
+                                <h3 className="font-semibold text-lg leading-tight mb-2">
+                                    Tevhid Dergisi - Sayı 152
+                                </h3>
+                                <Button variant="link" className="px-0 text-primary">
+                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                </Button>
+                            </CardContent>
+                        </Card>
+
+                        {/* Sayı 151 */}
+                        <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div className="relative aspect-[3/4] w-full overflow-hidden bg-white p-6">
+                                <Image
+                                    src="/images/151.sayi.jpg"
+                                    alt="Tevhid Dergisi Sayı 151"
+                                    fill
+                                    className="object-contain hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
+                            <CardContent className="pt-6">
+                                <h3 className="font-semibold text-lg leading-tight mb-2">
+                                    Tevhid Dergisi - Sayı 151
+                                </h3>
+                                <Button variant="link" className="px-0 text-primary">
+                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                </Button>
+                            </CardContent>
+                        </Card>
+
+                        {/* Sayı 150 */}
+                        <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div className="relative aspect-[3/4] w-full overflow-hidden bg-white p-6">
+                                <Image
+                                    src="/images/150.sayi.jpg"
+                                    alt="Tevhid Dergisi Sayı 150"
+                                    fill
+                                    className="object-contain hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
+                            <CardContent className="pt-6">
+                                <h3 className="font-semibold text-lg leading-tight mb-2">
+                                    Tevhid Dergisi - Sayı 150
+                                </h3>
+                                <Button variant="link" className="px-0 text-primary">
+                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                </Button>
+                            </CardContent>
+                        </Card>
+
+                        {/* Sayı 149 */}
+                        <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div className="relative aspect-[3/4] w-full overflow-hidden bg-white p-6">
+                                <Image
+                                    src="/images/149.sayi.jpeg"
+                                    alt="Tevhid Dergisi Sayı 149"
+                                    fill
+                                    className="object-contain hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
+                            <CardContent className="pt-6">
+                                <h3 className="font-semibold text-lg leading-tight mb-2">
+                                    Tevhid Dergisi - Sayı 149
+                                </h3>
+                                <Button variant="link" className="px-0 text-primary">
+                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                </Button>
+                            </CardContent>
+                        </Card>
                     </div>
 
                     <div className="flex justify-center mt-12">
@@ -127,21 +188,23 @@ export default function TevhidBasimYayinPage() {
             <section className="py-20 bg-orange-50/50">
                 <div className="container px-4 md:px-6">
                     <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
-                        <div className="relative h-[500px] w-full rounded-xl shadow-2xl overflow-hidden group">
-                            <Image
-                                src="/images/magazine-cover.png"
-                                alt="Tevhid Çocuk Son Sayı"
-                                fill
-                                className="object-cover group-hover:scale-105 transition-transform duration-500"
-                            />
-                            <div className="absolute top-4 right-4">
-                                <Badge className="bg-orange-500 text-white text-lg px-4 py-1">YENİ SAYI</Badge>
+                        <div className="relative flex items-center justify-center bg-white rounded-xl shadow-2xl p-8 border border-orange-500/10 group overflow-hidden">
+                            <div className="relative w-full max-w-[320px] aspect-[3/4]">
+                                <Image
+                                    src="/images/31.sayi.jpg"
+                                    alt="Tevhid Çocuk Son Sayı"
+                                    fill
+                                    className="object-contain transition-transform duration-500 group-hover:scale-105"
+                                />
+                            </div>
+                            <div className="absolute top-4 right-4 group-hover:scale-110 transition-transform duration-300">
+                                <Badge className="bg-orange-500 text-white text-lg px-4 py-1 shadow-lg">YENİ SAYI</Badge>
                             </div>
                         </div>
                         <div className="space-y-8">
                             <div className="space-y-4">
                                 <h2 className="text-3xl md:text-5xl font-bold tracking-tight text-orange-950">
-                                    Tevhid Çocuk 45. Sayı Çıktı!
+                                    Tevhid Çocuk 31. Sayı Çıktı!
                                 </h2>
                                 <p className="text-xl text-orange-600 font-medium">
                                     "Minik Kalplerde Büyük İman"
@@ -188,26 +251,85 @@ export default function TevhidBasimYayinPage() {
                     </div>
 
                     <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-                        {[44, 43, 42, 41].map((index) => (
-                            <Card key={index} className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
-                                <div className="relative aspect-[3/4] w-full overflow-hidden bg-muted">
-                                    <Image
-                                        src="/images/magazine-cover.png"
-                                        alt={`Tevhid Çocuk Sayı ${index}`}
-                                        fill
-                                        className="object-cover hover:scale-105 transition-transform duration-500"
-                                    />
-                                </div>
-                                <CardContent className="pt-6">
-                                    <h3 className="font-semibold text-lg leading-tight mb-2">
-                                        Tevhid Çocuk - Sayı {index}
-                                    </h3>
-                                    <Button variant="link" className="px-0 text-orange-600">
-                                        İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                    </Button>
-                                </CardContent>
-                            </Card>
-                        ))}
+                        {/* Sayı 30 */}
+                        <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div className="relative aspect-[3/4] w-full overflow-hidden bg-white p-6">
+                                <Image
+                                    src="/images/30.sayi.jpg"
+                                    alt="Tevhid Çocuk Sayı 30"
+                                    fill
+                                    className="object-contain hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
+                            <CardContent className="pt-6">
+                                <h3 className="font-semibold text-lg leading-tight mb-2 text-orange-950">
+                                    Tevhid Çocuk - Sayı 30
+                                </h3>
+                                <Button variant="link" className="px-0 text-orange-600">
+                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                </Button>
+                            </CardContent>
+                        </Card>
+
+                        {/* Sayı 29 */}
+                        <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div className="relative aspect-[3/4] w-full overflow-hidden bg-white p-6">
+                                <Image
+                                    src="/images/29.sayi.jpeg"
+                                    alt="Tevhid Çocuk Sayı 29"
+                                    fill
+                                    className="object-contain hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
+                            <CardContent className="pt-6">
+                                <h3 className="font-semibold text-lg leading-tight mb-2 text-orange-950">
+                                    Tevhid Çocuk - Sayı 29
+                                </h3>
+                                <Button variant="link" className="px-0 text-orange-600">
+                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                </Button>
+                            </CardContent>
+                        </Card>
+
+                        {/* Sayı 28 */}
+                        <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div className="relative aspect-[3/4] w-full overflow-hidden bg-white p-6">
+                                <Image
+                                    src="/images/28.sayi.jpg"
+                                    alt="Tevhid Çocuk Sayı 28"
+                                    fill
+                                    className="object-contain hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
+                            <CardContent className="pt-6">
+                                <h3 className="font-semibold text-lg leading-tight mb-2 text-orange-950">
+                                    Tevhid Çocuk - Sayı 28
+                                </h3>
+                                <Button variant="link" className="px-0 text-orange-600">
+                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                </Button>
+                            </CardContent>
+                        </Card>
+
+                        {/* Sayı 27 */}
+                        <Card className="overflow-hidden border-none shadow-lg hover:shadow-xl transition-shadow duration-300">
+                            <div className="relative aspect-[3/4] w-full overflow-hidden bg-white p-6">
+                                <Image
+                                    src="/images/27.sayi.jpg"
+                                    alt="Tevhid Çocuk Sayı 27"
+                                    fill
+                                    className="object-contain hover:scale-105 transition-transform duration-500"
+                                />
+                            </div>
+                            <CardContent className="pt-6">
+                                <h3 className="font-semibold text-lg leading-tight mb-2 text-orange-950">
+                                    Tevhid Çocuk - Sayı 27
+                                </h3>
+                                <Button variant="link" className="px-0 text-orange-600">
+                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                </Button>
+                            </CardContent>
+                        </Card>
                     </div>
 
                     <div className="flex justify-center mt-12">

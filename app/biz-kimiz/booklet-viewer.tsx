@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { createPortal } from "react-dom";
 import { Button } from "@/components/ui/button";
 import { X, BookOpen } from "lucide-react";
 
@@ -39,8 +40,8 @@ export function BookletViewer() {
                 </Button>
             </div>
 
-            {isOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm animate-in fade-in duration-200">
+            {isOpen && createPortal(
+                <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/90 backdrop-blur-sm animate-in fade-in duration-200">
                     <div
                         className="relative w-full max-w-md h-[90vh] bg-background rounded-xl shadow-xl flex flex-col animate-in zoom-in-95 duration-200 border border-border"
                         onClick={(e) => e.stopPropagation()}
@@ -72,7 +73,8 @@ export function BookletViewer() {
                             />
                         </div>
                     </div>
-                </div>
+                </div>,
+                document.body
             )}
         </>
     );
