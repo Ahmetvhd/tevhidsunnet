@@ -111,7 +111,7 @@ export default function DijitalIceriklerimizPage() {
                                 <Card className="group relative h-full overflow-hidden border-none shadow-md hover:shadow-2xl hover:-translate-y-1 active:scale-[0.99] transition-all duration-500 bg-card touch-manipulation">
                                     <div className="absolute inset-0 z-0">
                                         <Image
-                                            src="/images/tevhiddersleriarkaplan.jpg"
+                                            src="/images/dersen_tewhide.jpg"
                                             alt="Background"
                                             fill
                                             className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
@@ -163,11 +163,10 @@ export default function DijitalIceriklerimizPage() {
                                 <Card className="group relative h-full overflow-hidden border-none shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-card">
                                     <div className="absolute inset-0 z-0">
                                         <Image
-                                            src="https://yt3.googleusercontent.com/GBTT0aHQRnxnQlFwmN9cJ9Pq2CD6qZkN9gYyNYtFeW6bMzs6h0VmFo26jCwGw5dwrCSiTUbC=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+                                            src="/images/Monotheism-arkaplan.jpg"
                                             alt="Background"
                                             fill
                                             className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
-                                            unoptimized
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background/95" />
                                     </div>
@@ -177,11 +176,10 @@ export default function DijitalIceriklerimizPage() {
                                             <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-primary/30 to-transparent blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                             <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-background shadow-xl ring-1 ring-border group-hover:ring-primary/40 transition-all duration-300">
                                                 <Image
-                                                    src="https://yt3.googleusercontent.com/P2UC8rcCzoYMREmxms2QRN_E3JLCYGarfU6rbqQe0s2QT521WrjsoIioj_KnW6hLOuCTaa_AzKc=s160-c-k-c0x00ffffff-no-rj"
+                                                    src="/images/Monotheism-logo.jpg"
                                                     alt="Monotheism"
                                                     fill
                                                     className="object-cover"
-                                                    unoptimized
                                                 />
                                             </div>
                                             <Badge className="absolute -bottom-3 left-1/2 -translate-x-1/2 px-3 py-0.5 text-xs bg-primary text-primary-foreground border-2 border-background shadow-sm">
@@ -217,11 +215,10 @@ export default function DijitalIceriklerimizPage() {
                                 <Card className="group relative h-full overflow-hidden border-none shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-card">
                                     <div className="absolute inset-0 z-0">
                                         <Image
-                                            src="https://yt3.googleusercontent.com/j5VzZMA-KWtKiHXFuQwnNA2zhisDFHsoVJG5UauVb2kXrDccH9-sYJ3Oa8qtb-AMZCHpWf5MZg=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+                                            src="/images/monotheisme-fransızca-arkaplan1.jpg"
                                             alt="Background"
                                             fill
                                             className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
-                                            unoptimized
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background/95" />
                                     </div>
@@ -231,11 +228,10 @@ export default function DijitalIceriklerimizPage() {
                                             <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-primary/30 to-transparent blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                             <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-background shadow-xl ring-1 ring-border group-hover:ring-primary/40 transition-all duration-300">
                                                 <Image
-                                                    src="https://yt3.googleusercontent.com/ihdBm4IRQMSBqJummTvSLQDZTK1IR60bYM5XYUTYYn7fTh_igRI6VH57G0Pmt6bYI8bmmkI_=s160-c-k-c0x00ffffff-no-rj"
+                                                    src="/images/monotheisme-fransızca-logo.jpg"
                                                     alt="Monothéisme"
                                                     fill
                                                     className="object-cover"
-                                                    unoptimized
                                                 />
                                             </div>
                                             <Badge className="absolute -bottom-3 left-1/2 -translate-x-1/2 px-3 py-0.5 text-xs bg-primary text-primary-foreground border-2 border-background shadow-sm">
@@ -271,11 +267,10 @@ export default function DijitalIceriklerimizPage() {
                                 <Card className="group relative h-full overflow-hidden border-none shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-card">
                                     <div className="absolute inset-0 z-0">
                                         <Image
-                                            src="https://yt3.googleusercontent.com/y6pSLyCG3IJTbcfhAZMs8uE8d4BR2ebpdIlyRzhNwaUbI2b39HEV3lwDZwFrIKtWeTjvrok8CA=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+                                            src="/images/monotheismus-arkaplan.jpeg"
                                             alt="Background"
                                             fill
                                             className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
-                                            unoptimized
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background/95" />
                                     </div>
@@ -285,11 +280,10 @@ export default function DijitalIceriklerimizPage() {
                                             <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-primary/30 to-transparent blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                             <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-background shadow-xl ring-1 ring-border group-hover:ring-primary/40 transition-all duration-300">
                                                 <Image
-                                                    src="https://yt3.googleusercontent.com/UJL_P2mXgCfBTSJd7A__W_7eJVKSIOGa8DAyrjEjMwAredIHVvNS2fvSlYTx71G03sukH3zzNg=s160-c-k-c0x00ffffff-no-rj"
+                                                    src="/images/monotheismus-logo.jpg"
                                                     alt="Monotheismus"
                                                     fill
                                                     className="object-cover"
-                                                    unoptimized
                                                 />
                                             </div>
                                             <Badge className="absolute -bottom-3 left-1/2 -translate-x-1/2 px-3 py-0.5 text-xs bg-primary text-primary-foreground border-2 border-background shadow-sm">
@@ -345,11 +339,10 @@ export default function DijitalIceriklerimizPage() {
                                     {/* Arka Plan Görseli */}
                                     <div className="absolute inset-0 z-0">
                                         <Image
-                                            src="https://yt3.googleusercontent.com/b3xa30I-CNKqVHu8E4mATMiLFpA7BULkqBhuZJYL-JZFcwTtQ7i-xPtaleSu9se_8_33CteYSA=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+                                            src="/images/halisbayancukhoca-yt-arkaplan.jpg"
                                             alt="Background"
                                             fill
                                             className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
-                                            unoptimized
                                         />
                                         {/* Gradient Overlay - Yumuşak geçiş için */}
                                         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background/95" />
@@ -406,11 +399,10 @@ export default function DijitalIceriklerimizPage() {
                                 <Card className="group relative h-full overflow-hidden border-none shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-card">
                                     <div className="absolute inset-0 z-0">
                                         <Image
-                                            src="https://yt3.googleusercontent.com/b3xa30I-CNKqVHu8E4mATMiLFpA7BULkqBhuZJYL-JZFcwTtQ7i-xPtaleSu9se_8_33CteYSA=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+                                            src="/images/halisbayancuk-eng-arkaplan.jpeg"
                                             alt="Background"
                                             fill
                                             className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
-                                            unoptimized
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background/95" />
                                     </div>
@@ -420,11 +412,10 @@ export default function DijitalIceriklerimizPage() {
                                             <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-primary/30 to-transparent blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                             <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-background shadow-xl ring-1 ring-border group-hover:ring-primary/40 transition-all duration-300">
                                                 <Image
-                                                    src="https://yt3.ggpht.com/fvDvMFatJNL7e4bGgwc0XjICf4mQGVrtXO_hIZZ8C1lwoglab8lnkoK29KgewNWT7Y9UVko5=s800-c-k-c0x00ffffff-no-rj"
+                                                    src="/images/halisbayancuk-yabanci-logo.jpg"
                                                     alt="Halis Bayancuk Russian"
                                                     fill
                                                     className="object-cover"
-                                                    unoptimized
                                                 />
                                             </div>
                                             <Badge className="absolute -bottom-3 left-1/2 -translate-x-1/2 px-3 py-0.5 text-xs bg-primary text-primary-foreground border-2 border-background shadow-sm">
@@ -460,11 +451,10 @@ export default function DijitalIceriklerimizPage() {
                                 <Card className="group relative h-full overflow-hidden border-none shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-card">
                                     <div className="absolute inset-0 z-0">
                                         <Image
-                                            src="https://yt3.googleusercontent.com/b3xa30I-CNKqVHu8E4mATMiLFpA7BULkqBhuZJYL-JZFcwTtQ7i-xPtaleSu9se_8_33CteYSA=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+                                            src="/images/halisbayancuk-eng-arkaplan.jpeg"
                                             alt="Background"
                                             fill
                                             className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
-                                            unoptimized
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background/95" />
                                     </div>
@@ -474,11 +464,10 @@ export default function DijitalIceriklerimizPage() {
                                             <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-primary/30 to-transparent blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                             <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-background shadow-xl ring-1 ring-border group-hover:ring-primary/40 transition-all duration-300">
                                                 <Image
-                                                    src="https://yt3.ggpht.com/fvDvMFatJNL7e4bGgwc0XjICf4mQGVrtXO_hIZZ8C1lwoglab8lnkoK29KgewNWT7Y9UVko5=s800-c-k-c0x00ffffff-no-rj"
+                                                    src="/images/halisbayancuk-yabanci-logo.jpg"
                                                     alt="Halis Bayancuk Deutsch"
                                                     fill
                                                     className="object-cover"
-                                                    unoptimized
                                                 />
                                             </div>
                                             <Badge className="absolute -bottom-3 left-1/2 -translate-x-1/2 px-3 py-0.5 text-xs bg-primary text-primary-foreground border-2 border-background shadow-sm">
@@ -514,11 +503,10 @@ export default function DijitalIceriklerimizPage() {
                                 <Card className="group relative h-full overflow-hidden border-none shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-card">
                                     <div className="absolute inset-0 z-0">
                                         <Image
-                                            src="https://yt3.googleusercontent.com/b3xa30I-CNKqVHu8E4mATMiLFpA7BULkqBhuZJYL-JZFcwTtQ7i-xPtaleSu9se_8_33CteYSA=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+                                            src="/images/halisbayancuk-eng-arkaplan.jpeg"
                                             alt="Background"
                                             fill
                                             className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
-                                            unoptimized
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background/95" />
                                     </div>
@@ -528,11 +516,10 @@ export default function DijitalIceriklerimizPage() {
                                             <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-primary/30 to-transparent blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                             <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-background shadow-xl ring-1 ring-border group-hover:ring-primary/40 transition-all duration-300">
                                                 <Image
-                                                    src="https://yt3.ggpht.com/fvDvMFatJNL7e4bGgwc0XjICf4mQGVrtXO_hIZZ8C1lwoglab8lnkoK29KgewNWT7Y9UVko5=s800-c-k-c0x00ffffff-no-rj"
+                                                    src="/images/halisbayancuk-yabanci-logo.jpg"
                                                     alt="Halis Bayancuk English"
                                                     fill
                                                     className="object-cover"
-                                                    unoptimized
                                                 />
                                             </div>
                                             <Badge className="absolute -bottom-3 left-1/2 -translate-x-1/2 px-3 py-0.5 text-xs bg-primary text-primary-foreground border-2 border-background shadow-sm">
@@ -568,11 +555,10 @@ export default function DijitalIceriklerimizPage() {
                                 <Card className="group relative h-full overflow-hidden border-none shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-card">
                                     <div className="absolute inset-0 z-0">
                                         <Image
-                                            src="https://yt3.googleusercontent.com/b3xa30I-CNKqVHu8E4mATMiLFpA7BULkqBhuZJYL-JZFcwTtQ7i-xPtaleSu9se_8_33CteYSA=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+                                            src="/images/halisbayancuk-eng-arkaplan.jpeg"
                                             alt="Background"
                                             fill
                                             className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
-                                            unoptimized
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background/95" />
                                     </div>
@@ -582,11 +568,10 @@ export default function DijitalIceriklerimizPage() {
                                             <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-primary/30 to-transparent blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                             <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-background shadow-xl ring-1 ring-border group-hover:ring-primary/40 transition-all duration-300">
                                                 <Image
-                                                    src="https://yt3.ggpht.com/fvDvMFatJNL7e4bGgwc0XjICf4mQGVrtXO_hIZZ8C1lwoglab8lnkoK29KgewNWT7Y9UVko5=s800-c-k-c0x00ffffff-no-rj"
+                                                    src="/images/halisbayancuk-yabanci-logo.jpg"
                                                     alt="Halis Bayancuk Francais"
                                                     fill
                                                     className="object-cover"
-                                                    unoptimized
                                                 />
                                             </div>
                                             <Badge className="absolute -bottom-3 left-1/2 -translate-x-1/2 px-3 py-0.5 text-xs bg-primary text-primary-foreground border-2 border-background shadow-sm">
@@ -622,11 +607,10 @@ export default function DijitalIceriklerimizPage() {
                                 <Card className="group relative h-full overflow-hidden border-none shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-card">
                                     <div className="absolute inset-0 z-0">
                                         <Image
-                                            src="https://yt3.googleusercontent.com/b3xa30I-CNKqVHu8E4mATMiLFpA7BULkqBhuZJYL-JZFcwTtQ7i-xPtaleSu9se_8_33CteYSA=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+                                            src="/images/halisbayancuk-eng-arkaplan.jpeg"
                                             alt="Background"
                                             fill
                                             className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
-                                            unoptimized
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background/95" />
                                     </div>
@@ -636,11 +620,10 @@ export default function DijitalIceriklerimizPage() {
                                             <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-primary/30 to-transparent blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                             <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-background shadow-xl ring-1 ring-border group-hover:ring-primary/40 transition-all duration-300">
                                                 <Image
-                                                    src="https://yt3.ggpht.com/fvDvMFatJNL7e4bGgwc0XjICf4mQGVrtXO_hIZZ8C1lwoglab8lnkoK29KgewNWT7Y9UVko5=s800-c-k-c0x00ffffff-no-rj"
+                                                    src="/images/halisbayancuk-yabanci-logo.jpg"
                                                     alt="Halis Bayancuk Kiswahili"
                                                     fill
                                                     className="object-cover"
-                                                    unoptimized
                                                 />
                                             </div>
                                             <Badge className="absolute -bottom-3 left-1/2 -translate-x-1/2 px-3 py-0.5 text-xs bg-primary text-primary-foreground border-2 border-background shadow-sm">
@@ -676,11 +659,10 @@ export default function DijitalIceriklerimizPage() {
                                 <Card className="group relative h-full overflow-hidden border-none shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-card">
                                     <div className="absolute inset-0 z-0">
                                         <Image
-                                            src="https://yt3.googleusercontent.com/b3xa30I-CNKqVHu8E4mATMiLFpA7BULkqBhuZJYL-JZFcwTtQ7i-xPtaleSu9se_8_33CteYSA=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+                                            src="/images/halisbayancuk-eng-arkaplan.jpeg"
                                             alt="Background"
                                             fill
                                             className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
-                                            unoptimized
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background/95" />
                                     </div>
@@ -690,11 +672,10 @@ export default function DijitalIceriklerimizPage() {
                                             <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-primary/30 to-transparent blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                             <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-background shadow-xl ring-1 ring-border group-hover:ring-primary/40 transition-all duration-300">
                                                 <Image
-                                                    src="https://yt3.ggpht.com/fvDvMFatJNL7e4bGgwc0XjICf4mQGVrtXO_hIZZ8C1lwoglab8lnkoK29KgewNWT7Y9UVko5=s800-c-k-c0x00ffffff-no-rj"
+                                                    src="/images/halisbayancuk-yabanci-logo.jpg"
                                                     alt="Halis Bayancuk Soomaali"
                                                     fill
                                                     className="object-cover"
-                                                    unoptimized
                                                 />
                                             </div>
                                             <Badge className="absolute -bottom-3 left-1/2 -translate-x-1/2 px-3 py-0.5 text-xs bg-primary text-primary-foreground border-2 border-background shadow-sm">
@@ -730,11 +711,10 @@ export default function DijitalIceriklerimizPage() {
                                 <Card className="group relative h-full overflow-hidden border-none shadow-md hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-card">
                                     <div className="absolute inset-0 z-0">
                                         <Image
-                                            src="https://yt3.googleusercontent.com/b3xa30I-CNKqVHu8E4mATMiLFpA7BULkqBhuZJYL-JZFcwTtQ7i-xPtaleSu9se_8_33CteYSA=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+                                            src="/images/halisbayancuk-eng-arkaplan.jpeg"
                                             alt="Background"
                                             fill
                                             className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
-                                            unoptimized
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background/95" />
                                     </div>
@@ -744,11 +724,10 @@ export default function DijitalIceriklerimizPage() {
                                             <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-primary/30 to-transparent blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                             <div className="relative w-24 h-24 rounded-full overflow-hidden border-4 border-background shadow-xl ring-1 ring-border group-hover:ring-primary/40 transition-all duration-300">
                                                 <Image
-                                                    src="https://yt3.ggpht.com/fvDvMFatJNL7e4bGgwc0XjICf4mQGVrtXO_hIZZ8C1lwoglab8lnkoK29KgewNWT7Y9UVko5=s800-c-k-c0x00ffffff-no-rj"
+                                                    src="/images/halisbayancuk-yabanci-logo.jpg"
                                                     alt="Halis Bayancuk Dutch"
                                                     fill
                                                     className="object-cover"
-                                                    unoptimized
                                                 />
                                             </div>
                                             <Badge className="absolute -bottom-3 left-1/2 -translate-x-1/2 px-3 py-0.5 text-xs bg-primary text-primary-foreground border-2 border-background shadow-sm">
@@ -809,7 +788,7 @@ export default function DijitalIceriklerimizPage() {
                                 <Card className="group relative h-full overflow-hidden border-none shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-card/50 backdrop-blur-sm">
                                     <div className="absolute inset-0 z-0">
                                         <Image
-                                            src="/images/bizimdunyamiz.jpg"
+                                            src="/images/bizimcocuklar.jpg"
                                             alt="Background"
                                             fill
                                             className="object-cover opacity-25 blur-sm scale-105 group-hover:scale-110 group-hover:blur-md transition-all duration-700"
@@ -863,11 +842,10 @@ export default function DijitalIceriklerimizPage() {
                                 <Card className="group relative h-full overflow-hidden border-none shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-500 bg-card/50 backdrop-blur-sm">
                                     <div className="absolute inset-0 z-0">
                                         <Image
-                                            src="https://yt3.googleusercontent.com/WHWD6lyRQBXEf2fbGnGZiACau9-Vl94ht-ys_AN3-RSrZgmM2vHHahGeQK-KRbDOrqFYymgn=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+                                            src="/images/kasas-suresi.jpeg"
                                             alt="Background"
                                             fill
                                             className="object-cover opacity-25 group-hover:opacity-30 group-hover:scale-105 transition-all duration-700"
-                                            unoptimized
                                         />
                                         <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-background/40" />
                                     </div>
@@ -878,11 +856,10 @@ export default function DijitalIceriklerimizPage() {
                                             <div className="absolute -inset-4 rounded-full bg-primary/15 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                                             <div className="relative w-28 h-28 rounded-full overflow-hidden border-4 border-background shadow-xl ring-2 ring-border/50 group-hover:ring-primary/40 transition-all duration-500">
                                                 <Image
-                                                    src="https://yt3.googleusercontent.com/AtelLsFsoDmpWXqZsHIi5vy5qi-qg0XGxiJqq3n4c8HXgfNmYlNk2g1n4ITxXTkS83253sfSvJY=s160-c-k-c0x00ffffff-no-rj"
+                                                    src="/images/tevhidmealiikon.webp"
                                                     alt="Tevhid Meali"
                                                     fill
                                                     className="object-cover"
-                                                    unoptimized
                                                 />
                                             </div>
                                             <Badge className="absolute -bottom-2 left-1/2 -translate-x-1/2 px-4 py-1 text-xs font-semibold bg-primary text-primary-foreground border-2 border-background shadow-lg">
@@ -936,11 +913,10 @@ export default function DijitalIceriklerimizPage() {
                             <Card className="group relative overflow-hidden border-none shadow-sm bg-card hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 h-full ring-1 ring-primary/20">
                                 <div className="absolute inset-0 z-0">
                                     <Image
-                                        src="https://yt3.googleusercontent.com/-_KvaDmoimwoJEa40abZg-XM04Vulejv1g-Od-TZGkuN2l-mC8bj3n4K2cEScJzuvnVj8XDeng=w1707-fcrop64=1,00005a57ffffa5a8-k-c0xffffffff-no-nd-rj"
+                                        src="/images/tevhiddersleriarkaplan.jpg"
                                         alt="Background"
                                         fill
-                                        className="object-cover opacity-[0.08] group-hover:opacity-[0.12] transition-opacity grayscale"
-                                        unoptimized
+                                        className="object-cover opacity-[0.50] group-hover:opacity-[0.70] transition-opacity grayscale"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
                                 </div>
@@ -964,11 +940,10 @@ export default function DijitalIceriklerimizPage() {
                             <Card className="group relative overflow-hidden border-none shadow-sm bg-card hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 h-full ring-1 ring-primary/20">
                                 <div className="absolute inset-0 z-0">
                                     <Image
-                                        src="https://tevhiddergisi.org/wp-content/uploads/2022/08/tevhid_dergisi_logo.png"
+                                        src="/images/tevhid_dergisi_arkaplan.png"
                                         alt="Background"
                                         fill
-                                        className="object-cover opacity-[0.08] group-hover:opacity-[0.12] transition-opacity grayscale"
-                                        unoptimized
+                                        className="object-contain scale-75 opacity-[0.50] group-hover:opacity-[0.70] transition-all duration-300 grayscale"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
                                 </div>
@@ -992,10 +967,10 @@ export default function DijitalIceriklerimizPage() {
                             <Card className="group relative overflow-hidden border-none shadow-sm bg-card hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 h-full ring-1 ring-primary/20">
                                 <div className="absolute inset-0 z-0">
                                     <Image
-                                        src="/images/halisbayancuk_bg.png"
+                                        src="/images/halisbayancuk-x-arkaplan.jpeg"
                                         alt="Background"
                                         fill
-                                        className="object-cover opacity-[0.08] group-hover:opacity-[0.12] transition-opacity grayscale"
+                                        className="object-cover opacity-[0.50] group-hover:opacity-[0.70] transition-opacity grayscale"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
                                 </div>
@@ -1022,7 +997,7 @@ export default function DijitalIceriklerimizPage() {
                                         src="/images/ankebut-suresi.jpeg"
                                         alt="Background"
                                         fill
-                                        className="object-cover opacity-[0.08] group-hover:opacity-[0.12] transition-opacity grayscale"
+                                        className="object-cover opacity-[0.50] group-hover:opacity-[0.70] transition-opacity grayscale"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
                                 </div>
@@ -1046,16 +1021,16 @@ export default function DijitalIceriklerimizPage() {
                             <Card className="group relative overflow-hidden border-none shadow-sm bg-card hover:shadow-md hover:-translate-y-0.5 transition-all duration-300 h-full ring-1 ring-primary/20">
                                 <div className="absolute inset-0 z-0">
                                     <Image
-                                        src="/images/app-showcase.png"
+                                        src="/images/kıblegah-arkaplan.png"
                                         alt="Background"
                                         fill
-                                        className="object-cover opacity-[0.08] group-hover:opacity-[0.12] transition-opacity grayscale"
+                                        className="object-cover opacity-[0.50] group-hover:opacity-[0.70] transition-opacity grayscale"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
                                 </div>
                                 <CardContent className="relative z-10 p-3 flex items-center gap-4">
                                     <div className="relative w-12 h-12 rounded-lg overflow-hidden border border-primary/20 shadow-sm flex-shrink-0 group-hover:border-primary/50 transition-colors bg-white p-1">
-                                        <Image src="https://kiblegah.com/images/kiblegah_onlyLogo.webp" alt="Kıblegâh" fill className="object-contain" unoptimized />
+                                        <Image src="/images/kiblegah_logo.webp" alt="Kıblegâh" fill className="object-contain" />
                                     </div>
                                     <div className="flex-1 min-w-0">
                                         <h3 className="text-sm font-bold truncate text-primary transition-colors">Kıblegâh</h3>
@@ -1075,7 +1050,7 @@ export default function DijitalIceriklerimizPage() {
                                         src="/images/tevhid-kitap-arkaplan2.png"
                                         alt="Background"
                                         fill
-                                        className="object-cover opacity-[0.08] group-hover:opacity-[0.12] transition-opacity grayscale"
+                                        className="object-contain scale-75 opacity-[0.50] group-hover:opacity-[0.70] transition-all duration-300 grayscale"
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
                                 </div>
@@ -1111,31 +1086,14 @@ export default function DijitalIceriklerimizPage() {
                         {/* Tevhid Meali App Card */}
                         <Card className="group relative overflow-hidden border-none shadow-lg bg-card hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ring-1 ring-primary/20 flex flex-col">
 
-                            {/* Repeating Diagonal Pattern */}
-                            <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-                                {/* Diagonal Container */}
-                                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 -rotate-12 scale-125 opacity-[0.30] dark:opacity-[0.15]">
-                                    {/* Top Row */}
-                                    <div className="flex gap-4">
-                                        <div className="relative w-64 h-40 rounded-lg overflow-hidden shrink-0">
-                                            <Image src="https://play-lh.googleusercontent.com/hpPwYMu_8bYZEVYqiCfOjn-w_OnD5hrWQDwEX0DakiFMEoJfw_X_ug0uNpA_J_7S8qpwNrpCuzVNqUg_MWKD=w1052-h592-rw" alt="" fill className="object-cover" />
-                                        </div>
-                                        <div className="relative w-64 h-40 rounded-lg overflow-hidden shrink-0">
-                                            <Image src="https://play-lh.googleusercontent.com/7qiWoXi0yEX9OY-Iz0WbwA4L7_fLQ3RoK-9BIMpClQq-R_-rRPzpyhAWdiB18P16nK0pO5cHq4ciuk53hvGB2w=w1052-h592-rw" alt="" fill className="object-cover" />
-                                        </div>
-                                    </div>
-                                    {/* Bottom Row */}
-                                    <div className="flex gap-4 -ml-24">
-                                        <div className="relative w-64 h-40 rounded-lg overflow-hidden shrink-0">
-                                            <Image src="https://play-lh.googleusercontent.com/7qiWoXi0yEX9OY-Iz0WbwA4L7_fLQ3RoK-9BIMpClQq-R_-rRPzpyhAWdiB18P16nK0pO5cHq4ciuk53hvGB2w=w1052-h592-rw" alt="" fill className="object-cover" />
-                                        </div>
-                                        <div className="relative w-64 h-40 rounded-lg overflow-hidden shrink-0">
-                                            <Image src="https://play-lh.googleusercontent.com/hpPwYMu_8bYZEVYqiCfOjn-w_OnD5hrWQDwEX0DakiFMEoJfw_X_ug0uNpA_J_7S8qpwNrpCuzVNqUg_MWKD=w1052-h592-rw" alt="" fill className="object-cover" />
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* Strong Gradient mainly for text readability at top */}
-                                <div className="absolute inset-0 bg-gradient-to-b from-card/90 via-card/60 to-card/20" />
+                            <div className="absolute inset-0 z-0">
+                                <Image
+                                    src="/images/tevhidmeali-arkaplan.avif"
+                                    alt="Background"
+                                    fill
+                                    className="object-cover opacity-60 group-hover:opacity-70 group-hover:scale-105 transition-all duration-700"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-b from-card/95 via-card/70 to-card/30" />
                             </div>
 
                             <CardContent className="relative z-10 p-6 flex flex-col items-center text-center h-full">
@@ -1157,7 +1115,7 @@ export default function DijitalIceriklerimizPage() {
                                             Mobil Uygulama
                                         </span>
                                     </div>
-                                    <p className="text-sm text-muted-foreground line-clamp-3 pt-1">
+                                    <p className="text-sm text-foreground/80 line-clamp-3 pt-1">
                                         Kur'an-ı Kerim meali ve tefsiri ile her an yanınızda. Gelişmiş arama ve not alma özellikleri.
                                     </p>
                                 </div>
@@ -1194,41 +1152,24 @@ export default function DijitalIceriklerimizPage() {
                         {/* Kıblegâh App Card */}
                         <Card className="group relative overflow-hidden border-none shadow-lg bg-card hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ring-1 ring-primary/20 flex flex-col">
 
-                            {/* Repeating Diagonal Pattern */}
-                            <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-                                {/* Diagonal Container */}
-                                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 -rotate-12 scale-125 opacity-[0.30] dark:opacity-[0.15]">
-                                    {/* Top Row */}
-                                    <div className="flex gap-4">
-                                        <div className="relative w-64 h-40 rounded-lg overflow-hidden shrink-0">
-                                            <Image src="https://play-lh.googleusercontent.com/z1EOeeMgGuQvTBnYNHTLwzWWQF-VUTuaOP1757y-J33UWNT9_w1kb51kRxgV16T318Y=w5120-h2880-rw" alt="" fill className="object-cover" />
-                                        </div>
-                                        <div className="relative w-64 h-40 rounded-lg overflow-hidden shrink-0">
-                                            <Image src="https://play-lh.googleusercontent.com/YnHT88cjlFza7KSyRBUbvLiTD1uS8Dti6YZR2-d5wqVtbh8z0jNXrydDe-GmwtNDMw=w5120-h2880-rw" alt="" fill className="object-cover" />
-                                        </div>
-                                    </div>
-                                    {/* Bottom Row */}
-                                    <div className="flex gap-4 -ml-24">
-                                        <div className="relative w-64 h-40 rounded-lg overflow-hidden shrink-0">
-                                            <Image src="https://play-lh.googleusercontent.com/YnHT88cjlFza7KSyRBUbvLiTD1uS8Dti6YZR2-d5wqVtbh8z0jNXrydDe-GmwtNDMw=w5120-h2880-rw" alt="" fill className="object-cover" />
-                                        </div>
-                                        <div className="relative w-64 h-40 rounded-lg overflow-hidden shrink-0">
-                                            <Image src="https://play-lh.googleusercontent.com/z1EOeeMgGuQvTBnYNHTLwzWWQF-VUTuaOP1757y-J33UWNT9_w1kb51kRxgV16T318Y=w5120-h2880-rw" alt="" fill className="object-cover" />
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* Strong Gradient mainly for text readability at top */}
-                                <div className="absolute inset-0 bg-gradient-to-b from-card/90 via-card/60 to-card/20" />
+                            <div className="absolute inset-0 z-0">
+                                <Image
+                                    src="/images/kıblegah-arkaplan-mobil.png"
+                                    alt="Background"
+                                    fill
+                                    className="object-cover opacity-60 group-hover:opacity-70 group-hover:scale-105 transition-all duration-700"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-b from-card/95 via-card/70 to-card/30" />
                             </div>
 
                             <CardContent className="relative z-10 p-6 flex flex-col items-center text-center h-full">
                                 {/* App Icon */}
                                 <div className="relative w-28 h-28 mb-5 rounded-[22px] overflow-hidden shadow-xl ring-4 ring-primary/10 group-hover:ring-primary/30 group-hover:scale-105 transition-all duration-500 bg-white">
                                     <Image
-                                        src="/images/kıblegahikon.webp"
+                                        src="/images/kiblegah_logo.webp"
                                         alt="Kıblegâh Uygulaması"
                                         fill
-                                        className="object-cover"
+                                        className="object-cover p-1"
                                     />
                                 </div>
 
@@ -1240,7 +1181,7 @@ export default function DijitalIceriklerimizPage() {
                                             Mobil Uygulama
                                         </span>
                                     </div>
-                                    <p className="text-sm text-muted-foreground line-clamp-3 pt-1">
+                                    <p className="text-sm text-foreground/80 line-clamp-3 pt-1">
                                         Dünyanın neresinde olursanız olun, Kıble yönünüzü hassasiyetle bulun. Namaz vakitleri ve fazlası.
                                     </p>
                                 </div>
@@ -1277,31 +1218,14 @@ export default function DijitalIceriklerimizPage() {
                         {/* Anlat Bakalım App Card */}
                         <Card className="group relative overflow-hidden border-none shadow-lg bg-card hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 ring-1 ring-primary/20 flex flex-col">
 
-                            {/* Repeating Diagonal Pattern */}
-                            <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none">
-                                {/* Diagonal Container */}
-                                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 -rotate-12 scale-125 opacity-[0.30] dark:opacity-[0.15]">
-                                    {/* Top Row */}
-                                    <div className="flex gap-4">
-                                        <div className="relative w-64 h-40 rounded-lg overflow-hidden shrink-0">
-                                            <Image src="https://play-lh.googleusercontent.com/3oMoZz5YAYE2LwBq6-SytgYp1t890E4F-vyc61ZomBHedAnx4JNODDaqsf1EAvhbFOw=w1052-h592-rw" alt="" fill className="object-cover" />
-                                        </div>
-                                        <div className="relative w-64 h-40 rounded-lg overflow-hidden shrink-0">
-                                            <Image src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/27/b9/88/27b9884d-7ef7-b5d7-c6df-4a80c1022471/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M4_U0029_-_2025-03-26_at_17.12.24.png/960x1280bb.webp" alt="" fill className="object-cover" />
-                                        </div>
-                                    </div>
-                                    {/* Bottom Row */}
-                                    <div className="flex gap-4 -ml-24">
-                                        <div className="relative w-64 h-40 rounded-lg overflow-hidden shrink-0">
-                                            <Image src="https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/27/b9/88/27b9884d-7ef7-b5d7-c6df-4a80c1022471/Simulator_Screenshot_-_iPad_Pro_13-inch__U0028M4_U0029_-_2025-03-26_at_17.12.24.png/960x1280bb.webp" alt="" fill className="object-cover" />
-                                        </div>
-                                        <div className="relative w-64 h-40 rounded-lg overflow-hidden shrink-0">
-                                            <Image src="https://play-lh.googleusercontent.com/3oMoZz5YAYE2LwBq6-SytgYp1t890E4F-vyc61ZomBHedAnx4JNODDaqsf1EAvhbFOw=w1052-h592-rw" alt="" fill className="object-cover" />
-                                        </div>
-                                    </div>
-                                </div>
-                                {/* Strong Gradient mainly for text readability at top */}
-                                <div className="absolute inset-0 bg-gradient-to-b from-card/90 via-card/60 to-card/20" />
+                            <div className="absolute inset-0 z-0">
+                                <Image
+                                    src="/images/anlatbakalım-arkaplanı.webp"
+                                    alt="Background"
+                                    fill
+                                    className="object-cover object-top opacity-60 group-hover:opacity-70 group-hover:scale-105 transition-all duration-700"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-b from-card/95 via-card/70 to-card/30" />
                             </div>
 
                             <CardContent className="relative z-10 p-6 flex flex-col items-center text-center h-full">
@@ -1323,7 +1247,7 @@ export default function DijitalIceriklerimizPage() {
                                             Mobil Uygulama
                                         </span>
                                     </div>
-                                    <p className="text-sm text-muted-foreground line-clamp-3 pt-1">
+                                    <p className="text-sm text-foreground/80 line-clamp-3 pt-1">
                                         İslami kavramları öğrenmenin ve öğretmenin en eğlenceli yolu. Ailenizle ve arkadaşlarınızla keyifli vakit geçirin.
                                     </p>
                                 </div>
@@ -1409,7 +1333,7 @@ export default function DijitalIceriklerimizPage() {
                                     </h3>
 
                                     {/* Sosyal Medya İkonları - Minimal Siyah */}
-                                    <div className="grid grid-cols-2 gap-4 mb-3 w-full max-w-[150px]">
+                                    <div className="flex flex-wrap justify-center gap-2 mb-3 w-full">
                                         {/* X */}
                                         <Link href="https://x.com/_tevhiddersleri" target="_blank" className="group/icon">
                                             <div className="w-8 h-8 rounded-lg bg-muted/60 border border-border/40 hover:bg-black/10 hover:border-black/20 flex items-center justify-center transition-all duration-300 hover:shadow-md">
@@ -1440,11 +1364,10 @@ export default function DijitalIceriklerimizPage() {
                                 {/* Arka Plan Görseli */}
                                 <div className="absolute inset-0 z-0">
                                     <Image
-                                        src="https://pbs.twimg.com/profile_banners/1200780989842251778/1687324943/1080x360"
+                                        src="/images/dersen_tewhide.jpg"
                                         alt="Background"
                                         fill
                                         className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
-                                        unoptimized
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background/95" />
                                 </div>
@@ -1473,7 +1396,7 @@ export default function DijitalIceriklerimizPage() {
                                     </h3>
 
                                     {/* Sosyal Medya İkonları - Minimal Siyah */}
-                                    <div className="flex justify-center mb-3 w-full">
+                                    <div className="flex flex-wrap justify-center gap-2 mb-3 w-full">
                                         {/* X */}
                                         <Link href="https://x.com/dersen_tewhide" target="_blank" className="group/icon active:scale-95 transition-transform">
                                             <div className="w-8 h-8 rounded-lg bg-muted/60 border border-border/40 hover:bg-black/10 hover:border-black/20 flex items-center justify-center transition-all duration-300 hover:shadow-md">
@@ -1527,7 +1450,7 @@ export default function DijitalIceriklerimizPage() {
                                     </h3>
 
                                     {/* Sosyal Medya İkonları - Minimal Siyah */}
-                                    <div className="grid grid-cols-4 gap-1.5 mb-3 w-full max-w-[200px]">
+                                    <div className="flex flex-wrap justify-center gap-2 mb-3 w-full">
                                         {/* X */}
                                         <Link href="https://x.com/monotheismeng" target="_blank" className="group/icon active:scale-95 transition-transform">
                                             <div className="w-8 h-8 rounded-lg bg-muted/60 border border-border/40 hover:bg-black/10 hover:border-black/20 flex items-center justify-center transition-all duration-300 hover:shadow-md">
@@ -1607,7 +1530,7 @@ export default function DijitalIceriklerimizPage() {
                                     </h3>
 
                                     {/* Sosyal Medya İkonları - Minimal Siyah */}
-                                    <div className="grid grid-cols-5 gap-1.5 mb-3 w-full max-w-[210px]">
+                                    <div className="flex flex-wrap justify-center gap-2 mb-3 w-full">
                                         {/* X */}
                                         <Link href="https://x.com/_Monotheismefr" target="_blank" className="group/icon active:scale-95 transition-transform">
                                             <div className="w-8 h-8 rounded-lg bg-muted/60 border border-border/40 hover:bg-black/10 hover:border-black/20 flex items-center justify-center transition-all duration-300 hover:shadow-md">
@@ -1696,7 +1619,7 @@ export default function DijitalIceriklerimizPage() {
                                     </h3>
 
                                     {/* Sosyal Medya İkonları - Minimal Siyah */}
-                                    <div className="grid grid-cols-3 gap-1.5 mb-3 w-full max-w-[150px]">
+                                    <div className="flex flex-wrap justify-center gap-2 mb-3 w-full">
                                         {/* X */}
                                         <Link href="http://x.com/monotheismusDE" target="_blank" className="group/icon active:scale-95 transition-transform">
                                             <div className="w-8 h-8 rounded-lg bg-muted/60 border border-border/40 hover:bg-black/10 hover:border-black/20 flex items-center justify-center transition-all duration-300 hover:shadow-md">
@@ -1739,7 +1662,7 @@ export default function DijitalIceriklerimizPage() {
                                 {/* Arka Plan Görseli */}
                                 <div className="absolute inset-0 z-0">
                                     <Image
-                                        src="/images/halisbayancuk_bg.png"
+                                        src="/images/halisbayancuk-x-arkaplan.jpeg"
                                         alt="Background"
                                         fill
                                         className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
@@ -1771,7 +1694,7 @@ export default function DijitalIceriklerimizPage() {
                                     </h3>
 
                                     {/* Sosyal Medya İkonları - Minimal Siyah */}
-                                    <div className="grid grid-cols-4 gap-1.5 mb-3 w-full max-w-[200px]">
+                                    <div className="flex flex-wrap justify-center gap-2 mb-3 w-full">
                                         {/* X */}
                                         <Link href="https://x.com/Halis_Bayancuk" target="_blank" className="group/icon active:scale-95 transition-transform">
                                             <div className="w-8 h-8 rounded-lg bg-muted/60 border border-border/40 hover:bg-black/10 hover:border-black/20 flex items-center justify-center transition-all duration-300 hover:shadow-md">
@@ -1852,7 +1775,7 @@ export default function DijitalIceriklerimizPage() {
                                     </h3>
 
                                     {/* Sosyal Medya İkonları - Minimal Siyah */}
-                                    <div className="grid grid-cols-1 gap-1.5 mb-3 w-full max-w-[40px]">
+                                    <div className="flex flex-wrap justify-center gap-2 mb-3 w-full">
                                         {/* X */}
                                         <Link href="https://x.com/HalisBayancukEn" target="_blank" className="group/icon active:scale-95 transition-transform">
                                             <div className="w-8 h-8 rounded-lg bg-muted/60 border border-border/40 hover:bg-black/10 hover:border-black/20 flex items-center justify-center transition-all duration-300 hover:shadow-md">
@@ -1906,7 +1829,7 @@ export default function DijitalIceriklerimizPage() {
                                     </h3>
 
                                     {/* Sosyal Medya İkonları - Minimal Siyah */}
-                                    <div className="grid grid-cols-1 gap-1.5 mb-3 w-full max-w-[40px]">
+                                    <div className="flex flex-wrap justify-center gap-2 mb-3 w-full">
                                         {/* X */}
                                         <Link href="https://x.com/HalisBayancukFR" target="_blank" className="group/icon active:scale-95 transition-transform">
                                             <div className="w-8 h-8 rounded-lg bg-muted/60 border border-border/40 hover:bg-black/10 hover:border-black/20 flex items-center justify-center transition-all duration-300 hover:shadow-md">
@@ -1931,7 +1854,7 @@ export default function DijitalIceriklerimizPage() {
                                 {/* Arka Plan Görseli */}
                                 <div className="absolute inset-0 z-0">
                                     <Image
-                                        src="/images/bizimdunyamiz.jpg"
+                                        src="/images/bizimcocuklar.jpg"
                                         alt="Background"
                                         fill
                                         className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
@@ -1963,7 +1886,7 @@ export default function DijitalIceriklerimizPage() {
                                     </h3>
 
                                     {/* Sosyal Medya İkonları - Minimal Siyah */}
-                                    <div className="grid grid-cols-3 gap-1.5 mb-3 w-full max-w-[150px]">
+                                    <div className="flex flex-wrap justify-center gap-2 mb-3 w-full">
                                         {/* X */}
                                         <Link href="https://x.com/_bizimdunyamiz" target="_blank" className="group/icon active:scale-95 transition-transform">
                                             <div className="w-8 h-8 rounded-lg bg-muted/60 border border-border/40 hover:bg-black/10 hover:border-black/20 flex items-center justify-center transition-all duration-300 hover:shadow-md">
@@ -2003,11 +1926,10 @@ export default function DijitalIceriklerimizPage() {
                                 {/* Arka Plan Görseli */}
                                 <div className="absolute inset-0 z-0">
                                     <Image
-                                        src="https://pbs.twimg.com/media/GF_l120W4AAX4J_?format=jpg&name=small"
+                                        src="/images/rabbimizdenmesajvar.jpeg"
                                         alt="Background"
                                         fill
                                         className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
-                                        unoptimized
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background/95" />
                                 </div>
@@ -2038,7 +1960,7 @@ export default function DijitalIceriklerimizPage() {
                                     </h3>
 
                                     {/* Sosyal Medya İkonları - Minimal Siyah */}
-                                    <div className="grid grid-cols-3 gap-1.5 mb-3 w-full max-w-[150px]">
+                                    <div className="flex flex-wrap justify-center gap-2 mb-3 w-full">
                                         {/* X */}
                                         <Link href="https://x.com/tevhidmeali" target="_blank" className="group/icon active:scale-95 transition-transform">
                                             <div className="w-8 h-8 rounded-lg bg-muted/60 border border-border/40 hover:bg-black/10 hover:border-black/20 flex items-center justify-center transition-all duration-300 hover:shadow-md">
@@ -2112,7 +2034,7 @@ export default function DijitalIceriklerimizPage() {
                                     </h3>
 
                                     {/* Sosyal Medya İkonları - Minimal Siyah */}
-                                    <div className="grid grid-cols-3 gap-1.5 mb-3 w-full max-w-[150px]">
+                                    <div className="flex flex-wrap justify-center gap-2 mb-3 w-full">
                                         {/* X */}
                                         <Link href="https://x.com/tevhidkitap_" target="_blank" className="group/icon active:scale-95 transition-transform">
                                             <div className="w-8 h-8 rounded-lg bg-muted/60 border border-border/40 hover:bg-black/10 hover:border-black/20 flex items-center justify-center transition-all duration-300 hover:shadow-md">
@@ -2186,7 +2108,7 @@ export default function DijitalIceriklerimizPage() {
                                     </h3>
 
                                     {/* Sosyal Medya İkonları - Minimal Siyah */}
-                                    <div className="grid grid-cols-3 gap-1.5 mb-3 w-full max-w-[150px]">
+                                    <div className="flex flex-wrap justify-center gap-2 mb-3 w-full">
                                         {/* X */}
                                         <Link href="https://x.com/uyanisofficial" target="_blank" className="group/icon active:scale-95 transition-transform">
                                             <div className="w-8 h-8 rounded-lg bg-muted/60 border border-border/40 hover:bg-black/10 hover:border-black/20 flex items-center justify-center transition-all duration-300 hover:shadow-md">
