@@ -67,9 +67,9 @@ export default function Home() {
 
           <div className="max-w-6xl mx-auto space-y-6 md:space-y-8">
             {/* Biz Kimiz */}
-            <Card className="group hover:shadow-xl active:scale-[0.99] transition-all duration-300 overflow-hidden border-primary/20 bg-primary/[0.02] touch-manipulation">
+            <Card className="group hover:shadow-xl active:scale-[0.99] transition-all duration-300 overflow-hidden border-primary/20 bg-primary/[0.02] touch-manipulation p-0">
               <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative h-48 md:h-auto overflow-hidden">
+                <div className="relative h-48 md:h-full overflow-hidden">
                   <Image
                     src="/images/merkez_mescid.webp"
                     alt="Tevhid ve Sünnet Merkez"
@@ -94,11 +94,11 @@ export default function Home() {
             </Card>
 
             {/* Dijital İçeriklerimiz */}
-            <Card className="group hover:shadow-xl active:scale-[0.99] transition-all duration-300 overflow-hidden border-primary/20 bg-primary/[0.02] touch-manipulation">
+            <Card className="group hover:shadow-xl active:scale-[0.99] transition-all duration-300 overflow-hidden border-primary/20 bg-primary/[0.02] touch-manipulation p-0">
               <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative h-48 md:h-auto overflow-hidden md:order-2">
+                <div className="relative h-48 md:h-full overflow-hidden md:order-2">
                   <Image
-                    src="/images/digital-card.png"
+                    src="/images/tevhid-ekip.jpeg"
                     alt="Dijital İçeriklerimiz"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -120,11 +120,11 @@ export default function Home() {
             </Card>
 
             {/* Basım Yayın */}
-            <Card className="group hover:shadow-xl active:scale-[0.99] transition-all duration-300 overflow-hidden border-primary/20 bg-primary/[0.02] touch-manipulation">
+            <Card className="group hover:shadow-xl active:scale-[0.99] transition-all duration-300 overflow-hidden border-primary/20 bg-primary/[0.02] touch-manipulation p-0">
               <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative h-48 md:h-auto overflow-hidden">
+                <div className="relative h-48 md:h-full overflow-hidden">
                   <Image
-                    src="/images/publishing-card.png"
+                    src="/images/tevhid-kitapevi.jpg"
                     alt="Basım Yayın"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -146,11 +146,11 @@ export default function Home() {
             </Card>
 
             {/* İnsani Yardım */}
-            <Card className="group hover:shadow-xl active:scale-[0.99] transition-all duration-300 overflow-hidden border-primary/20 bg-primary/[0.02] touch-manipulation">
+            <Card className="group hover:shadow-xl active:scale-[0.99] transition-all duration-300 overflow-hidden border-primary/20 bg-primary/[0.02] touch-manipulation p-0">
               <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative h-48 md:h-auto overflow-hidden md:order-2">
+                <div className="relative h-48 md:h-full overflow-hidden md:order-2">
                   <Image
-                    src="/images/aid-card-kids.png"
+                    src="/images/yetim_hamiligi.webp"
                     alt="İnsani Yardım"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -172,11 +172,11 @@ export default function Home() {
             </Card>
 
             {/* Şubelerimiz */}
-            <Card className="group hover:shadow-xl active:scale-[0.99] transition-all duration-300 overflow-hidden border-primary/20 bg-primary/[0.02] touch-manipulation">
+            <Card className="group hover:shadow-xl active:scale-[0.99] transition-all duration-300 overflow-hidden border-primary/20 bg-primary/[0.02] touch-manipulation p-0">
               <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative h-48 md:h-auto overflow-hidden">
+                <div className="relative h-48 md:h-full overflow-hidden">
                   <Image
-                    src="/images/branches-card.png"
+                    src="/images/Dergi_Tevhid.png"
                     alt="Şubelerimiz"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -198,9 +198,9 @@ export default function Home() {
             </Card>
 
             {/* İletişim */}
-            <Card className="group hover:shadow-xl active:scale-[0.99] transition-all duration-300 overflow-hidden border-primary/20 bg-primary/[0.02] touch-manipulation">
+            <Card className="group hover:shadow-xl active:scale-[0.99] transition-all duration-300 overflow-hidden border-primary/20 bg-primary/[0.02] touch-manipulation p-0">
               <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative h-48 md:h-auto overflow-hidden md:order-2">
+                <div className="relative h-48 md:h-full overflow-hidden md:order-2">
                   <Image
                     src="/images/contact-card.png"
                     alt="İletişim"
