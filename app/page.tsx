@@ -15,7 +15,7 @@ export default function Home() {
       <section className="relative h-[90vh] md:h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/images/hero-bg.png"
+            src="/images/hero-bg-v2.png"
             alt="Hero Background"
             fill
             className="object-cover"

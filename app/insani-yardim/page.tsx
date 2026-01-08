@@ -185,7 +185,7 @@ export default function InsaniYardimPage() {
             </section>
 
             {/* 2025 FAALİYETLERİ */}
-            <section id="faaliyetler" className="py-20 bg-muted/20">
+            <section id="faaliyetler" className="py-20 bg-primary/5">
                 <div className="container px-4 md:px-6">
                     <div className="max-w-5xl mx-auto">
                         <div className="text-center mb-12 space-y-4">

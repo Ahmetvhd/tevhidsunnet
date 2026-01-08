@@ -15,7 +15,7 @@ export function PageHero({ title, description, badge }: PageHeroProps) {
             {/* Background Image & Overlay */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/hero-bg.png"
+                    src="/images/hero-bg-v2.png"
                     alt="Hero Background"
                     fill
                     className="object-cover"

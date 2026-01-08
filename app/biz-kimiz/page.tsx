@@ -27,7 +27,7 @@ export default function BizKimizPage() {
             />
 
             {/* TARİHÇEMİZ */}
-            <section id="tarihcemiz" className="py-16 md:py-20 bg-background overflow-hidden">
+            <section id="tarihcemiz" className="py-16 md:py-20 bg-primary/5 overflow-hidden">
                 <div className="container px-4 md:px-6">
                     <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center max-w-6xl mx-auto">
                         <div className="space-y-6 animate-fade-in-left">
@@ -53,7 +53,7 @@ export default function BizKimizPage() {
             </section>
 
             {/* BİZ KİMİZ VE NE İSTİYORUZ KİTAPÇIĞI */}
-            <section id="kitapcik" className="py-16 md:py-20 bg-muted/20">
+            <section id="kitapcik" className="py-16 md:py-20 bg-background">
                 <div className="container px-4 md:px-6">
                     <div className="max-w-5xl mx-auto">
                         <Card className="group p-6 md:p-12 border border-primary/10 bg-card/50 hover:bg-card hover:border-primary/30 hover:shadow-2xl hover:shadow-primary/5 active:scale-[0.99] transition-all duration-500 overflow-hidden relative touch-manipulation">
