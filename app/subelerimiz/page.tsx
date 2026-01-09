@@ -223,7 +223,9 @@ export default function SubelerimizPage() {
                                             latitude={sube.latitude}
                                         >
                                             <MarkerContent className="cursor-pointer">
-                                                <div className="relative">
+                                                <div className="relative flex items-center gap-2">
+
+                                                    {/* Marker Pin */}
                                                     <div className={cn(
                                                         "rounded-full p-3 shadow-lg hover:scale-110 transition-transform",
                                                         sube.isMerkez
@@ -232,11 +234,6 @@ export default function SubelerimizPage() {
                                                     )}>
                                                         <MapPin className="w-5 h-5" />
                                                     </div>
-                                                    {sube.isMerkez && (
-                                                        <div className="absolute -top-1 -right-1">
-                                                            <Star className="w-3 h-3 text-primary fill-primary" />
-                                                        </div>
-                                                    )}
                                                 </div>
                                             </MarkerContent>
 
@@ -341,16 +338,30 @@ export default function SubelerimizPage() {
                                             </div>
                                         </div>
                                     )}
-                                    <div className={cn(
-                                        "relative h-32 w-full flex items-center justify-center transition-colors",
-                                        sube.isMerkez
-                                            ? "bg-primary/15"
-                                            : "bg-gradient-to-br from-primary/10 to-primary/5 group-hover:from-primary/20 group-hover:to-primary/10"
-                                    )}>
-                                        <MapPin className={cn(
-                                            "transition-all duration-300 text-primary",
-                                            sube.isMerkez ? "w-14 h-14" : "w-12 h-12"
-                                        )} />
+                                    <div className="relative h-48 w-full overflow-hidden">
+                                        {/* Mini Interactive Map */}
+                                        <Map
+                                            center={[sube.longitude, sube.latitude]}
+                                            zoom={14}
+                                        >
+                                            <MapMarker
+                                                longitude={sube.longitude}
+                                                latitude={sube.latitude}
+                                            >
+                                                <MarkerContent>
+                                                    <div className={cn(
+                                                        "rounded-full p-2 shadow-lg",
+                                                        sube.isMerkez
+                                                            ? "bg-primary text-primary-foreground ring-2 ring-primary ring-offset-2"
+                                                            : "bg-primary text-primary-foreground"
+                                                    )}>
+                                                        <MapPin className="w-4 h-4" />
+                                                    </div>
+                                                </MarkerContent>
+                                            </MapMarker>
+                                        </Map>
+                                        {/* Overlay gradient for better readability */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
                                     </div>
                                     <div className="p-6">
                                         <h3 className="font-bold text-xl mb-3 group-hover:text-primary transition-colors flex items-center gap-2">
