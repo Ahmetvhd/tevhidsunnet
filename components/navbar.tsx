@@ -74,7 +74,7 @@ const menuItems = [
   },
   {
     href: "/tevhid-basim-yayin",
-    label: "Tevhid Basım Yayın",
+    label: "Basım Yayın",
     icon: BookOpen,
     children: [
       { href: "/tevhid-basim-yayin#tevhid-dergisi", label: "Tevhid Dergisi" },
