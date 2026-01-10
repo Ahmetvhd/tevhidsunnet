@@ -208,8 +208,8 @@ export default function SubelerimizPage() {
                             </p>
                         </div>
 
-                        <Card className="p-0 overflow-hidden shadow-xl">
-                            <div className="h-[600px] w-full">
+                        <Card className="p-0 overflow-hidden shadow-xl rounded-2xl border">
+                            <div className="w-full aspect-[2/1] md:aspect-[3/1]">
                                 <Map
                                     center={[35.5, 39.0]}
                                     zoom={5.2}
@@ -338,7 +338,7 @@ export default function SubelerimizPage() {
                                             </div>
                                         </div>
                                     )}
-                                    <div className="relative h-48 w-full overflow-hidden">
+                                    <div className="relative h-40 w-full overflow-hidden">
                                         {/* Mini Interactive Map */}
                                         <Map
                                             center={[sube.longitude, sube.latitude]}

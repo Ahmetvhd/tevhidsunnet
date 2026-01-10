@@ -14,6 +14,13 @@ export const metadata: Metadata = {
 };
 
 import { PageHero } from "@/components/page-hero";
+import {
+    Carousel,
+    CarouselContent,
+    CarouselItem,
+    CarouselNext,
+    CarouselPrevious,
+} from "@/components/ui/carousel";
 
 export default function TevhidBasimYayinPage() {
     return (
@@ -133,15 +140,10 @@ export default function TevhidBasimYayinPage() {
                         </p>
                     </div>
 
-                    {/* Mobile Scroll Hint */}
-                    <div className="md:hidden flex items-center justify-center gap-2 text-muted-foreground/60 text-sm mb-6 animate-pulse">
-                        <ArrowLeftRight className="w-4 h-4" />
-                        <span>Diğer sayıları görmek için kaydırın</span>
-                    </div>
-
-                    <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-6 md:pb-0 -mx-4 px-4 md:mx-auto md:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:none]">
+                    {/* Desktop Grid - Hidden on Mobile */}
+                    <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
                         {/* Sayı 152 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group min-w-[85vw] sm:min-w-[45vw] md:min-w-0 snap-center">
+                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
                             <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
                                 <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
                                     {/* 3D Book Container */}
@@ -186,7 +188,7 @@ export default function TevhidBasimYayinPage() {
                         </Card>
 
                         {/* Sayı 151 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group min-w-[85vw] sm:min-w-[45vw] md:min-w-0 snap-center">
+                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
                             <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
                                 <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
                                     {/* 3D Book Container */}
@@ -232,7 +234,7 @@ export default function TevhidBasimYayinPage() {
                         </Card>
 
                         {/* Sayı 150 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group min-w-[85vw] sm:min-w-[45vw] md:min-w-0 snap-center">
+                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
                             <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
                                 <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
                                     {/* 3D Book Container */}
@@ -277,7 +279,7 @@ export default function TevhidBasimYayinPage() {
                         </Card>
 
                         {/* Sayı 149 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group min-w-[85vw] sm:min-w-[45vw] md:min-w-0 snap-center">
+                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
                             <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
                                 <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
                                     {/* 3D Book Container */}
@@ -320,6 +322,181 @@ export default function TevhidBasimYayinPage() {
                                 </Button>
                             </CardContent>
                         </Card>
+                    </div>
+
+                    {/* Mobile Carousel - Visible only on Mobile */}
+                    <div className="block md:hidden px-4">
+                        <Carousel
+                            opts={{
+                                align: "start",
+                                loop: true,
+                            }}
+                            className="w-full"
+                        >
+                            <CarouselContent className="-ml-4">
+                                {/* Sayı 152 */}
+                                <CarouselItem className="pl-4 basis-[85%]">
+                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
+                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
+                                            <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
+                                                {/* 3D Book Container */}
+                                                <div className="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] [transform:rotateY(15deg)_rotateZ(1deg)] group-hover:[transform:rotateY(22deg)_rotateZ(2deg)]">
+
+                                                    {/* Spine (Left side) */}
+                                                    <div className="absolute left-0 top-0 h-[99%] my-[0.5%] w-[15px] bg-[#1a1a1a] shadow-inner [transform:rotateY(-90deg)_translateZ(7.5px)] border-y border-l border-white/10 flex flex-col justify-between py-4 items-center">
+                                                        <div className="w-full h-px bg-white/5" />
+                                                        <div className="w-full h-px bg-white/5" />
+                                                    </div>
+
+                                                    {/* Front Cover */}
+                                                    <div className="absolute inset-0 [transform:translateZ(7.5px)] shadow-[-15px_15px_35px_rgba(0,0,0,0.6)] group-hover:shadow-[-25px_25px_55px_rgba(0,0,0,0.7)] transition-all duration-700 rounded-sm overflow-hidden border border-black/30">
+                                                        <Image
+                                                            src="/images/152.sayi.jpg"
+                                                            alt="Tevhid Dergisi Sayı 152"
+                                                            fill
+                                                            className="object-cover"
+                                                        />
+                                                        {/* Spine Shadow on Cover */}
+                                                        <div className="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black/25 to-transparent" />
+                                                    </div>
+
+                                                    {/* Thickness / Pages (Right side) */}
+                                                    <div className="absolute top-0 right-0 h-[98%] my-[1%] w-[15px] bg-[#fdfdfd] [transform:rotateY(90deg)_translateZ(7.5px)] origin-right shadow-inner opacity-90 border-y border-black/5">
+                                                        <div className="w-full h-full bg-[repeating-linear-gradient(transparent,transparent_2px,#e5e5e5_3px)]" />
+                                                    </div>
+                                                </div>
+
+                                                {/* Dynamic Floor Shadow */}
+                                                <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[95%] h-10 bg-black/25 blur-3xl rounded-[100%] opacity-70 group-hover:opacity-50 transition-all duration-700 [transform:rotateX(75deg)]" />
+                                            </div>
+                                        </div>
+                                        <CardContent className="pt-6 bg-card border-t border-border/10">
+                                            <h3 className="font-semibold text-lg leading-tight mb-2">
+                                                Tevhid Dergisi - Sayı 152
+                                            </h3>
+                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
+                                                İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                            </Button>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+
+                                {/* Sayı 151 */}
+                                <CarouselItem className="pl-4 basis-[85%]">
+                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
+                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
+                                            <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
+                                                <div className="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] [transform:rotateY(15deg)_rotateZ(1deg)] group-hover:[transform:rotateY(22deg)_rotateZ(2deg)]">
+                                                    <div className="absolute left-0 top-0 h-[99%] my-[0.5%] w-[15px] bg-[#1a1a1a] shadow-inner [transform:rotateY(-90deg)_translateZ(7.5px)] border-y border-l border-white/10 flex flex-col justify-between py-4 items-center">
+                                                        <div className="w-full h-px bg-white/5" />
+                                                        <div className="w-full h-px bg-white/5" />
+                                                    </div>
+                                                    <div className="absolute inset-0 [transform:translateZ(7.5px)] shadow-[-15px_15px_35px_rgba(0,0,0,0.6)] group-hover:shadow-[-25px_25px_55px_rgba(0,0,0,0.7)] transition-all duration-700 rounded-sm overflow-hidden border border-black/30">
+                                                        <Image
+                                                            src="/images/151.sayi.jpg"
+                                                            alt="Tevhid Dergisi Sayı 151"
+                                                            fill
+                                                            className="object-cover"
+                                                        />
+                                                        <div className="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black/25 to-transparent" />
+                                                    </div>
+                                                    <div className="absolute top-0 right-0 h-[98%] my-[1%] w-[15px] bg-[#fdfdfd] [transform:rotateY(90deg)_translateZ(7.5px)] origin-right shadow-inner opacity-90 border-y border-black/5">
+                                                        <div className="w-full h-full bg-[repeating-linear-gradient(transparent,transparent_2px,#e5e5e5_3px)]" />
+                                                    </div>
+                                                </div>
+                                                <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[95%] h-10 bg-black/25 blur-3xl rounded-[100%] opacity-70 group-hover:opacity-50 transition-all duration-700 [transform:rotateX(75deg)]" />
+                                            </div>
+                                        </div>
+                                        <CardContent className="pt-6 bg-card border-t border-border/10">
+                                            <h3 className="font-semibold text-lg leading-tight mb-2">
+                                                Tevhid Dergisi - Sayı 151
+                                            </h3>
+                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
+                                                İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                            </Button>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+
+                                {/* Sayı 150 */}
+                                <CarouselItem className="pl-4 basis-[85%]">
+                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
+                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
+                                            <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
+                                                <div className="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] [transform:rotateY(15deg)_rotateZ(1deg)] group-hover:[transform:rotateY(22deg)_rotateZ(2deg)]">
+                                                    <div className="absolute left-0 top-0 h-[99%] my-[0.5%] w-[15px] bg-[#1a1a1a] shadow-inner [transform:rotateY(-90deg)_translateZ(7.5px)] border-y border-l border-white/10 flex flex-col justify-between py-4 items-center">
+                                                        <div className="w-full h-px bg-white/5" />
+                                                        <div className="w-full h-px bg-white/5" />
+                                                    </div>
+                                                    <div className="absolute inset-0 [transform:translateZ(7.5px)] shadow-[-15px_15px_35px_rgba(0,0,0,0.6)] group-hover:shadow-[-25px_25px_55px_rgba(0,0,0,0.7)] transition-all duration-700 rounded-sm overflow-hidden border border-black/30">
+                                                        <Image
+                                                            src="/images/150.sayi.jpg"
+                                                            alt="Tevhid Dergisi Sayı 150"
+                                                            fill
+                                                            className="object-cover"
+                                                        />
+                                                        <div className="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black/25 to-transparent" />
+                                                    </div>
+                                                    <div className="absolute top-0 right-0 h-[98%] my-[1%] w-[15px] bg-[#fdfdfd] [transform:rotateY(90deg)_translateZ(7.5px)] origin-right shadow-inner opacity-90 border-y border-black/5">
+                                                        <div className="w-full h-full bg-[repeating-linear-gradient(transparent,transparent_2px,#e5e5e5_3px)]" />
+                                                    </div>
+                                                </div>
+                                                <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[95%] h-10 bg-black/25 blur-3xl rounded-[100%] opacity-70 group-hover:opacity-50 transition-all duration-700 [transform:rotateX(75deg)]" />
+                                            </div>
+                                        </div>
+                                        <CardContent className="pt-6 bg-card border-t border-border/10">
+                                            <h3 className="font-semibold text-lg leading-tight mb-2">
+                                                Tevhid Dergisi - Sayı 150
+                                            </h3>
+                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
+                                                İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                            </Button>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+
+                                {/* Sayı 149 */}
+                                <CarouselItem className="pl-4 basis-[85%]">
+                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
+                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
+                                            <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
+                                                <div className="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] [transform:rotateY(15deg)_rotateZ(1deg)] group-hover:[transform:rotateY(22deg)_rotateZ(2deg)]">
+                                                    <div className="absolute left-0 top-0 h-[99%] my-[0.5%] w-[15px] bg-[#1a1a1a] shadow-inner [transform:rotateY(-90deg)_translateZ(7.5px)] border-y border-l border-white/10 flex flex-col justify-between py-4 items-center">
+                                                        <div className="w-full h-px bg-white/5" />
+                                                        <div className="w-full h-px bg-white/5" />
+                                                    </div>
+                                                    <div className="absolute inset-0 [transform:translateZ(7.5px)] shadow-[-15px_15px_35px_rgba(0,0,0,0.6)] group-hover:shadow-[-25px_25px_55px_rgba(0,0,0,0.7)] transition-all duration-700 rounded-sm overflow-hidden border border-black/30">
+                                                        <Image
+                                                            src="/images/149.sayi.jpeg"
+                                                            alt="Tevhid Dergisi Sayı 149"
+                                                            fill
+                                                            className="object-cover"
+                                                        />
+                                                        <div className="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black/25 to-transparent" />
+                                                    </div>
+                                                    <div className="absolute top-0 right-0 h-[98%] my-[1%] w-[15px] bg-[#fdfdfd] [transform:rotateY(90deg)_translateZ(7.5px)] origin-right shadow-inner opacity-90 border-y border-black/5">
+                                                        <div className="w-full h-full bg-[repeating-linear-gradient(transparent,transparent_2px,#e5e5e5_3px)]" />
+                                                    </div>
+                                                </div>
+                                                <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[95%] h-10 bg-black/25 blur-3xl rounded-[100%] opacity-70 group-hover:opacity-50 transition-all duration-700 [transform:rotateX(75deg)]" />
+                                            </div>
+                                        </div>
+                                        <CardContent className="pt-6 bg-card border-t border-border/10">
+                                            <h3 className="font-semibold text-lg leading-tight mb-2">
+                                                Tevhid Dergisi - Sayı 149
+                                            </h3>
+                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
+                                                İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                            </Button>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+                            </CarouselContent>
+                            <div className="flex justify-center gap-2 mt-4">
+                                <CarouselPrevious className="static translate-y-0 translate-x-0 h-8 w-8" />
+                                <CarouselNext className="static translate-y-0 translate-x-0 h-8 w-8" />
+                            </div>
+                        </Carousel>
                     </div>
 
                     <div className="flex justify-center mt-12">
@@ -446,15 +623,10 @@ export default function TevhidBasimYayinPage() {
                         </p>
                     </div>
 
-                    {/* Mobile Scroll Hint */}
-                    <div className="md:hidden flex items-center justify-center gap-2 text-muted-foreground/60 text-sm mb-6 animate-pulse">
-                        <ArrowLeftRight className="w-4 h-4" />
-                        <span>Diğer sayıları görmek için kaydırın</span>
-                    </div>
-
-                    <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-6 md:pb-0 -mx-4 px-4 md:mx-auto md:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:none]">
+                    {/* Desktop Grid - Hidden on Mobile */}
+                    <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
                         {/* Sayı 30 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group min-w-[85vw] sm:min-w-[45vw] md:min-w-0 snap-center">
+                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
                             <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
                                 <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
                                     {/* 3D Book Container */}
@@ -499,7 +671,7 @@ export default function TevhidBasimYayinPage() {
                         </Card>
 
                         {/* Sayı 29 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group min-w-[85vw] sm:min-w-[45vw] md:min-w-0 snap-center">
+                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
                             <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
                                 <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
                                     {/* 3D Book Container */}
@@ -544,7 +716,7 @@ export default function TevhidBasimYayinPage() {
                         </Card>
 
                         {/* Sayı 28 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group min-w-[85vw] sm:min-w-[45vw] md:min-w-0 snap-center">
+                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
                             <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
                                 <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
                                     {/* 3D Book Container */}
@@ -589,7 +761,7 @@ export default function TevhidBasimYayinPage() {
                         </Card>
 
                         {/* Sayı 27 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group min-w-[85vw] sm:min-w-[45vw] md:min-w-0 snap-center">
+                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
                             <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
                                 <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
                                     {/* 3D Book Container */}
@@ -632,6 +804,135 @@ export default function TevhidBasimYayinPage() {
                                 </Button>
                             </CardContent>
                         </Card>
+                    </div>
+
+                    {/* Mobile Carousel - Visible only on Mobile */}
+                    <div className="block md:hidden px-4">
+                        <Carousel
+                            opts={{
+                                align: "start",
+                                loop: true,
+                            }}
+                            className="w-full"
+                        >
+                            <CarouselContent className="-ml-4">
+                                {/* Sayı 30 */}
+                                <CarouselItem className="pl-4 basis-[85%]">
+                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
+                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
+                                            <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
+                                                <div className="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] [transform:rotateY(15deg)_rotateZ(1deg)] group-hover:[transform:rotateY(22deg)_rotateZ(2deg)]">
+                                                    <div className="absolute left-0 top-0 h-[99%] my-[0.5%] w-[15px] bg-[#1a1a1a] shadow-inner [transform:rotateY(-90deg)_translateZ(7.5px)] border-y border-l border-white/10 flex flex-col justify-between py-4 items-center">
+                                                        <div className="w-full h-px bg-white/5" />
+                                                        <div className="w-full h-px bg-white/5" />
+                                                    </div>
+                                                    <div className="absolute inset-0 [transform:translateZ(7.5px)] shadow-[-15px_15px_35px_rgba(0,0,0,0.6)] group-hover:shadow-[-25px_25px_55px_rgba(0,0,0,0.7)] transition-all duration-700 rounded-sm overflow-hidden border border-black/30">
+                                                        <Image src="/images/30.sayi.jpg" alt="Tevhid Çocuk Sayı 30" fill className="object-cover" />
+                                                        <div className="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black/25 to-transparent" />
+                                                    </div>
+                                                    <div className="absolute top-0 right-0 h-[98%] my-[1%] w-[15px] bg-[#fdfdfd] [transform:rotateY(90deg)_translateZ(7.5px)] origin-right shadow-inner opacity-90 border-y border-black/5">
+                                                        <div className="w-full h-full bg-[repeating-linear-gradient(transparent,transparent_2px,#e5e5e5_3px)]" />
+                                                    </div>
+                                                </div>
+                                                <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[95%] h-10 bg-black/25 blur-3xl rounded-[100%] opacity-70 group-hover:opacity-50 transition-all duration-700 [transform:rotateX(75deg)]" />
+                                            </div>
+                                        </div>
+                                        <CardContent className="pt-6 bg-card border-t border-border/10">
+                                            <h3 className="font-semibold text-lg leading-tight mb-2">Tevhid Çocuk - Sayı 30</h3>
+                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">İncele & Oku <ArrowRight className="ml-2 h-4 w-4" /></Button>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+
+                                {/* Sayı 29 */}
+                                <CarouselItem className="pl-4 basis-[85%]">
+                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
+                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
+                                            <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
+                                                <div className="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] [transform:rotateY(15deg)_rotateZ(1deg)] group-hover:[transform:rotateY(22deg)_rotateZ(2deg)]">
+                                                    <div className="absolute left-0 top-0 h-[99%] my-[0.5%] w-[15px] bg-[#1a1a1a] shadow-inner [transform:rotateY(-90deg)_translateZ(7.5px)] border-y border-l border-white/10 flex flex-col justify-between py-4 items-center">
+                                                        <div className="w-full h-px bg-white/5" />
+                                                        <div className="w-full h-px bg-white/5" />
+                                                    </div>
+                                                    <div className="absolute inset-0 [transform:translateZ(7.5px)] shadow-[-15px_15px_35px_rgba(0,0,0,0.6)] group-hover:shadow-[-25px_25px_55px_rgba(0,0,0,0.7)] transition-all duration-700 rounded-sm overflow-hidden border border-black/30">
+                                                        <Image src="/images/29.sayi.jpeg" alt="Tevhid Çocuk Sayı 29" fill className="object-cover" />
+                                                        <div className="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black/25 to-transparent" />
+                                                    </div>
+                                                    <div className="absolute top-0 right-0 h-[98%] my-[1%] w-[15px] bg-[#fdfdfd] [transform:rotateY(90deg)_translateZ(7.5px)] origin-right shadow-inner opacity-90 border-y border-black/5">
+                                                        <div className="w-full h-full bg-[repeating-linear-gradient(transparent,transparent_2px,#e5e5e5_3px)]" />
+                                                    </div>
+                                                </div>
+                                                <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[95%] h-10 bg-black/25 blur-3xl rounded-[100%] opacity-70 group-hover:opacity-50 transition-all duration-700 [transform:rotateX(75deg)]" />
+                                            </div>
+                                        </div>
+                                        <CardContent className="pt-6 bg-card border-t border-border/10">
+                                            <h3 className="font-semibold text-lg leading-tight mb-2">Tevhid Çocuk - Sayı 29</h3>
+                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">İncele & Oku <ArrowRight className="ml-2 h-4 w-4" /></Button>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+
+                                {/* Sayı 28 */}
+                                <CarouselItem className="pl-4 basis-[85%]">
+                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
+                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
+                                            <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
+                                                <div className="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] [transform:rotateY(15deg)_rotateZ(1deg)] group-hover:[transform:rotateY(22deg)_rotateZ(2deg)]">
+                                                    <div className="absolute left-0 top-0 h-[99%] my-[0.5%] w-[15px] bg-[#1a1a1a] shadow-inner [transform:rotateY(-90deg)_translateZ(7.5px)] border-y border-l border-white/10 flex flex-col justify-between py-4 items-center">
+                                                        <div className="w-full h-px bg-white/5" />
+                                                        <div className="w-full h-px bg-white/5" />
+                                                    </div>
+                                                    <div className="absolute inset-0 [transform:translateZ(7.5px)] shadow-[-15px_15px_35px_rgba(0,0,0,0.6)] group-hover:shadow-[-25px_25px_55px_rgba(0,0,0,0.7)] transition-all duration-700 rounded-sm overflow-hidden border border-black/30">
+                                                        <Image src="/images/28.sayi.jpg" alt="Tevhid Çocuk Sayı 28" fill className="object-cover" />
+                                                        <div className="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black/25 to-transparent" />
+                                                    </div>
+                                                    <div className="absolute top-0 right-0 h-[98%] my-[1%] w-[15px] bg-[#fdfdfd] [transform:rotateY(90deg)_translateZ(7.5px)] origin-right shadow-inner opacity-90 border-y border-black/5">
+                                                        <div className="w-full h-full bg-[repeating-linear-gradient(transparent,transparent_2px,#e5e5e5_3px)]" />
+                                                    </div>
+                                                </div>
+                                                <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[95%] h-10 bg-black/25 blur-3xl rounded-[100%] opacity-70 group-hover:opacity-50 transition-all duration-700 [transform:rotateX(75deg)]" />
+                                            </div>
+                                        </div>
+                                        <CardContent className="pt-6 bg-card border-t border-border/10">
+                                            <h3 className="font-semibold text-lg leading-tight mb-2">Tevhid Çocuk - Sayı 28</h3>
+                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">İncele & Oku <ArrowRight className="ml-2 h-4 w-4" /></Button>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+
+                                {/* Sayı 27 */}
+                                <CarouselItem className="pl-4 basis-[85%]">
+                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
+                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
+                                            <div className="relative aspect-[3/4] w-full max-w-[240px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
+                                                <div className="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] [transform:rotateY(15deg)_rotateZ(1deg)] group-hover:[transform:rotateY(22deg)_rotateZ(2deg)]">
+                                                    <div className="absolute left-0 top-0 h-[99%] my-[0.5%] w-[15px] bg-[#1a1a1a] shadow-inner [transform:rotateY(-90deg)_translateZ(7.5px)] border-y border-l border-white/10 flex flex-col justify-between py-4 items-center">
+                                                        <div className="w-full h-px bg-white/5" />
+                                                        <div className="w-full h-px bg-white/5" />
+                                                    </div>
+                                                    <div className="absolute inset-0 [transform:translateZ(7.5px)] shadow-[-15px_15px_35px_rgba(0,0,0,0.6)] group-hover:shadow-[-25px_25px_55px_rgba(0,0,0,0.7)] transition-all duration-700 rounded-sm overflow-hidden border border-black/30">
+                                                        <Image src="/images/27.sayi.jpg" alt="Tevhid Çocuk Sayı 27" fill className="object-cover" />
+                                                        <div className="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black/25 to-transparent" />
+                                                    </div>
+                                                    <div className="absolute top-0 right-0 h-[98%] my-[1%] w-[15px] bg-[#fdfdfd] [transform:rotateY(90deg)_translateZ(7.5px)] origin-right shadow-inner opacity-90 border-y border-black/5">
+                                                        <div className="w-full h-full bg-[repeating-linear-gradient(transparent,transparent_2px,#e5e5e5_3px)]" />
+                                                    </div>
+                                                </div>
+                                                <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[95%] h-10 bg-black/25 blur-3xl rounded-[100%] opacity-70 group-hover:opacity-50 transition-all duration-700 [transform:rotateX(75deg)]" />
+                                            </div>
+                                        </div>
+                                        <CardContent className="pt-6 bg-card border-t border-border/10">
+                                            <h3 className="font-semibold text-lg leading-tight mb-2">Tevhid Çocuk - Sayı 27</h3>
+                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">İncele & Oku <ArrowRight className="ml-2 h-4 w-4" /></Button>
+                                        </CardContent>
+                                    </Card>
+                                </CarouselItem>
+                            </CarouselContent>
+                            <div className="flex justify-center gap-2 mt-4">
+                                <CarouselPrevious className="static translate-y-0 translate-x-0 h-8 w-8" />
+                                <CarouselNext className="static translate-y-0 translate-x-0 h-8 w-8" />
+                            </div>
+                        </Carousel>
                     </div>
 
                     <div className="flex justify-center mt-12">
@@ -748,15 +1049,10 @@ export default function TevhidBasimYayinPage() {
                         </p>
                     </div>
 
-                    {/* Mobile Scroll Hint */}
-                    <div className="md:hidden flex items-center justify-center gap-2 text-muted-foreground/60 text-sm mb-6 animate-pulse">
-                        <ArrowLeftRight className="w-4 h-4" />
-                        <span>Diğer eserleri görmek için kaydırın</span>
-                    </div>
-
-                    <div className="flex md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto overflow-x-auto md:overflow-visible snap-x snap-mandatory pb-6 md:pb-0 -mx-4 px-4 md:mx-auto md:px-0 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:'none'] [scrollbar-width:none]">
+                    {/* Desktop Grid - Hidden on Mobile */}
+                    <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
                         {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
-                            <Card key={index} className="overflow-hidden border border-primary/10 shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-all duration-500 group min-w-[85vw] sm:min-w-[45vw] md:min-w-0 snap-center">
+                            <Card key={index} className="overflow-hidden border border-primary/10 shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-all duration-500 group">
                                 <div className="flex items-center justify-center bg-muted/20 p-8 overflow-hidden">
                                     <div className="relative aspect-[3/4] w-full max-w-[200px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
                                         {/* 3D Book Container */}
@@ -803,6 +1099,54 @@ export default function TevhidBasimYayinPage() {
                                 </CardContent>
                             </Card>
                         ))}
+                    </div>
+
+                    {/* Mobile Carousel - Visible only on Mobile */}
+                    <div className="block md:hidden px-4">
+                        <Carousel
+                            opts={{
+                                align: "start",
+                                loop: true,
+                            }}
+                            className="w-full"
+                        >
+                            <CarouselContent className="-ml-4">
+                                {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
+                                    <CarouselItem key={index} className="pl-4 basis-[85%]">
+                                        <Card className="overflow-hidden border border-primary/10 shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-all duration-500 group">
+                                            <div className="flex items-center justify-center bg-muted/20 p-8 overflow-hidden">
+                                                <div className="relative aspect-[3/4] w-full max-w-[200px] [perspective:2000px] group-hover:[perspective:2500px] transition-all duration-500">
+                                                    <div className="relative w-full h-full transition-all duration-700 [transform-style:preserve-3d] [transform:rotateY(15deg)_rotateZ(0.5deg)] group-hover:[transform:rotateY(22deg)_rotateZ(1deg)]">
+                                                        <div className="absolute left-0 top-0 h-[99.6%] my-[0.2%] w-[20px] bg-[#222] shadow-inner [transform:rotateY(-90deg)_translateZ(10px)] border-y border-l border-white/5 flex flex-col justify-between py-5 items-center">
+                                                            <div className="w-full h-[1px] bg-white/10" />
+                                                            <div className="w-full h-[1px] bg-white/10" />
+                                                        </div>
+                                                        <div className="absolute inset-0 [transform:translateZ(10px)] shadow-[-15px_15px_35px_rgba(0,0,0,0.4)] group-hover:shadow-[-25px_25px_55px_rgba(0,0,0,0.5)] transition-all duration-700 rounded-sm overflow-hidden border border-black/20">
+                                                            <Image src="/images/book-cover.png" alt={`Kitap ${index}`} fill className="object-cover" />
+                                                            <div className="absolute inset-y-0 left-0 w-3 bg-gradient-to-r from-black/40 to-transparent" />
+                                                            <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-black/5 pointer-events-none" />
+                                                        </div>
+                                                        <div className="absolute top-0 right-0 h-[99%] my-[0.5%] w-[20px] bg-[#f5f5f5] [transform:rotateY(90deg)_translateZ(10px)] origin-right shadow-inner border-y border-black/5">
+                                                            <div className="w-full h-full bg-[repeating-linear-gradient(transparent,transparent_1.5px,#e0e0e0_1.5px,#e0e0e0_2.5px,transparent_2.5px)] opacity-60" />
+                                                        </div>
+                                                    </div>
+                                                    <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 w-[110%] h-10 bg-black/30 blur-2xl rounded-[100%] opacity-60 group-hover:opacity-40 transition-all duration-700 [transform:rotateX(80deg)]" />
+                                                </div>
+                                            </div>
+                                            <CardContent className="pt-6 bg-background">
+                                                <h3 className="font-semibold text-lg leading-tight mb-2">Tevhid Risalesi {index}</h3>
+                                                <p className="text-sm text-muted-foreground line-clamp-2 mb-4">İslam akaidinin temellerinin işlendiği, başucu eseri niteliğinde bir çalışma.</p>
+                                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">İncele & Satın Al <ArrowRight className="ml-2 h-4 w-4" /></Button>
+                                            </CardContent>
+                                        </Card>
+                                    </CarouselItem>
+                                ))}
+                            </CarouselContent>
+                            <div className="flex justify-center gap-2 mt-4">
+                                <CarouselPrevious className="static translate-y-0 translate-x-0 h-8 w-8" />
+                                <CarouselNext className="static translate-y-0 translate-x-0 h-8 w-8" />
+                            </div>
+                        </Carousel>
                     </div>
 
                     <div className="flex justify-center mt-12">
