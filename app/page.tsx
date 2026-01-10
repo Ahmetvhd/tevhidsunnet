@@ -202,7 +202,7 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-48 md:h-full overflow-hidden md:order-2">
                   <Image
-                    src="/images/contact-card.png"
+                    src="/images/phone.avif"
                     alt="İletişim"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
