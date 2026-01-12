@@ -28,16 +28,20 @@ function WebsiteCard({ site }: { site: any }) {
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
                 </div>
-                <CardContent className="relative z-10 p-4 flex items-center gap-4 h-full">
-                    <div className={`relative w-14 h-14 rounded-lg overflow-hidden border border-primary/20 shadow-sm flex-shrink-0 group-hover:border-primary/50 transition-colors ${site.darkBgInfo ? 'bg-black p-2' : 'bg-white p-1'}`}>
+                <CardContent className="relative z-20 p-4 flex items-center gap-3 sm:gap-4 h-full">
+                    <div className={`relative w-12 h-12 sm:w-14 sm:h-14 rounded-lg overflow-hidden border border-primary/20 shadow-sm flex-shrink-0 group-hover:border-primary/50 transition-colors ${site.darkBgInfo ? 'bg-black p-2' : 'bg-white p-1'}`}>
                         <Image src={site.image} alt={site.title} fill className="object-contain" />
                     </div>
                     <div className="flex-1 min-w-0">
-                        <h3 className="text-base font-bold truncate text-primary transition-colors">{site.title}</h3>
-                        <p className="text-sm text-muted-foreground truncate font-mono opacity-80">{site.description}</p>
+                        <h3 className="text-sm sm:text-base font-bold line-clamp-1 text-foreground group-hover:text-primary transition-colors">
+                            {site.title}
+                        </h3>
+                        <p className="text-[10px] sm:text-xs text-muted-foreground line-clamp-1 font-mono opacity-80">
+                            {site.description}
+                        </p>
                     </div>
-                    <div className="w-10 h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 transform group-hover:rotate-[-45deg]">
-                        <ArrowRight className="w-5 h-5" />
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-primary/10 text-primary flex items-center justify-center group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 transform group-hover:rotate-[-45deg] flex-shrink-0">
+                        <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
                     </div>
                 </CardContent>
             </Card>
