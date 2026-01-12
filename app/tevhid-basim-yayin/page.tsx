@@ -221,7 +221,7 @@ export default function TevhidBasimYayinPage() {
 
                             <div className="flex flex-col sm:flex-row gap-4 pt-4">
                                 <Button size="lg" className="h-12 px-8 text-base" asChild>
-                                    <Link href="https://tevhiddergisi.org/tevhid-cocuk-dergisi/TC_31/" target="_blank">
+                                    <Link href="https://www.tevhiddergisi.org/dergiler/tcd/31_Tevhid_Cocuk.pdf?_gl=1*wms6im*_ga*MTkxNTI5NzUxOC4xNzYxNzQ1MDM2*_ga_RR184147PL*czE3NjgyMjEzNTgkbzMyJGcxJHQxNzY4MjIxNzg3JGoxMyRsMCRoMA..*_ga_8TNV9PW6DE*czE3NjgyMjEzNTgkbzMyJGcxJHQxNzY4MjIxNzg3JGoxMyRsMCRoMA.." target="_blank">
                                         <BookOpen className="mr-2 h-5 w-5" />
                                         Sayıyı İncele
                                     </Link>
