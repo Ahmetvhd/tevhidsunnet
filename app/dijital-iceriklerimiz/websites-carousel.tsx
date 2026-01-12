@@ -24,7 +24,7 @@ function WebsiteCard({ site }: { site: any }) {
                         src={site.background}
                         alt="Background"
                         fill
-                        className={`object-cover ${site.containImage ? 'object-contain scale-75' : ''} opacity-[0.50] group-hover:opacity-[0.70] transition-all duration-300 grayscale`}
+                        className="object-cover opacity-[0.50] group-hover:opacity-[0.70] transition-all duration-300 grayscale"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />
                 </div>
@@ -62,7 +62,7 @@ export function WebsitesCarousel() {
             </div>
 
             {/* Mobile Carousel - Restored to original vertical style */}
-            <div className="block md:hidden max-w-3xl mx-auto">
+            <div className="block md:hidden max-w-[340px] mx-auto">
                 <Carousel
                     opts={{
                         align: "start",
@@ -75,12 +75,12 @@ export function WebsitesCarousel() {
                             stopOnInteraction: false,
                         })
                     ]}
-                    className="w-full h-[500px]"
+                    className="w-full h-80"
                 >
-                    <CarouselContent className="-mt-4 h-[500px]">
+                    <CarouselContent className="-mt-1 h-80">
                         {websites.map((site) => (
-                            <CarouselItem key={site.id} className="pt-4 basis-1/3">
-                                <div className="h-full">
+                            <CarouselItem key={site.id} className="pt-1 basis-1/3">
+                                <div className="h-full px-4 py-1">
                                     <WebsiteCard site={site} />
                                 </div>
                             </CarouselItem>
