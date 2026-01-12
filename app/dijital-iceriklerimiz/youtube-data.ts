@@ -17,7 +17,7 @@ export const halisBayancukChannels = [
         description: "Ebu Hanzala Hoca's sermons and lectures in Russian.",
         image: "/images/halisbayancuk-yabanci-logo.jpg",
         background: "/images/halisbayancuk-eng-arkaplan.jpeg",
-        url: "https://alpha.tevhiddersleri.org/kanallar/halis-bayancuk-russian",
+        url: "https://www.youtube.com/@%D0%A5%D0%B0%D0%BB%D0%B8%D1%81%D0%91%D0%B0%D1%8F%D0%BD%D1%87%D1%83%D0%BA",
         buttonText: "Kanala Git"
     },
     {
@@ -27,7 +27,7 @@ export const halisBayancukChannels = [
         description: "Predigten und Vorträge von Ebu Hanzala Hoca auf Deutsch.",
         image: "/images/halisbayancuk-yabanci-logo.jpg",
         background: "/images/halisbayancuk-eng-arkaplan.jpeg",
-        url: "https://alpha.tevhiddersleri.org/kanallar/halis-bayancuk-deutsch",
+        url: "https://www.youtube.com/@HalisBayancukDeutsch",
         buttonText: "Kanala Git"
     },
     {
@@ -37,7 +37,7 @@ export const halisBayancukChannels = [
         description: "Lectures and insights by Ebu Hanzala Hoca in English.",
         image: "/images/halisbayancuk-yabanci-logo.jpg",
         background: "/images/halisbayancuk-eng-arkaplan.jpeg",
-        url: "https://alpha.tevhiddersleri.org/kanallar/halis-bayancuk-english",
+        url: "https://www.youtube.com/@HalisBayancukEnglish",
         buttonText: "Kanala Git"
     },
     {
@@ -47,7 +47,7 @@ export const halisBayancukChannels = [
         description: "Conférences et rappels d'Ebu Hanzala Hoca en français.",
         image: "/images/halisbayancuk-yabanci-logo.jpg",
         background: "/images/halisbayancuk-eng-arkaplan.jpeg",
-        url: "https://alpha.tevhiddersleri.org/kanallar/halis-bayancuk-francais",
+        url: "https://www.youtube.com/@HalisBayancukFran%C3%A7ais",
         buttonText: "Kanala Git"
     },
     {
@@ -57,7 +57,7 @@ export const halisBayancukChannels = [
         description: "Mafundisho ya Ebu Hanzala Hoca kwa Kiswahili.",
         image: "/images/halisbayancuk-yabanci-logo.jpg",
         background: "/images/halisbayancuk-eng-arkaplan.jpeg",
-        url: "https://alpha.tevhiddersleri.org/kanallar/halis-bayancuk-kiswahili",
+        url: "https://www.youtube.com/@HalisBayancukKiswahili",
         buttonText: "Kanala Git"
     },
     {
@@ -67,7 +67,7 @@ export const halisBayancukChannels = [
         description: "Casharada iyo muxaadaraadka Ebu Hanzala Hoca ee Soomaaliga.",
         image: "/images/halisbayancuk-yabanci-logo.jpg",
         background: "/images/halisbayancuk-eng-arkaplan.jpeg",
-        url: "https://alpha.tevhiddersleri.org/kanallar/halis-bayancuk-soomaali",
+        url: "https://www.youtube.com/@HalisBayancukSoomaali",
         buttonText: "Kanala Git"
     },
     {
@@ -77,7 +77,7 @@ export const halisBayancukChannels = [
         description: "Lezingen en lessen van Ebu Hanzala Hoca in het Nederlands.",
         image: "/images/halisbayancuk-yabanci-logo.jpg",
         background: "/images/halisbayancuk-eng-arkaplan.jpeg",
-        url: "https://alpha.tevhiddersleri.org/kanallar/halis-bayancuk-dutch",
+        url: "https://www.youtube.com/@HalisBayancukDutch",
         buttonText: "Kanala Git"
     }
 ];
@@ -142,8 +142,8 @@ export const otherChannels = [
         title: "Bizim Dünyamız",
         description: "Çocuklar için İslami ahlakı öğreten çizgi filmler, eğitici animasyonlar ve ailece izlenebilecek neşeli içerikler.",
         image: "/images/bizimdunyamiz.jpg",
-        background: "/images/bizimcocuklar.jpg",
-        url: "https://www.youtube.com/@BizimDunyamiz",
+        background: "/images/kelime-dunyasi-basliyor.jpg",
+        url: "https://www.youtube.com/@_bizimdunyamiz",
         buttonText: "Kanala Git",
         type: "bizim-dunyammiz"
     },

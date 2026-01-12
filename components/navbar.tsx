@@ -160,24 +160,14 @@ export function Navbar() {
                         </span>
                       </NavigationMenuTrigger>
                       <NavigationMenuContent className="bg-transparent border-none shadow-none mt-2 animate-in fade-in slide-in-from-top-1 duration-200">
-                        <ul className={cn(
-                          "flex flex-col w-[240px] gap-2 p-2 rounded-xl backdrop-blur-xl transition-all duration-300",
-                          isScrolled
-                            ? "bg-background/80 border border-border/40 shadow-xl"
-                            : "bg-black/10 border border-white/10 shadow-lg"
-                        )}>
+                        <ul className="flex flex-col w-[240px] gap-2 p-2 rounded-xl backdrop-blur-xl transition-all duration-300 bg-background/80 border border-border/40 shadow-xl">
                           {item.children.map((child, idx) => (
                             <ListItem
                               key={child.href}
                               title={child.label}
                               href={child.href}
                               index={idx}
-                              className={cn(
-                                "transition-all duration-300 font-medium py-2 px-3 rounded-lg",
-                                isScrolled
-                                  ? "text-foreground hover:bg-primary/10 hover:text-primary"
-                                  : "text-white hover:bg-white/10 hover:text-white"
-                              )}
+                              className="transition-all duration-300 font-medium py-2 px-3 rounded-lg text-foreground hover:bg-primary/10 hover:text-primary"
                             />
                           ))}
                         </ul>

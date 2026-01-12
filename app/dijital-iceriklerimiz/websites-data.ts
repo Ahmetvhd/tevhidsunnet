@@ -52,7 +52,7 @@ export const websites = [
     {
         id: 6,
         title: "Tevhid Kitap",
-        url: "https://tevhidkitap.com/",
+        url: "https://www.tevhidkitap.net/?srsltid=AfmBOoq8uD1L-gfZ1jAq_Ibos-gOYqEL5SRtlgcLX5Et2x0_yK5mBbJC",
         image: "/images/tevhid-kitap-logo.png",
         background: "/images/tevhid-kitap-arkaplan2.png",
         description: "tevhidkitap.com",

@@ -4,25 +4,25 @@ export const tevhidDergisiIssues = [
         id: 152,
         title: "Tevhid Dergisi - Sayı 152",
         image: "/images/152.sayi.jpg",
-        url: "https://tevhiddergisi.org/"
+        url: "https://tevhiddergisi.org/Dergiler/TD_152/"
     },
     {
         id: 151,
         title: "Tevhid Dergisi - Sayı 151",
         image: "/images/151.sayi.jpg",
-        url: "https://tevhiddergisi.org/"
+        url: "https://tevhiddergisi.org/Dergiler/TD_151/"
     },
     {
         id: 150,
         title: "Tevhid Dergisi - Sayı 150",
         image: "/images/150.sayi.jpg",
-        url: "https://tevhiddergisi.org/"
+        url: "https://tevhiddergisi.org/Dergiler/TD_150/"
     },
     {
         id: 149,
         title: "Tevhid Dergisi - Sayı 149",
         image: "/images/149.sayi.jpeg",
-        url: "https://tevhiddergisi.org/"
+        url: "https://tevhiddergisi.org/Dergiler/TD_149/"
     }
 ];
 

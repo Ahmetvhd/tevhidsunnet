@@ -224,7 +224,7 @@ const SocialIcon = ({ type, className }: { type: string, className?: string }) =
 
 function SocialMediaCard({ item }: { item: any }) {
     return (
-        <Card className="group relative aspect-square w-full max-w-[220px] mx-auto overflow-hidden border border-border/40 bg-card shadow-md hover:shadow-2xl hover:-translate-y-1 hover:border-primary/20 transition-all duration-500 touch-manipulation">
+        <Card className="group relative aspect-square w-full max-w-[240px] mx-auto overflow-hidden border border-border/40 bg-card shadow-md hover:shadow-2xl hover:-translate-y-1 hover:border-primary/20 transition-all duration-500 touch-manipulation">
             {/* Arka Plan Görseli */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -270,7 +270,7 @@ function SocialMediaCard({ item }: { item: any }) {
                 </h3>
 
                 {/* Sosyal Medya İkonları */}
-                <div className="flex flex-wrap justify-center gap-2 mb-3 w-full">
+                <div className="flex flex-wrap justify-center gap-1.5 mb-3 w-full">
                     {item.links.map((link: any, index: number) => {
                         // Determine styling based on link type for hover effects
                         let hoverClass = "";

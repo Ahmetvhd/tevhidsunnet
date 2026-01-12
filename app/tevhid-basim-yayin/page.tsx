@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { cinzel } from "@/lib/fonts";
 import type { Metadata } from "next";
 import { Magazine3D } from "@/components/book-3d";
+import { tevhidDergisiIssues, tevhidCocukIssues, books } from "./data";
 
 
 export const metadata: Metadata = {
@@ -76,9 +77,11 @@ export default function TevhidBasimYayinPage() {
                             </div>
 
                             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                                <Button size="lg" className="h-12 px-8 text-base">
-                                    <BookOpen className="mr-2 h-5 w-5" />
-                                    Sayıyı Oku
+                                <Button size="lg" className="h-12 px-8 text-base" asChild>
+                                    <Link href="https://tevhiddergisi.org/Dergiler/TD_153/" target="_blank">
+                                        <BookOpen className="mr-2 h-5 w-5" />
+                                        Sayıyı Oku
+                                    </Link>
                                 </Button>
                                 <Button size="lg" variant="outline" className="h-12 px-8 text-base" asChild>
                                     <Link href="https://tevhiddergisi.org/tevhid-dergisi/" target="_blank">
@@ -104,77 +107,26 @@ export default function TevhidBasimYayinPage() {
 
                     {/* Desktop Grid - Hidden on Mobile */}
                     <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
-                        {/* Sayı 152 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                            <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                <Magazine3D
-                                    src="/images/152.sayi.jpg"
-                                    alt="Tevhid Dergisi Sayı 152"
-                                />
-                            </div>
-                            <CardContent className="pt-6 bg-card border-t border-border/10">
-                                <h3 className="font-semibold text-lg leading-tight mb-2">
-                                    Tevhid Dergisi - Sayı 152
-                                </h3>
-                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
-                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                </Button>
-                            </CardContent>
-                        </Card>
-
-                        {/* Sayı 151 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                            <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                <Magazine3D
-                                    src="/images/151.sayi.jpg"
-                                    alt="Tevhid Dergisi Sayı 151"
-                                />
-                            </div>
-                            <CardContent className="pt-6 bg-card border-t border-border/10">
-                                <h3 className="font-semibold text-lg leading-tight mb-2">
-                                    Tevhid Dergisi - Sayı 151
-                                </h3>
-                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
-                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                </Button>
-                            </CardContent>
-                        </Card>
-
-                        {/* Sayı 150 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                            <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                <Magazine3D
-                                    src="/images/150.sayi.jpg"
-                                    alt="Tevhid Dergisi Sayı 150"
-                                />
-                            </div>
-                            <CardContent className="pt-6 bg-card border-t border-border/10">
-                                <h3 className="font-semibold text-lg leading-tight mb-2">
-                                    Tevhid Dergisi - Sayı 150
-                                </h3>
-                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
-                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                </Button>
-                            </CardContent>
-                        </Card>
-
-                        {/* Sayı 149 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                            <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                <Magazine3D
-                                    src="/images/149.sayi.jpeg"
-                                    alt="Tevhid Dergisi Sayı 149"
-                                />
-                            </div>
-                            <CardContent className="pt-6 bg-card border-t border-border/10">
-                                <h3 className="font-semibold text-lg leading-tight mb-2">
-                                    Tevhid Dergisi - Sayı 149
-                                </h3>
-                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
-                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                </Button>
-                            </CardContent>
-                        </Card>
+                        {tevhidDergisiIssues.map((issue) => (
+                            <Card key={issue.id} className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
+                                <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
+                                    <Magazine3D
+                                        src={issue.image}
+                                        alt={issue.title}
+                                    />
+                                </div>
+                                <CardContent className="pt-6 bg-card border-t border-border/10">
+                                    <h3 className="font-semibold text-lg leading-tight mb-2">
+                                        {issue.title}
+                                    </h3>
+                                    <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors" asChild>
+                                        <Link href={issue.url} target="_blank">
+                                            İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                        </Link>
+                                    </Button>
+                                </CardContent>
+                            </Card>
+                        ))}
                     </div>
 
                     {/* Mobile Carousel - Visible only on Mobile */}
@@ -187,85 +139,28 @@ export default function TevhidBasimYayinPage() {
                             className="w-full"
                         >
                             <CarouselContent className="-ml-4">
-                                {/* Sayı 152 */}
-                                <CarouselItem className="pl-4 basis-[85%]">
-                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                            <Magazine3D
-                                                src="/images/152.sayi.jpg"
-                                                alt="Tevhid Dergisi Sayı 152"
-                                            />
-                                        </div>
-                                        <CardContent className="pt-6 bg-card border-t border-border/10">
-                                            <h3 className="font-semibold text-lg leading-tight mb-2">
-                                                Tevhid Dergisi - Sayı 152
-                                            </h3>
-                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
-                                                İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                            </Button>
-                                        </CardContent>
-                                    </Card>
-                                </CarouselItem>
-
-                                {/* Sayı 151 */}
-                                <CarouselItem className="pl-4 basis-[85%]">
-                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                            <Magazine3D
-                                                src="/images/151.sayi.jpg"
-                                                alt="Tevhid Dergisi Sayı 151"
-                                            />
-                                        </div>
-                                        <CardContent className="pt-6 bg-card border-t border-border/10">
-                                            <h3 className="font-semibold text-lg leading-tight mb-2">
-                                                Tevhid Dergisi - Sayı 151
-                                            </h3>
-                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
-                                                İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                            </Button>
-                                        </CardContent>
-                                    </Card>
-                                </CarouselItem>
-
-                                {/* Sayı 150 */}
-                                <CarouselItem className="pl-4 basis-[85%]">
-                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                            <Magazine3D
-                                                src="/images/150.sayi.jpg"
-                                                alt="Tevhid Dergisi Sayı 150"
-                                            />
-                                        </div>
-                                        <CardContent className="pt-6 bg-card border-t border-border/10">
-                                            <h3 className="font-semibold text-lg leading-tight mb-2">
-                                                Tevhid Dergisi - Sayı 150
-                                            </h3>
-                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
-                                                İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                            </Button>
-                                        </CardContent>
-                                    </Card>
-                                </CarouselItem>
-
-                                {/* Sayı 149 */}
-                                <CarouselItem className="pl-4 basis-[85%]">
-                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                            <Magazine3D
-                                                src="/images/149.sayi.jpeg"
-                                                alt="Tevhid Dergisi Sayı 149"
-                                            />
-                                        </div>
-                                        <CardContent className="pt-6 bg-card border-t border-border/10">
-                                            <h3 className="font-semibold text-lg leading-tight mb-2">
-                                                Tevhid Dergisi - Sayı 149
-                                            </h3>
-                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
-                                                İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                            </Button>
-                                        </CardContent>
-                                    </Card>
-                                </CarouselItem>
+                                {tevhidDergisiIssues.map((issue) => (
+                                    <CarouselItem key={issue.id} className="pl-4 basis-[85%]">
+                                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
+                                            <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
+                                                <Magazine3D
+                                                    src={issue.image}
+                                                    alt={issue.title}
+                                                />
+                                            </div>
+                                            <CardContent className="pt-6 bg-card border-t border-border/10">
+                                                <h3 className="font-semibold text-lg leading-tight mb-2">
+                                                    {issue.title}
+                                                </h3>
+                                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors" asChild>
+                                                    <Link href={issue.url} target="_blank">
+                                                        İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                                    </Link>
+                                                </Button>
+                                            </CardContent>
+                                        </Card>
+                                    </CarouselItem>
+                                ))}
                             </CarouselContent>
                             <div className="flex justify-center gap-2 mt-4">
                                 <CarouselPrevious className="static translate-y-0 translate-x-0 h-8 w-8" />
@@ -325,9 +220,11 @@ export default function TevhidBasimYayinPage() {
                             </div>
 
                             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                                <Button size="lg" className="h-12 px-8 text-base">
-                                    <BookOpen className="mr-2 h-5 w-5" />
-                                    Sayıyı İncele
+                                <Button size="lg" className="h-12 px-8 text-base" asChild>
+                                    <Link href="https://tevhiddergisi.org/tevhid-cocuk-dergisi/TC_31/" target="_blank">
+                                        <BookOpen className="mr-2 h-5 w-5" />
+                                        Sayıyı İncele
+                                    </Link>
                                 </Button>
                                 <Button size="lg" variant="outline" className="h-12 px-8 text-base" asChild>
                                     <Link href="https://tevhiddergisi.org/tevhid-cocuk-dergisi/" target="_blank">
@@ -353,77 +250,26 @@ export default function TevhidBasimYayinPage() {
 
                     {/* Desktop Grid - Hidden on Mobile */}
                     <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
-                        {/* Sayı 30 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                            <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                <Magazine3D
-                                    src="/images/30.sayi.jpg"
-                                    alt="Tevhid Çocuk Sayı 30"
-                                />
-                            </div>
-                            <CardContent className="pt-6 bg-card border-t border-border/10">
-                                <h3 className="font-semibold text-lg leading-tight mb-2">
-                                    Tevhid Çocuk - Sayı 30
-                                </h3>
-                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
-                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                </Button>
-                            </CardContent>
-                        </Card>
-
-                        {/* Sayı 29 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                            <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                <Magazine3D
-                                    src="/images/29.sayi.jpeg"
-                                    alt="Tevhid Çocuk Sayı 29"
-                                />
-                            </div>
-                            <CardContent className="pt-6 bg-card border-t border-border/10">
-                                <h3 className="font-semibold text-lg leading-tight mb-2">
-                                    Tevhid Çocuk - Sayı 29
-                                </h3>
-                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
-                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                </Button>
-                            </CardContent>
-                        </Card>
-
-                        {/* Sayı 28 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                            <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                <Magazine3D
-                                    src="/images/28.sayi.jpg"
-                                    alt="Tevhid Çocuk Sayı 28"
-                                />
-                            </div>
-                            <CardContent className="pt-6 bg-card border-t border-border/10">
-                                <h3 className="font-semibold text-lg leading-tight mb-2">
-                                    Tevhid Çocuk - Sayı 28
-                                </h3>
-                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
-                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                </Button>
-                            </CardContent>
-                        </Card>
-
-                        {/* Sayı 27 */}
-                        <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                            <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                <Magazine3D
-                                    src="/images/27.sayi.jpg"
-                                    alt="Tevhid Çocuk Sayı 27"
-                                />
-                            </div>
-                            <CardContent className="pt-6 bg-card border-t border-border/10">
-                                <h3 className="font-semibold text-lg leading-tight mb-2">
-                                    Tevhid Çocuk - Sayı 27
-                                </h3>
-                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
-                                    İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                </Button>
-                            </CardContent>
-                        </Card>
+                        {tevhidCocukIssues.map((issue) => (
+                            <Card key={issue.id} className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
+                                <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
+                                    <Magazine3D
+                                        src={issue.image}
+                                        alt={issue.title}
+                                    />
+                                </div>
+                                <CardContent className="pt-6 bg-card border-t border-border/10">
+                                    <h3 className="font-semibold text-lg leading-tight mb-2">
+                                        {issue.title}
+                                    </h3>
+                                    <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors" asChild>
+                                        <Link href={issue.url} target="_blank">
+                                            İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                        </Link>
+                                    </Button>
+                                </CardContent>
+                            </Card>
+                        ))}
                     </div>
 
                     {/* Mobile Carousel - Visible only on Mobile */}
@@ -436,69 +282,28 @@ export default function TevhidBasimYayinPage() {
                             className="w-full"
                         >
                             <CarouselContent className="-ml-4">
-                                {/* Sayı 30 */}
-                                <CarouselItem className="pl-4 basis-[85%]">
-                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                            <Magazine3D
-                                                src="/images/30.sayi.jpg"
-                                                alt="Tevhid Çocuk Sayı 30"
-                                            />
-                                        </div>
-                                        <CardContent className="pt-6 bg-card border-t border-border/10">
-                                            <h3 className="font-semibold text-lg leading-tight mb-2">Tevhid Çocuk - Sayı 30</h3>
-                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">İncele & Oku <ArrowRight className="ml-2 h-4 w-4" /></Button>
-                                        </CardContent>
-                                    </Card>
-                                </CarouselItem>
-
-                                {/* Sayı 29 */}
-                                <CarouselItem className="pl-4 basis-[85%]">
-                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                            <Magazine3D
-                                                src="/images/29.sayi.jpeg"
-                                                alt="Tevhid Çocuk Sayı 29"
-                                            />
-                                        </div>
-                                        <CardContent className="pt-6 bg-card border-t border-border/10">
-                                            <h3 className="font-semibold text-lg leading-tight mb-2">Tevhid Çocuk - Sayı 29</h3>
-                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">İncele & Oku <ArrowRight className="ml-2 h-4 w-4" /></Button>
-                                        </CardContent>
-                                    </Card>
-                                </CarouselItem>
-
-                                {/* Sayı 28 */}
-                                <CarouselItem className="pl-4 basis-[85%]">
-                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                            <Magazine3D
-                                                src="/images/28.sayi.jpg"
-                                                alt="Tevhid Çocuk Sayı 28"
-                                            />
-                                        </div>
-                                        <CardContent className="pt-6 bg-card border-t border-border/10">
-                                            <h3 className="font-semibold text-lg leading-tight mb-2">Tevhid Çocuk - Sayı 28</h3>
-                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">İncele & Oku <ArrowRight className="ml-2 h-4 w-4" /></Button>
-                                        </CardContent>
-                                    </Card>
-                                </CarouselItem>
-
-                                {/* Sayı 27 */}
-                                <CarouselItem className="pl-4 basis-[85%]">
-                                    <Card className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                                        <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
-                                            <Magazine3D
-                                                src="/images/27.sayi.jpg"
-                                                alt="Tevhid Çocuk Sayı 27"
-                                            />
-                                        </div>
-                                        <CardContent className="pt-6 bg-card border-t border-border/10">
-                                            <h3 className="font-semibold text-lg leading-tight mb-2">Tevhid Çocuk - Sayı 27</h3>
-                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">İncele & Oku <ArrowRight className="ml-2 h-4 w-4" /></Button>
-                                        </CardContent>
-                                    </Card>
-                                </CarouselItem>
+                                {tevhidCocukIssues.map((issue) => (
+                                    <CarouselItem key={issue.id} className="pl-4 basis-[85%]">
+                                        <Card key={issue.id} className="overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
+                                            <div className="flex items-center justify-center bg-muted/30 p-10 overflow-hidden">
+                                                <Magazine3D
+                                                    src={issue.image}
+                                                    alt={issue.title}
+                                                />
+                                            </div>
+                                            <CardContent className="pt-6 bg-card border-t border-border/10">
+                                                <h3 className="font-semibold text-lg leading-tight mb-2">
+                                                    {issue.title}
+                                                </h3>
+                                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors" asChild>
+                                                    <Link href={issue.url} target="_blank">
+                                                        İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
+                                                    </Link>
+                                                </Button>
+                                            </CardContent>
+                                        </Card>
+                                    </CarouselItem>
+                                ))}
                             </CarouselContent>
                             <div className="flex justify-center gap-2 mt-4">
                                 <CarouselPrevious className="static translate-y-0 translate-x-0 h-8 w-8" />
@@ -544,13 +349,17 @@ export default function TevhidBasimYayinPage() {
                             </div>
 
                             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                                <Button size="lg" className="h-12 px-8 text-base">
-                                    <BookOpen className="mr-2 h-5 w-5" />
-                                    Kitabı İncele
+                                <Button size="lg" className="h-12 px-8 text-base" asChild>
+                                    <Link href="https://tevhiddersleri.org/kitaplar" target="_blank">
+                                        <BookOpen className="mr-2 h-5 w-5" />
+                                        Kitabı İncele
+                                    </Link>
                                 </Button>
-                                <Button size="lg" variant="outline" className="h-12 px-8 text-base">
-                                    <ArrowRight className="mr-2 h-5 w-5" />
-                                    Tüm Eserler
+                                <Button size="lg" variant="outline" className="h-12 px-8 text-base" asChild>
+                                    <Link href="https://tevhiddersleri.org/kitaplar" target="_blank">
+                                        <ArrowRight className="mr-2 h-5 w-5" />
+                                        Tüm Eserler
+                                    </Link>
                                 </Button>
                             </div>
                         </div>
@@ -587,24 +396,26 @@ export default function TevhidBasimYayinPage() {
 
                     {/* Desktop Grid - Hidden on Mobile */}
                     <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
-                        {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
-                            <Card key={index} className="overflow-hidden border border-primary/10 shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-all duration-500 group">
+                        {books.map((book) => (
+                            <Card key={book.id} className="overflow-hidden border border-primary/10 shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-all duration-500 group">
                                 <div className="flex items-center justify-center bg-muted/20 p-8 overflow-hidden">
                                     <Magazine3D
-                                        src="/images/book-cover.png"
-                                        alt={`Kitap ${index}`}
+                                        src={book.image}
+                                        alt={book.title}
                                         thickness="thick"
                                     />
                                 </div>
                                 <CardContent className="pt-6 bg-background">
                                     <h3 className="font-semibold text-lg leading-tight mb-2">
-                                        Tevhid Risalesi {index}
+                                        {book.title}
                                     </h3>
                                     <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
-                                        İslam akaidinin temellerinin işlendiği, başucu eseri niteliğinde bir çalışma.
+                                        {book.description}
                                     </p>
-                                    <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">
-                                        İncele & Satın Al <ArrowRight className="ml-2 h-4 w-4" />
+                                    <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors" asChild>
+                                        <Link href="https://tevhiddersleri.org/kitaplar" target="_blank">
+                                            İncele & Satın Al <ArrowRight className="ml-2 h-4 w-4" />
+                                        </Link>
                                     </Button>
                                 </CardContent>
                             </Card>
@@ -621,20 +432,24 @@ export default function TevhidBasimYayinPage() {
                             className="w-full"
                         >
                             <CarouselContent className="-ml-4">
-                                {[1, 2, 3, 4, 5, 6, 7, 8].map((index) => (
-                                    <CarouselItem key={index} className="pl-4 basis-[85%]">
+                                {books.map((book) => (
+                                    <CarouselItem key={book.id} className="pl-4 basis-[85%]">
                                         <Card className="overflow-hidden border border-primary/10 shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-all duration-500 group">
                                             <div className="flex items-center justify-center bg-muted/20 p-8 overflow-hidden">
                                                 <Magazine3D
-                                                    src="/images/book-cover.png"
-                                                    alt={`Kitap ${index}`}
+                                                    src={book.image}
+                                                    alt={book.title}
                                                     thickness="thick"
                                                 />
                                             </div>
                                             <CardContent className="pt-6 bg-background">
-                                                <h3 className="font-semibold text-lg leading-tight mb-2">Tevhid Risalesi {index}</h3>
-                                                <p className="text-sm text-muted-foreground line-clamp-2 mb-4">İslam akaidinin temellerinin işlendiği, başucu eseri niteliğinde bir çalışma.</p>
-                                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors">İncele & Satın Al <ArrowRight className="ml-2 h-4 w-4" /></Button>
+                                                <h3 className="font-semibold text-lg leading-tight mb-2">{book.title}</h3>
+                                                <p className="text-sm text-muted-foreground line-clamp-2 mb-4">{book.description}</p>
+                                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors" asChild>
+                                                    <Link href="https://tevhiddersleri.org/kitaplar" target="_blank">
+                                                        İncele & Satın Al <ArrowRight className="ml-2 h-4 w-4" />
+                                                    </Link>
+                                                </Button>
                                             </CardContent>
                                         </Card>
                                     </CarouselItem>

@@ -37,9 +37,50 @@ function useMap() {
   return context;
 }
 
-const defaultStyles = {
-  dark: "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json",
-  light: "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json",
+const defaultStyles: {
+  dark: MapLibreGL.StyleSpecification;
+  light: MapLibreGL.StyleSpecification;
+} = {
+  dark: {
+    version: 8 as const,
+    sources: {
+      osm: {
+        type: "raster",
+        tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+        tileSize: 256,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }
+    },
+    layers: [
+      {
+        id: "osm",
+        type: "raster",
+        source: "osm",
+        minzoom: 0,
+        maxzoom: 19
+      }
+    ]
+  },
+  light: {
+    version: 8 as const,
+    sources: {
+      osm: {
+        type: "raster",
+        tiles: ["https://tile.openstreetmap.org/{z}/{x}/{y}.png"],
+        tileSize: 256,
+        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      }
+    },
+    layers: [
+      {
+        id: "osm",
+        type: "raster",
+        source: "osm",
+        minzoom: 0,
+        maxzoom: 19
+      }
+    ]
+  }
 };
 
 type MapStyleOption = string | MapLibreGL.StyleSpecification;

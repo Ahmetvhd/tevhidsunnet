@@ -116,7 +116,7 @@ export const otherSocial = [
         id: "bizim-dunyamiz",
         title: "Bizim Dünyamız",
         image: "/images/bizimdunyamiz.jpg",
-        background: "/images/bizimcocuklar.jpg",
+        background: "/images/kelime-dunyasi-basliyor.jpg",
         links: [
             { type: "x", url: "https://x.com/_bizimdunyamiz" },
             { type: "instagram", url: "https://www.instagram.com/bizim.dunyamiz__/" },

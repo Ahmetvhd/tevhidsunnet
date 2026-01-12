@@ -324,7 +324,7 @@ export default function SubelerimizPage() {
                                 <Card
                                     key={sube.id}
                                     className={cn(
-                                        "overflow-hidden transition-all duration-300 hover:-translate-y-1 group relative",
+                                        "overflow-hidden transition-all duration-300 hover:-translate-y-1 group relative p-0",
                                         sube.isMerkez
                                             ? "border-primary/50 shadow-lg ring-2 ring-primary/20"
                                             : "hover:shadow-lg"
@@ -338,11 +338,11 @@ export default function SubelerimizPage() {
                                             </div>
                                         </div>
                                     )}
-                                    <div className="relative h-40 w-full overflow-hidden">
+                                    <div className="relative h-56 w-full overflow-hidden">
                                         {/* Mini Interactive Map */}
                                         <Map
                                             center={[sube.longitude, sube.latitude]}
-                                            zoom={14}
+                                            zoom={15}
                                         >
                                             <MapMarker
                                                 longitude={sube.longitude}
