@@ -236,7 +236,7 @@ function SocialMediaCard({ item }: { item: any }) {
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background/95" />
             </div>
 
-            <CardContent className="relative z-10 p-3 flex flex-col items-center justify-center text-center h-full">
+            <CardContent className="relative z-10 px-2 py-4 flex flex-col items-center justify-center text-center h-full">
                 {/* Profil Fotoğrafı */}
                 <div className="relative mb-2 mt-1">
                     <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-primary/40 to-amber-500/0 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
@@ -260,17 +260,17 @@ function SocialMediaCard({ item }: { item: any }) {
                     )}
                 </div>
                 {item.language ? (
-                    <span className="text-[10px] font-medium text-muted-foreground/60 mb-1">{item.language}</span>
+                    <span className="text-[10px] font-medium text-muted-foreground/60 ">{item.language}</span>
                 ) : (
-                    <span className="text-[5px] font-medium text-transparent mb-1 select-none">Boşluk</span>
+                    <span className="text-[5px] font-medium text-transparent mb-0.05 select-none">Boşluk</span>
                 )}
 
-                <h3 className="text-sm font-bold tracking-tight group-hover:text-primary transition-colors duration-300 mb-2 line-clamp-2">
+                <h3 className="text-sm font-bold tracking-tight group-hover:text-primary transition-colors duration-300 mb-1 line-clamp-2">
                     {item.title}
                 </h3>
 
                 {/* Sosyal Medya İkonları */}
-                <div className="flex flex-wrap justify-center gap-1.5 mb-3 w-full">
+                <div className="flex flex-nowrap justify-center gap-1 mb-3 w-full overflow-visible">
                     {item.links.map((link: any, index: number) => {
                         // Determine styling based on link type for hover effects
                         let hoverClass = "";
@@ -287,8 +287,8 @@ function SocialMediaCard({ item }: { item: any }) {
 
                         return (
                             <Link key={index} href={link.url} target="_blank" className="group/icon active:scale-95 transition-transform">
-                                <div className={`w-8 h-8 rounded-lg bg-muted/60 border border-border/40 flex items-center justify-center transition-all duration-300 hover:shadow-md ${hoverClass}`}>
-                                    <SocialIcon type={link.type} className={`w-3.5 h-3.5 ${iconClass}`} />
+                                <div className={`w-7 h-7 rounded-md bg-muted/60 border border-border/40 flex items-center justify-center transition-all duration-300 hover:shadow-md ${hoverClass}`}>
+                                    <SocialIcon type={link.type} className={`w-3 h-3 ${iconClass}`} />
                                 </div>
                             </Link>
                         );
@@ -588,7 +588,7 @@ export default function DijitalIceriklerimizPage() {
                                 <Carousel opts={{ align: "start", loop: true }} className="w-full">
                                     <CarouselContent className="-ml-2">
                                         {halisBayancukSocial.map((item) => (
-                                            <CarouselItem key={item.id} className="pl-2 basis-[60%]">
+                                            <CarouselItem key={item.id} className="pl-2 basis-[65%] sm:basis-[50%]">
                                                 <SocialMediaCard item={item} />
                                             </CarouselItem>
                                         ))}
@@ -630,7 +630,7 @@ export default function DijitalIceriklerimizPage() {
                                 <Carousel opts={{ align: "start", loop: true }} className="w-full">
                                     <CarouselContent className="-ml-2">
                                         {tevhidDersleriSocial.map((item) => (
-                                            <CarouselItem key={item.id} className="pl-2 basis-[60%]">
+                                            <CarouselItem key={item.id} className="pl-2 basis-[65%] sm:basis-[50%]">
                                                 <SocialMediaCard item={item} />
                                             </CarouselItem>
                                         ))}
@@ -674,7 +674,7 @@ export default function DijitalIceriklerimizPage() {
                                 <Carousel opts={{ align: "start", loop: true }} className="w-full">
                                     <CarouselContent className="-ml-2">
                                         {otherSocial.map((item) => (
-                                            <CarouselItem key={item.id} className="pl-2 basis-[60%]">
+                                            <CarouselItem key={item.id} className="pl-2 basis-[65%] sm:basis-[50%]">
                                                 <SocialMediaCard item={item} />
                                             </CarouselItem>
                                         ))}
