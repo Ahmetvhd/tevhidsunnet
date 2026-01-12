@@ -197,7 +197,7 @@ export default function InsaniYardimPage() {
                         </div>
 
                         {/* Featured Image with Video Link */}
-                        <Card className="overflow-hidden mb-8 group rounded-2xl">
+                        <Card className="overflow-hidden mb-8 group rounded-2xl p-0">
                             <Link href="https://www.youtube.com/watch?v=pvWpwrASHXY&t=7s" target="_blank" className="block relative">
                                 <div className="relative aspect-video w-full overflow-hidden bg-muted">
                                     <Image
