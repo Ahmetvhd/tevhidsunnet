@@ -238,7 +238,7 @@ function SocialMediaCard({ item }: { item: any }) {
 
             <CardContent className="relative z-10 px-2 py-4 flex flex-col items-center justify-center text-center h-full">
                 {/* Profil Fotoğrafı */}
-                <div className="relative mb-2 mt-1">
+                <div className="relative mb-1 mt-1">
                     <div className="absolute -inset-2 rounded-full bg-gradient-to-tr from-primary/40 to-amber-500/0 blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                     <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-background shadow-xl ring-1 ring-border group-hover:ring-primary/50 transition-all duration-300">
                         <Image
@@ -249,7 +249,7 @@ function SocialMediaCard({ item }: { item: any }) {
                         />
                     </div>
                     {item.language && (
-                        <Badge className="absolute -bottom-1.5 left-1/2 -translate-x-1/2 px-2 py-0.5 text-[9px] bg-primary text-primary-foreground border border-primary-foreground/20 shadow-sm whitespace-nowrap">
+                        <Badge className="absolute -bottom-1 left-1/2 -translate-x-1/2 px-2 py-0.5 text-[9px] bg-primary text-primary-foreground border border-primary-foreground/20 shadow-sm whitespace-nowrap">
                             Sosyal Medya
                         </Badge>
                     )}
@@ -265,12 +265,12 @@ function SocialMediaCard({ item }: { item: any }) {
                     <span className="text-[5px] font-medium text-transparent mb-0.05 select-none">Boşluk</span>
                 )}
 
-                <h3 className="text-sm font-bold tracking-tight group-hover:text-primary transition-colors duration-300 mb-1 line-clamp-2">
+                <h3 className="text-sm font-bold tracking-tight group-hover:text-primary transition-colors duration-300 mb-0.5 line-clamp-2">
                     {item.title}
                 </h3>
 
                 {/* Sosyal Medya İkonları */}
-                <div className="flex flex-nowrap justify-center gap-1 mb-3 w-full overflow-visible">
+                <div className="flex flex-nowrap justify-center gap-1 mb-0.05 w-full overflow-visible">
                     {item.links.map((link: any, index: number) => {
                         // Determine styling based on link type for hover effects
                         let hoverClass = "";
