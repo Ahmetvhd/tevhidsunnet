@@ -430,15 +430,13 @@ export default function TevhidBasimYayinPage() {
                     <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
                         {books.map((book) => (
                             <Card key={book.id} className="flex flex-col h-full overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                                <div className="relative aspect-[3/4] overflow-hidden">
+                                <div className="w-full relative aspect-[3/4] overflow-hidden flex-shrink-0">
                                     <Image
                                         src={book.image}
                                         alt={book.title}
                                         fill
-                                        className="object-cover"
+                                        className="object-cover transition-transform duration-700 group-hover:scale-110"
                                     />
-                                    {/* Hover light effect */}
-                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out" />
                                 </div>
                                 <CardContent className="flex flex-col flex-grow pt-6 bg-background">
                                     <h3 className="font-semibold text-lg leading-tight mb-2">
@@ -482,15 +480,13 @@ export default function TevhidBasimYayinPage() {
                                 {books.map((book) => (
                                     <CarouselItem key={book.id} className="pl-4 basis-[85%]">
                                         <Card className="flex flex-col h-full overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
-                                            <div className="relative aspect-[3/4] overflow-hidden">
+                                            <div className="w-full relative aspect-[3/4] overflow-hidden flex-shrink-0">
                                                 <Image
                                                     src={book.image}
                                                     alt={book.title}
                                                     fill
-                                                    className="object-cover"
+                                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                                                 />
-                                                {/* Hover light effect */}
-                                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out" />
                                             </div>
                                             <CardContent className="flex flex-col flex-grow pt-6 bg-background">
                                                 <h3 className="font-semibold text-lg leading-tight mb-2">{book.title}</h3>

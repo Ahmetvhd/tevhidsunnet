@@ -73,7 +73,7 @@ export const books = [
     {
         id: 1,
         title: "La İlahe İllallah",
-        image: "/images/lailaheillallah.jpg",
+        image: "/images/lailaheillallah.png",
         description: "İslam'ın özü olan tevhid kelimesinin derinlemesine incelendiği temel bir eser.",
         reviewUrl: "https://tevhiddersleri.org/kitap/lailahe-illallah",
         actionUrl: "https://tevhidkitap.net/yarat%C4%B1l%C4%B1%C5%9F-gayesi-lailaheillallah",
@@ -82,7 +82,7 @@ export const books = [
     {
         id: 2,
         title: "İman Ettikten Sonra",
-        image: "/images/iman-ettikten-sonra.jpg",
+        image: "/images/iman-ettikten-sonra.png",
         description: "İman iddiamızın ispatı ve salih amellerle tezyin edilmesi üzerine bir çalışma.",
         reviewUrl: "https://tevhiddersleri.org/kitap/iman-ettikten-sonra",
         actionUrl: "https://tevhidkitap.net/iman-ettikten-sonra",
@@ -91,7 +91,7 @@ export const books = [
     {
         id: 3,
         title: "Tüm Resullerin Ortak Müjdesi",
-        image: "/images/tum-resullerin-ortak-mujdesi.jpg",
+        image: "/images/ortakm.png",
         description: "Tüm peygamberlerin ortak mesajı olan Tevhid'in Nebevi metodla anlatımı.",
         reviewUrl: "https://tevhiddersleri.org/kitaplar",
         actionUrl: "https://tevhidkitap.net/tum-rasullerin-ortak-mujdesi",
@@ -100,7 +100,7 @@ export const books = [
     {
         id: 4,
         title: "Akide Dersleri",
-        image: "/images/akide.jpg",
+        image: "/images/akide.png",
         description: "Ehl-i Sünnet ve'l Cemaat akidesinin berrak ve anlaşılır bir özeti.",
         reviewUrl: "https://tevhiddersleri.org/kitaplar",
         actionUrl: "https://tevhidkitap.net/akide-dersleri",
@@ -109,7 +109,7 @@ export const books = [
     {
         id: 5,
         title: "4 Asıl",
-        image: "/images/4-asıl.webp",
+        image: "/images/4-asıl.png",
         description: "Her Müslüman'ın bilmesi gereken dörttemel esası açıklayan kıymetli bir risale.",
         reviewUrl: "https://tevhiddersleri.org/kitap/4-asil",
         actionUrl: "https://tevhidkitap.net/tevhid-ve-sirkin-anlasilmasinda-4-asil",
@@ -118,7 +118,7 @@ export const books = [
     {
         id: 6,
         title: "Kalp Katılığının Zararları",
-        image: "/images/kalp-katiliginin-zararlari.webp",
+        image: "/images/kalp-katiliginin-zararlari.png",
         description: "Manevi hastalıkların tedavisi ve kalbin ıslahı üzerine nasihatler.",
         reviewUrl: "https://tevhiddersleri.org/kitaplar",
         actionUrl: "https://tevhidkitap.net/kalp-katiliginin-zararlari",
@@ -127,7 +127,7 @@ export const books = [
     {
         id: 7,
         title: "Gençlerle Hasbihal",
-        image: "/images/gençlerle-hasbihal.jpg",
+        image: "/images/gençlerle-hasbihal.png",
         description: "Geleceğimizin teminatı gençlere yönelik akidevi ve ahlaki rehberlik.",
         reviewUrl: "https://tevhiddersleri.org/kitap/genclerle-hasbihal",
         actionUrl: "https://tevhidkitap.net/genclerle-hasbihal",
@@ -136,7 +136,7 @@ export const books = [
     {
         id: 8,
         title: "Tevhid Meali",
-        image: "/images/tevhid-meali.jpg",
+        image: "/images/tevhid-meali.png",
         description: "Kur'an-ı Kerim'in mesajını Tevhid ekseninde anlamak için hazırlanan çalışma.",
         reviewUrl: "https://tevhiddersleri.org/mealler",
         actionUrl: "https://tevhidkitap.net/tevhid-meali-kuran-i-kerim-orta-boy-su-yesili",
