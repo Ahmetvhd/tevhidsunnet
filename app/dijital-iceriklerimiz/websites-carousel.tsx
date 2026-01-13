@@ -75,9 +75,9 @@ export function WebsitesCarousel() {
                             stopOnInteraction: false,
                         })
                     ]}
-                    className="w-full h-80"
+                    className="w-full h-[420px]"
                 >
-                    <CarouselContent className="-mt-1 h-80">
+                    <CarouselContent className="-mt-1 h-[420px]">
                         {websites.map((site) => (
                             <CarouselItem key={site.id} className="pt-1 basis-1/3">
                                 <div className="h-full px-4 py-1">
