@@ -10,7 +10,7 @@ export const halisBayancukSocial = [
             { type: "x", url: "https://x.com/Halis_Bayancuk" },
             { type: "whatsapp", url: "https://whatsapp.com/channel/0029VaBAj4L5PO0ycHhP7g17" },
             { type: "dailymotion", url: "https://www.dailymotion.com/HalisBayancuk" },
-            { type: "telegram", url: "https://web.telegram.org/k/#@HalisBayancukHoca" }
+            { type: "telegram", url: "https://t.me/HalisBayancukHoca" }
         ]
     },
     {
@@ -44,7 +44,7 @@ export const tevhidDersleriSocial = [
         background: "/images/tevhiddersleriarkaplan.jpg",
         links: [
             { type: "x", url: "https://x.com/_tevhiddersleri" },
-            { type: "telegram", url: "https://web.telegram.org/k/#@tevhid_dersleri" }
+            { type: "telegram", url: "https://t.me/tevhid_dersleri" }
         ]
     },
     {
@@ -67,7 +67,8 @@ export const tevhidDersleriSocial = [
             { type: "x", url: "https://x.com/monotheismeng" },
             { type: "instagram", url: "https://www.instagram.com/monotheism.eng" },
             { type: "whatsapp", url: "https://whatsapp.com/channel/0029Vb77wnW4NViq7Lo3YY2Z" },
-            { type: "tiktok", url: "https://www.tiktok.com/@monotheism.eng" }
+            { type: "tiktok", url: "https://www.tiktok.com/@monotheism.eng" },
+            { type: "telegram", url: "https://t.me/monotheismeng" }
         ]
     },
     {
@@ -80,7 +81,7 @@ export const tevhidDersleriSocial = [
             { type: "x", url: "https://x.com/_Monotheismefr" },
             { type: "instagram", url: "https://www.instagram.com/monotheismefr" },
             { type: "tiktok", url: "https://www.tiktok.com/@monotheismefr" },
-            { type: "telegram", url: "https://web.telegram.org/k/#@monotheismefr1" },
+            { type: "telegram", url: "https://t.me/monotheismefr1" },
             { type: "facebook", url: "https://www.facebook.com/MonotheismeFR" }
         ]
     },
@@ -99,6 +100,38 @@ export const tevhidDersleriSocial = [
 ];
 
 export const otherSocial = [
+    {
+        id: "tevhid-meali",
+        title: "Tevhid Meali",
+        image: "/images/tevhidmealiikon.webp",
+        background: "/images/rabbimizdenmesajvar.jpeg",
+        links: [
+            { type: "x", url: "https://x.com/tevhidmeali" },
+            { type: "instagram", url: "https://www.instagram.com/tevhidmeali" },
+            { type: "telegram", url: "https://t.me/TevhidMealiii" }
+        ]
+    },
+    {
+        id: "tevhid-dergisi",
+        title: "Tevhid Dergisi",
+        image: "/images/tevhiddergisi.jpeg",
+        background: "/images/tevhiddergisi.jpeg",
+        links: [
+            { type: "whatsapp", url: "https://whatsapp.com/channel/0029VaB1lLV0wajkj9xgAm1f" },
+            { type: "telegram", url: "https://t.me/TevhidDergisii" }
+        ]
+    },
+    {
+        id: "tevhid-kitap",
+        title: "Tevhid Kitap",
+        image: "/images/tevhid-kitap-logo.png",
+        background: "/images/tevhid-kitap-arkaplan.jpeg",
+        links: [
+            { type: "x", url: "https://x.com/tevhidkitap_" },
+            { type: "instagram", url: "https://www.instagram.com/tevhidkitap_/" },
+            { type: "whatsapp", url: "https://whatsapp.com/channel/0029Va7U0h94Y9lhjRR4hI2C" }
+        ]
+    },
     {
         id: "ecir-kapisi",
         title: "Ecir Kapısı",
@@ -124,28 +157,6 @@ export const otherSocial = [
         ]
     },
     {
-        id: "tevhid-meali",
-        title: "Tevhid Meali",
-        image: "/images/tevhidmealiikon.webp",
-        background: "/images/rabbimizdenmesajvar.jpeg",
-        links: [
-            { type: "x", url: "https://x.com/tevhidmeali" },
-            { type: "instagram", url: "https://www.instagram.com/tevhidmeali" },
-            { type: "telegram", url: "https://web.telegram.org/k/#@TevhidMealiii" }
-        ]
-    },
-    {
-        id: "tevhid-kitap",
-        title: "Tevhid Kitap",
-        image: "/images/tevhid-kitap-logo.png",
-        background: "/images/tevhid-kitap-arkaplan.jpeg",
-        links: [
-            { type: "x", url: "https://x.com/tevhidkitap_" },
-            { type: "instagram", url: "https://www.instagram.com/tevhidkitap_/" },
-            { type: "whatsapp", url: "https://whatsapp.com/channel/0029Va7U0h94Y9lhjRR4hI2C" }
-        ]
-    },
-    {
         id: "tevhidi-uhanis",
         title: "Tevhidi Uyanış",
         image: "/images/tevhidi-uyanıs.jpg",
@@ -157,6 +168,15 @@ export const otherSocial = [
         ]
     },
     {
+        id: "tevhid-gundemi",
+        title: "Tevhid Gündemi",
+        image: "/images/tevhid-gundemi-logo.jpg",
+        background: "/images/tevhid-gundemi-arkaplan.jpeg",
+        links: [
+            { type: "x", url: "https://x.com/gundemi_tevhid" }
+        ]
+    },
+    {
         id: "tevhid-ekip",
         title: "Tevhid Ekip",
         image: "/images/tevhid-ekip-logo.jpg",
@@ -164,17 +184,8 @@ export const otherSocial = [
         links: [
             { type: "x", url: "https://x.com/tevhidekip_" },
             { type: "instagram", url: "https://www.instagram.com/tevhid__ekip/" },
-            { type: "telegram", url: "https://web.telegram.org/k/#@tevhidekip" },
+            { type: "telegram", url: "https://t.me/tevhidekip" },
             { type: "facebook", url: "https://www.facebook.com/EkipTevhid/" }
-        ]
-    },
-    {
-        id: "tevhid-gundemi",
-        title: "Tevhid Gündemi",
-        image: "/images/tevhid-gundemi-logo.jpg",
-        background: "/images/tevhid-gundemi-arkaplan.jpeg",
-        links: [
-            { type: "x", url: "https://x.com/gundemi_tevhid" }
         ]
     },
     {

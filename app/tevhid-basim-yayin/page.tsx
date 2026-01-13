@@ -116,14 +116,22 @@ export default function TevhidBasimYayinPage() {
                                     />
                                 </div>
                                 <CardContent className="pt-6 bg-card border-t border-border/10">
-                                    <h3 className="font-semibold text-lg leading-tight mb-2">
+                                    <h3 className="font-semibold text-lg leading-tight mb-4">
                                         {issue.title}
                                     </h3>
-                                    <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors" asChild>
-                                        <Link href={issue.url} target="_blank">
-                                            İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                        </Link>
-                                    </Button>
+                                    <div className="flex items-center gap-4">
+                                        <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors h-auto" asChild>
+                                            <Link href={issue.readUrl} target="_blank">
+                                                Oku
+                                            </Link>
+                                        </Button>
+                                        <span className="text-muted-foreground/30">|</span>
+                                        <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors h-auto" asChild>
+                                            <Link href={issue.actionUrl} target="_blank">
+                                                Satın Al <ArrowRight className="ml-1 h-4 w-4" />
+                                            </Link>
+                                        </Button>
+                                    </div>
                                 </CardContent>
                             </Card>
                         ))}
@@ -149,14 +157,22 @@ export default function TevhidBasimYayinPage() {
                                                 />
                                             </div>
                                             <CardContent className="pt-6 bg-card border-t border-border/10">
-                                                <h3 className="font-semibold text-lg leading-tight mb-2">
+                                                <h3 className="font-semibold text-lg leading-tight mb-4">
                                                     {issue.title}
                                                 </h3>
-                                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors" asChild>
-                                                    <Link href={issue.url} target="_blank">
-                                                        İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                                    </Link>
-                                                </Button>
+                                                <div className="flex items-center gap-4">
+                                                    <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors h-auto" asChild>
+                                                        <Link href={issue.readUrl} target="_blank">
+                                                            Oku
+                                                        </Link>
+                                                    </Button>
+                                                    <span className="text-muted-foreground/30">|</span>
+                                                    <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors h-auto" asChild>
+                                                        <Link href={issue.actionUrl} target="_blank">
+                                                            Satın Al <ArrowRight className="ml-1 h-4 w-4" />
+                                                        </Link>
+                                                    </Button>
+                                                </div>
                                             </CardContent>
                                         </Card>
                                     </CarouselItem>
@@ -259,14 +275,22 @@ export default function TevhidBasimYayinPage() {
                                     />
                                 </div>
                                 <CardContent className="pt-6 bg-card border-t border-border/10">
-                                    <h3 className="font-semibold text-lg leading-tight mb-2">
+                                    <h3 className="font-semibold text-lg leading-tight mb-4">
                                         {issue.title}
                                     </h3>
-                                    <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors" asChild>
-                                        <Link href={issue.url} target="_blank">
-                                            İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                        </Link>
-                                    </Button>
+                                    <div className="flex items-center gap-4">
+                                        <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors h-auto" asChild>
+                                            <Link href={issue.readUrl} target="_blank">
+                                                Oku
+                                            </Link>
+                                        </Button>
+                                        <span className="text-muted-foreground/30">|</span>
+                                        <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors h-auto" asChild>
+                                            <Link href={issue.actionUrl} target="_blank">
+                                                Satın Al <ArrowRight className="ml-1 h-4 w-4" />
+                                            </Link>
+                                        </Button>
+                                    </div>
                                 </CardContent>
                             </Card>
                         ))}
@@ -292,14 +316,22 @@ export default function TevhidBasimYayinPage() {
                                                 />
                                             </div>
                                             <CardContent className="pt-6 bg-card border-t border-border/10">
-                                                <h3 className="font-semibold text-lg leading-tight mb-2">
+                                                <h3 className="font-semibold text-lg leading-tight mb-4">
                                                     {issue.title}
                                                 </h3>
-                                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors" asChild>
-                                                    <Link href={issue.url} target="_blank">
-                                                        İncele & Oku <ArrowRight className="ml-2 h-4 w-4" />
-                                                    </Link>
-                                                </Button>
+                                                <div className="flex items-center gap-4">
+                                                    <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors h-auto" asChild>
+                                                        <Link href={issue.readUrl} target="_blank">
+                                                            Oku
+                                                        </Link>
+                                                    </Button>
+                                                    <span className="text-muted-foreground/30">|</span>
+                                                    <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors h-auto" asChild>
+                                                        <Link href={issue.actionUrl} target="_blank">
+                                                            Satın Al <ArrowRight className="ml-1 h-4 w-4" />
+                                                        </Link>
+                                                    </Button>
+                                                </div>
                                             </CardContent>
                                         </Card>
                                     </CarouselItem>
@@ -332,33 +364,33 @@ export default function TevhidBasimYayinPage() {
                                     Ayın Kitabı
                                 </h2>
                                 <p className="text-xl text-primary font-medium">
-                                    "Tevhid Risaleleri Külliyatı"
+                                    "Allah Sevgisi"
                                 </p>
                             </div>
 
                             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
                                 <p>
-                                    İslam akidesinin temel taşlarını, Kur'an ve Sünnet ışığında, anlaşılır bir dille ortaya koyan başucu eseri.
+                                    Müminin en belirgin vasfı olan 'Allah Sevgisi'ni Kur'an ve Sünnet penceresinden kalplere nakşeden eşsiz bir eser.
                                 </p>
                                 <blockquote className="border-l-4 border-primary pl-4 italic bg-background/50 p-4 rounded-r-lg">
-                                    "İlim, amelin imamıdır. Amel ise ona tabidir..."
+                                    "İman edenlerin Allah'a olan sevgileri ise çok daha kuvvetlidir." (Bakara, 165)
                                 </blockquote>
                                 <p>
-                                    Şirkten arınmış saf bir Tevhid inancı, sahih bir kulluk şuuru ve Nebevi metod üzere bir hayat inşası için.
+                                    Sevginin hakikatini, Allah'ı sevmenin alametlerini ve kalbi Allah sevgisiyle diri tutmanın yollarını bu eserde bulacaksınız.
                                 </p>
                             </div>
 
                             <div className="flex flex-col sm:flex-row gap-4 pt-4">
                                 <Button size="lg" className="h-12 px-8 text-base" asChild>
-                                    <Link href="https://tevhiddersleri.org/kitaplar" target="_blank">
+                                    <Link href="https://tevhidkitap.net/allah-sevgisi?search=Allah%20sevgisi" target="_blank">
                                         <BookOpen className="mr-2 h-5 w-5" />
-                                        Kitabı İncele
+                                        İncele
                                     </Link>
                                 </Button>
-                                <Button size="lg" variant="outline" className="h-12 px-8 text-base" asChild>
-                                    <Link href="https://tevhiddersleri.org/kitaplar" target="_blank">
+                                <Button size="lg" variant="outline" className="h-12 px-8 text-base bg-primary text-primary-foreground hover:bg-primary/90 hover:text-primary-foreground border-none" asChild>
+                                    <Link href="https://tevhidkitap.net/allah-sevgisi?search=Allah%20sevgisi" target="_blank">
                                         <ArrowRight className="mr-2 h-5 w-5" />
-                                        Tüm Eserler
+                                        Satın Al
                                     </Link>
                                 </Button>
                             </div>
@@ -369,7 +401,7 @@ export default function TevhidBasimYayinPage() {
 
                             <div className="flex items-center justify-center h-full w-full">
                                 <Magazine3D
-                                    src="/images/book-cover.png"
+                                    src="/images/Allah-sevgisi.webp"
                                     alt="Ayın Kitabı"
                                     size="large"
                                     thickness="thick"
@@ -397,26 +429,41 @@ export default function TevhidBasimYayinPage() {
                     {/* Desktop Grid - Hidden on Mobile */}
                     <div className="hidden md:grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
                         {books.map((book) => (
-                            <Card key={book.id} className="overflow-hidden border border-primary/10 shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-all duration-500 group">
-                                <div className="flex items-center justify-center bg-muted/20 p-8 overflow-hidden">
-                                    <Magazine3D
+                            <Card key={book.id} className="flex flex-col h-full overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
+                                <div className="relative aspect-[3/4] overflow-hidden">
+                                    <Image
                                         src={book.image}
                                         alt={book.title}
-                                        thickness="thick"
+                                        fill
+                                        className="object-cover"
                                     />
+                                    {/* Hover light effect */}
+                                    <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out" />
                                 </div>
-                                <CardContent className="pt-6 bg-background">
+                                <CardContent className="flex flex-col flex-grow pt-6 bg-background">
                                     <h3 className="font-semibold text-lg leading-tight mb-2">
                                         {book.title}
                                     </h3>
                                     <p className="text-sm text-muted-foreground line-clamp-2 mb-4">
                                         {book.description}
                                     </p>
-                                    <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors" asChild>
-                                        <Link href="https://tevhiddersleri.org/kitaplar" target="_blank">
-                                            İncele & Satın Al <ArrowRight className="ml-2 h-4 w-4" />
-                                        </Link>
-                                    </Button>
+                                    <div className="flex items-center gap-4 mt-auto">
+                                        {book.readUrl && (
+                                            <>
+                                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors h-auto" asChild>
+                                                    <Link href={book.readUrl} target="_blank">
+                                                        Oku
+                                                    </Link>
+                                                </Button>
+                                                <span className="text-muted-foreground/30">|</span>
+                                            </>
+                                        )}
+                                        <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors h-auto" asChild>
+                                            <Link href={book.actionUrl} target="_blank">
+                                                Satın Al <ArrowRight className="ml-1 h-4 w-4" />
+                                            </Link>
+                                        </Button>
+                                    </div>
                                 </CardContent>
                             </Card>
                         ))}
@@ -434,22 +481,37 @@ export default function TevhidBasimYayinPage() {
                             <CarouselContent className="-ml-4">
                                 {books.map((book) => (
                                     <CarouselItem key={book.id} className="pl-4 basis-[85%]">
-                                        <Card className="overflow-hidden border border-primary/10 shadow-2xl hover:shadow-[0_20px_50px_rgba(0,0,0,0.15)] transition-all duration-500 group">
-                                            <div className="flex items-center justify-center bg-muted/20 p-8 overflow-hidden">
-                                                <Magazine3D
+                                        <Card className="flex flex-col h-full overflow-hidden border border-primary/10 shadow-xl hover:shadow-2xl transition-all duration-500 group">
+                                            <div className="relative aspect-[3/4] overflow-hidden">
+                                                <Image
                                                     src={book.image}
                                                     alt={book.title}
-                                                    thickness="thick"
+                                                    fill
+                                                    className="object-cover"
                                                 />
+                                                {/* Hover light effect */}
+                                                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700 ease-in-out" />
                                             </div>
-                                            <CardContent className="pt-6 bg-background">
+                                            <CardContent className="flex flex-col flex-grow pt-6 bg-background">
                                                 <h3 className="font-semibold text-lg leading-tight mb-2">{book.title}</h3>
                                                 <p className="text-sm text-muted-foreground line-clamp-2 mb-4">{book.description}</p>
-                                                <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors" asChild>
-                                                    <Link href="https://tevhiddersleri.org/kitaplar" target="_blank">
-                                                        İncele & Satın Al <ArrowRight className="ml-2 h-4 w-4" />
-                                                    </Link>
-                                                </Button>
+                                                <div className="flex items-center gap-4 mt-auto">
+                                                    {book.readUrl && (
+                                                        <>
+                                                            <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors h-auto" asChild>
+                                                                <Link href={book.readUrl} target="_blank">
+                                                                    Oku
+                                                                </Link>
+                                                            </Button>
+                                                            <span className="text-muted-foreground/30">|</span>
+                                                        </>
+                                                    )}
+                                                    <Button variant="link" className="px-0 text-primary hover:text-primary/80 transition-colors h-auto" asChild>
+                                                        <Link href={book.actionUrl} target="_blank">
+                                                            Satın Al <ArrowRight className="ml-1 h-4 w-4" />
+                                                        </Link>
+                                                    </Button>
+                                                </div>
                                             </CardContent>
                                         </Card>
                                     </CarouselItem>
@@ -464,7 +526,7 @@ export default function TevhidBasimYayinPage() {
 
                     <div className="flex justify-center mt-12">
                         <Button size="lg" variant="outline" className="h-12 px-8 text-base border-primary/20 hover:border-primary text-primary" asChild>
-                            <a href="https://tevhiddersleri.org/kitaplar" target="_blank" rel="noopener noreferrer">
+                            <a href="https://tevhidkitap.net" target="_blank" rel="noopener noreferrer">
                                 Tüm Kitapları Gör <ArrowRight className="ml-2 h-4 w-4" />
                             </a>
                         </Button>

@@ -110,7 +110,7 @@ function AppCard({ app }: { app: any }) {
                     src={app.background}
                     alt="Background"
                     fill
-                    className="object-cover opacity-60 group-hover:opacity-70 group-hover:scale-105 transition-all duration-700"
+                    className="object-cover object-top opacity-60 group-hover:opacity-70 group-hover:scale-105 transition-all duration-700"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-card/95 via-card/70 to-card/30" />
             </div>
@@ -231,7 +231,7 @@ function SocialMediaCard({ item }: { item: any }) {
                     src={item.background}
                     alt="Background"
                     fill
-                    className="object-cover opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"
+                    className={`object-cover ${item.id === 'tevhid-ekip' ? 'object-left' : ''} opacity-30 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/60 to-background/95" />
             </div>

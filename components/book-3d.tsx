@@ -58,7 +58,8 @@ export function Magazine3D({ src, alt, size = "medium", priority = false, thickn
                             src={src}
                             alt={alt}
                             fill
-                            className="object-cover"
+                            className="object-contain"
+                            style={{ mixBlendMode: "multiply" }}
                             priority={priority}
                         />
 
