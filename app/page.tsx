@@ -150,7 +150,7 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-48 md:h-full overflow-hidden md:order-2">
                   <Image
-                    src="/images/yetim_hamiligi.webp"
+                    src="/images/ecir-kapisi-bayragi.jpg"
                     alt="İnsani Yardım"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -176,7 +176,7 @@ export default function Home() {
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-48 md:h-full overflow-hidden">
                   <Image
-                    src="/images/Dergi_Tevhid.png"
+                    src="/images/tevhid-dergisi-şube.jpg"
                     alt="Şubelerimiz"
                     fill
                     className="object-cover group-hover:scale-105 transition-transform duration-500"

@@ -7,6 +7,7 @@ import { Map, MapMarker, MarkerContent, MarkerPopup, MapControls } from "@/compo
 import { cn } from "@/lib/utils";
 import { cinzel } from "@/lib/fonts";
 import { PageHero } from "@/components/page-hero";
+import { useState, useEffect, useRef } from "react";
 
 // Şube verileri - https://alpha.tevhiddersleri.org/subeler referans alınarak oluşturulmuştur
 const subeler = [
@@ -181,6 +182,78 @@ const subeler = [
     },
 ];
 
+// Lazy loading map component to prevent WebGL context exhaustion
+function LazyMap({
+    longitude,
+    latitude,
+    isMerkez
+}: {
+    longitude: number;
+    latitude: number;
+    isMerkez: boolean;
+}) {
+    const [shouldLoad, setShouldLoad] = useState(false);
+    const containerRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting && !shouldLoad) {
+                        setShouldLoad(true);
+                    }
+                });
+            },
+            {
+                rootMargin: "100px", // Start loading 100px before the element is visible
+            }
+        );
+
+        if (containerRef.current) {
+            observer.observe(containerRef.current);
+        }
+
+        return () => {
+            if (containerRef.current) {
+                observer.unobserve(containerRef.current);
+            }
+        };
+    }, [shouldLoad]);
+
+    return (
+        <div ref={containerRef} className="w-full h-full">
+            {shouldLoad ? (
+                <Map
+                    center={[longitude, latitude]}
+                    zoom={15}
+                >
+                    <MapMarker
+                        longitude={longitude}
+                        latitude={latitude}
+                    >
+                        <MarkerContent>
+                            <div className={cn(
+                                "rounded-full p-2 shadow-lg",
+                                isMerkez
+                                    ? "bg-primary text-primary-foreground ring-2 ring-primary ring-offset-2"
+                                    : "bg-primary text-primary-foreground"
+                            )}>
+                                <MapPin className="w-4 h-4" />
+                            </div>
+                        </MarkerContent>
+                    </MapMarker>
+                </Map>
+            ) : (
+                <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900">
+                    <div className="text-center p-4">
+                        <MapPin className="w-8 h-8 mx-auto mb-2 text-primary animate-pulse" />
+                        <p className="text-xs text-muted-foreground">Harita yükleniyor...</p>
+                    </div>
+                </div>
+            )}
+        </div>
+    );
+}
 
 export default function SubelerimizPage() {
     return (
@@ -339,27 +412,12 @@ export default function SubelerimizPage() {
                                         </div>
                                     )}
                                     <div className="relative h-56 w-full overflow-hidden">
-                                        {/* Mini Interactive Map */}
-                                        <Map
-                                            center={[sube.longitude, sube.latitude]}
-                                            zoom={15}
-                                        >
-                                            <MapMarker
-                                                longitude={sube.longitude}
-                                                latitude={sube.latitude}
-                                            >
-                                                <MarkerContent>
-                                                    <div className={cn(
-                                                        "rounded-full p-2 shadow-lg",
-                                                        sube.isMerkez
-                                                            ? "bg-primary text-primary-foreground ring-2 ring-primary ring-offset-2"
-                                                            : "bg-primary text-primary-foreground"
-                                                    )}>
-                                                        <MapPin className="w-4 h-4" />
-                                                    </div>
-                                                </MarkerContent>
-                                            </MapMarker>
-                                        </Map>
+                                        {/* Lazy-loaded Interactive Map for all devices */}
+                                        <LazyMap
+                                            longitude={sube.longitude}
+                                            latitude={sube.latitude}
+                                            isMerkez={sube.isMerkez}
+                                        />
                                         {/* Overlay gradient for better readability */}
                                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent pointer-events-none" />
                                     </div>
