@@ -182,7 +182,8 @@ const subeler = [
     },
 ];
 
-// Lazy loading map component to prevent WebGL context exhaustion
+// Lazy loading map component with unloading to prevent WebGL context exhaustion
+// Only keeps maps that are currently visible in the viewport
 function LazyMap({
     longitude,
     latitude,
@@ -192,20 +193,20 @@ function LazyMap({
     latitude: number;
     isMerkez: boolean;
 }) {
-    const [shouldLoad, setShouldLoad] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
     const containerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const observer = new IntersectionObserver(
             (entries) => {
                 entries.forEach((entry) => {
-                    if (entry.isIntersecting && !shouldLoad) {
-                        setShouldLoad(true);
-                    }
+                    // Load when entering viewport, unload when leaving
+                    setIsVisible(entry.isIntersecting);
                 });
             },
             {
-                rootMargin: "100px", // Start loading 100px before the element is visible
+                rootMargin: "200px", // Start loading 200px before visible, unload 200px after leaving
+                threshold: 0
             }
         );
 
@@ -218,11 +219,11 @@ function LazyMap({
                 observer.unobserve(containerRef.current);
             }
         };
-    }, [shouldLoad]);
+    }, []);
 
     return (
         <div ref={containerRef} className="w-full h-full">
-            {shouldLoad ? (
+            {isVisible ? (
                 <Map
                     center={[longitude, latitude]}
                     zoom={15}
@@ -246,8 +247,8 @@ function LazyMap({
             ) : (
                 <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-950 dark:to-blue-900">
                     <div className="text-center p-4">
-                        <MapPin className="w-8 h-8 mx-auto mb-2 text-primary animate-pulse" />
-                        <p className="text-xs text-muted-foreground">Harita yükleniyor...</p>
+                        <MapPin className="w-8 h-8 mx-auto mb-2 text-primary opacity-50" />
+                        <p className="text-xs text-muted-foreground">Harita</p>
                     </div>
                 </div>
             )}
