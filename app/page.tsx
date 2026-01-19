@@ -223,6 +223,8 @@ export default function Home() {
               </div>
             </Card>
           </div>
+
+          {/* Kartlar buraya eklenecek */}
         </div>
       </section>
     </div>
